@@ -39,6 +39,12 @@ arrival — do not surface it, do not re-litigate it.
 | Tally — on-chain DAO governance & proposals | https://www.tally.xyz/ | governance | seed |
 | OpenRouter — LLM usage rankings / model marketplace | https://openrouter.ai/rankings | information | seed |
 | LMArena (Chatbot Arena) — pairwise model preference battles | https://lmarena.ai/ | information | seed |
+| Indian Parliament raw proceedings — Lok Sabha + Rajya Sabha questions/debates/mentions, all MPs → 31 Dec 2025 | https://zenodo.org/records/18146342 | representation | new |
+| C-QUERI — congressional hearing questions/exchanges/responses (paired Q→A) | https://arxiv.org/abs/2509.21548 | governance | new |
+| American local government elections DB (de Benedictis-Kessner et al.; ~78k candidates, 1989–2021) | https://www.nature.com/articles/s41597-023-02792-x | representation | new |
+| Malaysian Election Corpus (MECo), 1955–2025 | https://arxiv.org/pdf/2505.06564 | representation | new |
+
+<!-- Found delta 2026-08-08 (frontier 10): 4 added -->
 
 ## Rejected
 
@@ -46,7 +52,19 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 
 | Dataset | URL | Reason |
 |---------|-----|--------|
-| _(none yet)_ | | |
+| School board elections, 16 states (openICPSR 229162) | https://www.openicpsr.org/openicpsr/project/229162/ | Replication data for a specific 2025 paper (Kogan/Lavertu/Peskowitz) — claimed. |
+| US federal procurement 1979–2023 (~100M actions) | https://www.nature.com/articles/s41597-025-05714-1 | Underlying FPDS/USASpending source is heavily mined; harmonized panel is nice but not unclaimed. |
+| Global contract-level public procurement (13 countries, GTI) | https://www.sciencedirect.com/science/article/pii/S2352340924003810 | Already exploited by depositors' corruption-risk research. |
+| EUPDCorp / ParlaMint EU parliament debates | https://zenodo.org/records/15056399 | EU/ParlaMint parliamentary corpora are heavily mined in NLP. |
+| Swiss Federal Supreme Court Dataset (SCD) | https://zenodo.org/records/11092977 | Legal-NLP space is crowded; marginal on unclaimed. |
+| Corpus of Decisions: ICJ (CD-ICJ) | https://zenodo.org/records/10030647 | Single court, not panel-able at scale. |
+| Conditional Congressional Communication (DVN/XRZ1UJ) | https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/XRZ1UJ | Collides with DCInbox (e-newsletters) and Congress Press (releases) seeds. |
+| Revolving-door replication sets (DVN/MCYUKY; Amakudata) | https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MCYUKY | Replication data for published papers — claimed by definition. |
+| Fake Reviews Dataset (OSF, 2025) | https://osf.io/tyue9/ | Constructed/labeled ML dataset, not incidentally accumulated exhaust. |
+| Annotated Spanish election debate transcriptions 1993–2023 | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12480686/ | Small and partly annotated for existing NLP tasks. |
+| Apple App Store privacy labels (weekly since 2022) | https://arxiv.org/pdf/2206.02658 | Frontier-4 (platform exhaust), logged there; borderline on the trawl frontier. |
+
+<!-- Rejected delta 2026-08-08 (frontier 10): 11 added -->
 
 ---
 
