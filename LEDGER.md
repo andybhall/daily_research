@@ -1,0 +1,77 @@
+# LEDGER
+
+The single source of truth for the Daily Dataset Hunt. **Every run reads this file
+first.** A candidate that matches anything in **Found** or **Rejected** is dead on
+arrival — do not surface it, do not re-litigate it.
+
+- **Status values:** `seed` (surfaced in prior sessions, seeded here so the daily
+  run never re-proposes it) · `new` (surfaced by a daily run, un-triaged) ·
+  `spec'd` (promoted, has a project spec) · `building` · `published`.
+- **Layers:** `information` · `representation` · `governance` (see the agenda at the
+  bottom).
+- Append-only in spirit: entries move status but are not deleted, so collisions
+  stay detectable forever.
+
+---
+
+## Found
+
+| Dataset | URL | Layer | Status |
+|---------|-----|-------|--------|
+| Congress Press / Derek Willis scrapers (congressional press releases, 26 yrs, ~675k releases) | https://github.com/dwillis/congress-press | information | seed |
+| DCInbox — official congressional e-newsletters (~90k+ mailings since 2009) | https://www.dcinbox.com/ | information | seed |
+| Princeton Corpus of Political Emails (300k+ emails, 2020 cycle) | https://electionemails2020.org/ | information | seed |
+| FEC individual disbursements (bulk + API) | https://www.fec.gov/data/disbursements/ | representation | seed |
+| Meta Ad Library (political & issue ads, with API) | https://www.facebook.com/ads/library/ | information | seed |
+| Google Ads Transparency Center | https://adstransparency.google.com/ | information | seed |
+| LocalView — local government meeting videos + transcripts (~140k videos) | https://localview.net/ | representation | seed |
+| Legistar — municipal legislation / agendas / votes (Granicus API) | https://webapi.legistar.com/ | governance | seed |
+| IRS Form 990 filings (nonprofits) via ProPublica Nonprofit Explorer | https://projects.propublica.org/nonprofits/ | governance | seed |
+| Congressional hearing witnesses | https://www.congress.gov/committees | governance | seed |
+| Regulations.gov — public comments on federal rulemaking (API) | https://www.regulations.gov/ | governance | seed |
+| CourtListener / RECAP — federal dockets & opinions (API) | https://www.courtlistener.com/ | governance | seed |
+| Glassdoor — employer reviews | https://www.glassdoor.com/ | information | seed |
+| Blind — anonymous verified-employee posts | https://www.teamblind.com/ | information | seed |
+| Wayback Machine — policy-page / ToS diffs over time | https://web.archive.org/ | information | seed |
+| Kalshi — regulated event/prediction markets | https://kalshi.com/ | governance | seed |
+| Polymarket — prediction markets | https://polymarket.com/ | governance | seed |
+| Snapshot — off-chain DAO governance votes (GraphQL) | https://snapshot.org/ | governance | seed |
+| Tally — on-chain DAO governance & proposals | https://www.tally.xyz/ | governance | seed |
+| OpenRouter — LLM usage rankings / model marketplace | https://openrouter.ai/rankings | information | seed |
+| LMArena (Chatbot Arena) — pairwise model preference battles | https://lmarena.ai/ | information | seed |
+
+## Rejected
+
+_Datasets considered and rejected, with reasons — so they are never re-litigated._
+
+| Dataset | URL | Reason |
+|---------|-----|--------|
+| _(none yet)_ | | |
+
+---
+
+## Active research agenda — the three layers
+
+Relevance is scored against this fixed agenda so the hunt stays anchored (rubric
+criterion **e**). A find should cleanly hit one of these:
+
+- **Information** — how political information is produced, distributed, and
+  distorted: persuasion, advertising, media, disclosure, strategic communication.
+  *Behaviorally revealing when the text/spend was optimized under real stakes.*
+- **Representation** — how citizen preferences and voices get expressed and
+  aggregated into collective choice: elections, participation, deliberation,
+  constituent contact, campaign finance.
+- **Governance** — how institutions make, contest, and enforce binding decisions:
+  courts, agencies, legislatures, procurement, corporate and DAO governance.
+
+The Willis rubric (used every run in Phase 2):
+
+1. **Optimized-under-pressure / behaviorally revealed** — revealed behavior under
+   stakes, not stated preference.
+2. **Incidentally accumulated / longitudinal** — a byproduct that piled up, not
+   assembled to be studied.
+3. **Unclaimed** — Google Scholar shows little prior academic use (required check).
+4. **Panel-able** — repeated observations of the same units over time.
+5. **Maps to a layer** — Information, Representation, or Governance.
+
+Score 1–5 each, 25 max. Kill anything < 18/25.

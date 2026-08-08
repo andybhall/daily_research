@@ -1,0 +1,83 @@
+name: Daily Dataset Hunt
+
+# 6am PT weekdays (13:00 UTC). Also runnable on demand from the Actions tab.
+on:
+  schedule:
+    - cron: "0 13 * * 1-5"
+  workflow_dispatch:
+
+# Least privilege: commit the memo/ledger and open the triage issue.
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-hunt
+  cancel-in-progress: false
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Compute run date and frontier
+        id: params
+        run: |
+          DOY=$(date -u +%j)
+          # 10#$DOY forces base-10 (avoids octal parsing of leading zeros).
+          IDX=$(( 10#$DOY % 10 ))
+          echo "run_date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+          echo "frontier_index=$IDX" >> "$GITHUB_OUTPUT"
+
+      - name: Run the hunt
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RUN_DATE: ${{ steps.params.outputs.run_date }}
+          FRONTIER_INDEX: ${{ steps.params.outputs.frontier_index }}
+        run: |
+          mkdir -p .hunt memos
+          # Substitute today's parameters into the harness prompt, then run headless.
+          PROMPT="$(RUN_DATE="$RUN_DATE" FRONTIER_INDEX="$FRONTIER_INDEX" \
+            envsubst '$RUN_DATE $FRONTIER_INDEX' < HARNESS.md)"
+          claude -p "$PROMPT" \
+            --allowedTools "WebSearch,WebFetch,Read,Write,Edit,Bash" \
+            --dangerously-skip-permissions \
+            --output-format text \
+            | tee .hunt/run-log.txt
+
+      - name: Open triage issue
+        if: hashFiles('.hunt/issue-title.txt') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="$(head -n1 .hunt/issue-title.txt)"
+          BODY_FILE=.hunt/issue-body.md
+          [ -f "$BODY_FILE" ] || echo "See today's memo." > "$BODY_FILE"
+          gh issue create \
+            --title "$TITLE" \
+            --body-file "$BODY_FILE" \
+            --label "dataset-hunt" || \
+          gh issue create --title "$TITLE" --body-file "$BODY_FILE"
+
+      - name: Commit memo and ledger
+        run: |
+          git config user.name "dataset-hunt-bot"
+          git config user.email "dataset-hunt-bot@users.noreply.github.com"
+          git add memos LEDGER.md FRONTIERS.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit (possible null day with no ledger delta)."
+          else
+            git commit -m "Daily hunt: ${{ steps.params.outputs.run_date }} (frontier ${{ steps.params.outputs.frontier_index }})"
+            git push
+          fi
