@@ -43,8 +43,10 @@ arrival — do not surface it, do not re-litigate it.
 | C-QUERI — congressional hearing questions/exchanges/responses (paired Q→A) | https://arxiv.org/abs/2509.21548 | governance | new |
 | American local government elections DB (de Benedictis-Kessner et al.; ~78k candidates, 1989–2021) | https://www.nature.com/articles/s41597-023-02792-x | representation | new |
 | Malaysian Election Corpus (MECo), 1955–2025 | https://arxiv.org/pdf/2505.06564 | representation | new |
+| EU "Have Your Say" public-consultation full-text corpus (all input to EU legislation + attachments, through May 2025) | https://zenodo.org/records/15864330 | governance | new |
+| Mexican municipal-elections precinct-level database (1994–2019; 456k precinct returns, 15.6k elections) | https://www.nature.com/articles/s41597-025-04918-9 | representation | new |
 
-<!-- Found delta 2026-08-08 (frontier 10): 4 added -->
+<!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 
 ## Rejected
 
@@ -63,8 +65,16 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Fake Reviews Dataset (OSF, 2025) | https://osf.io/tyue9/ | Constructed/labeled ML dataset, not incidentally accumulated exhaust. |
 | Annotated Spanish election debate transcriptions 1993–2023 | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12480686/ | Small and partly annotated for existing NLP tasks. |
 | Apple App Store privacy labels (weekly since 2022) | https://arxiv.org/pdf/2206.02658 | Frontier-4 (platform exhaust), logged there; borderline on the trawl frontier. |
+| ParlSpeech V2 (6.3M parliamentary speeches, 9 democracies) | https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/L4OAKN | One of the most-used comparative parliamentary corpora — not unclaimed. |
+| Nomic Congressional Database (every congressional Tweet, daily-updated) | https://arxiv.org/abs/2505.00006 | Introduced by a published paper (digital-twin of Congress); congressional tweets heavily mined. |
+| FCC net-neutrality comment corpus (~24M, Stanford RegLab) | https://reglab.stanford.edu/data/fcc-comment-dataset/ | The 2017 fake-comment episode is extensively studied — claimed. |
+| AGORA — AI Governance & Regulatory Archive (Zenodo 20229467) | https://zenodo.org/records/20229467 | Deliberately curated "living collection," not incidentally accumulated exhaust. |
+| MeetingBank — 6-city council meetings (video/transcript/minutes) | https://meetingbank.github.io/ | Small (6 cities), NLP-summarization-mined; overlaps LocalView seed genre. |
+| BICAM — Bulk Ingestion of Congressional Actions & Materials | https://pubmed.ncbi.nlm.nih.gov/41006307/ | Curated congressional research dataset; congressional data saturated. |
+| Telegram 2024 U.S. election corpus (~1B posts) | https://arxiv.org/pdf/2410.23638 | Constructed study corpus; platform exhaust (frontier 4), not a trawl deposit. |
+| Grand Débat National citizen-consultation corpus (GDN-CC) | https://arxiv.org/pdf/2601.14944 | Single 2019 event, already studied; not panel-able. |
 
-<!-- Rejected delta 2026-08-08 (frontier 10): 11 added -->
+<!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 
 ---
 
