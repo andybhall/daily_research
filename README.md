@@ -11,8 +11,8 @@ you can triage in under two minutes.
 
 ## How it works
 
-Every weekday morning a scheduled run executes [`HARNESS.md`](./HARNESS.md) in
-Claude Code headless mode with web search enabled. The run:
+Every weekday morning a **Claude scheduled Routine** fires a fresh Claude session
+that executes [`HARNESS.md`](./HARNESS.md) with web search enabled. The run:
 
 1. **Reads state first.** [`LEDGER.md`](./LEDGER.md) (everything ever found or
    rejected) and [`FRONTIERS.md`](./FRONTIERS.md) (ten rotating search frontiers).
@@ -23,8 +23,8 @@ Claude Code headless mode with web search enabled. The run:
    anything under 18/25 or colliding with the ledger.
 4. **Deep-dives** the top two: access mechanics, collection cost, nearest existing
    paper, headline figure, first analysis.
-5. **Writes** `memos/YYYY-MM-DD.md`, appends to the ledger, and opens a GitHub
-   issue titled with the best find. A null day is allowed and beats a padded one.
+5. **Writes** `memos/YYYY-MM-DD.md`, appends to the ledger, commits both to `main`,
+   and pushes a short brief to your phone. A null day is allowed and beats a padded one.
 
 The anti-slop mechanics live in [`HARNESS.md`](./HARNESS.md#anti-slop-rules) and
 are explained in the spec below.
@@ -49,38 +49,38 @@ Relevance is scored against a fixed agenda so the hunt stays anchored:
 | `LEDGER.md` | Versioned state. Found / Rejected / Agenda. Read first every run. |
 | `FRONTIERS.md` | Ten search frontiers + the rotation rule. |
 | `memos/` | One dated memo per run (≤800 words, verified URLs mandatory). |
-| `.github/workflows/daily-hunt.yml` | Cron: 6am PT weekdays. Runs the harness, commits, opens an issue. |
-| `.github/workflows/weekly-meta.yml` | Sundays: ranks the week's finds, flags harness drift, proposes frontier edits. |
+| `META.md` | The weekly meta-review prompt: ranks the week's finds, flags harness drift, proposes frontier edits. |
 
 ## Operating it
 
-### 1. Enable the scheduled run (GitHub Actions)
+### 1. The scheduled Routine
 
-The daily workflow needs one secret:
+The hunt runs as a **Claude scheduled Routine** (a recurring trigger) rather than
+GitHub Actions — no Anthropic API key or Actions secret is needed. The Routine
+fires a fresh Claude session on weekday mornings (`0 13 * * 1-5` UTC ≈ 6am PT),
+which runs `HARNESS.md`, commits the memo + ledger to `main`, and delivers a short
+brief to your phone via the Routine's push notification.
 
-- `ANTHROPIC_API_KEY` — an Anthropic API key with web search access.
-  Add it under **Settings → Secrets and variables → Actions**.
-
-`GITHUB_TOKEN` is provided automatically; the workflow requests `contents: write`
-and `issues: write` so it can commit the memo and open the issue.
-
-Once the secret is set the cron fires on its own. You can also run it on demand
-from the **Actions** tab (**Run workflow**), or lock in a run by triggering
-`workflow_dispatch`.
+Manage it from the **Routines** UI on claude.ai (pause, edit the schedule, or fire
+it on demand). Because the schedule is a fixed UTC cron, the local fire time shifts
+by an hour across US daylight-saving changes (6am PDT / 5am PST) — nudge the cron
+if you want it pinned to 6am year-round.
 
 ### 2. Triage (the human loop, <2 min/day)
 
-Each run opens an issue titled with the best find. Skim it. If a find is worth
-pursuing, label it and it graduates to `spec'd` — write a project spec doc for it.
-Everything else stays in the ledger so it is never re-litigated.
+Each run pushes a brief to your phone with the best find and a link to the full
+memo in `memos/`. If a find is worth pursuing, promote it in the ledger to `spec'd`
+and write a project spec doc for it. Everything else stays in the ledger so it is
+never re-litigated.
 
 ### 3. Tune
 
-Edit `HARNESS.md` and `FRONTIERS.md` like source code. The weekly meta-run
-proposes edits; you accept or reject them via normal PRs.
+Edit `HARNESS.md` and `FRONTIERS.md` like source code. `META.md` is the weekly
+meta-review prompt — run it on demand (or wire up a second weekly Routine) to rank
+the week's finds, flag harness drift, and propose frontier edits.
 
 ## Definition of done
 
-Repo live with `HARNESS.md`, a seeded `LEDGER.md`, `FRONTIERS.md`, cron firing,
-and five consecutive weekday memos where at least two contain a find you genuinely
-had not considered.
+Repo live with `HARNESS.md`, a seeded `LEDGER.md`, `FRONTIERS.md`, the daily Routine
+firing, and five consecutive weekday memos where at least two contain a find you
+genuinely had not considered.

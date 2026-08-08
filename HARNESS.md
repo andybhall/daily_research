@@ -135,15 +135,15 @@ Then:
 1. **Append to `LEDGER.md`.** Add every surviving find to **Found**
    (`name | URL | layer | status: new`) and every worth-remembering kill to
    **Rejected** (`name | URL | reason`).
-2. **Emit the issue.** Write the issue title to `.hunt/issue-title.txt` (a single
-   line: the best find, or `Null day — <RUN_DATE>`) and the issue body to
-   `.hunt/issue-body.md` (a short triage-ready summary linking the memo). The
-   workflow opens the GitHub issue from these files.
-3. Leave `LEDGER.md`, the memo, and the `.hunt/` files staged; the workflow commits
-   and pushes.
+2. **Commit and push to `main`.** Stage `memos/`, `LEDGER.md`, and any
+   `FRONTIERS.md` edit; commit as `Daily hunt: <RUN_DATE> (frontier
+   <FRONTIER_INDEX>)`; then `git push origin HEAD:main`.
+3. **End with the phone brief.** Your final message is a ≤120-word brief —
+   frontier, verdict, top find + score, runner-up, and a link to the committed
+   memo. This summary is what gets pushed to the phone.
 
 ### If it is a null day
 
-Say so explicitly in the memo and issue title. Still record the screened
+Say so explicitly in the memo and the phone brief. Still record the screened
 candidates and their kill reasons in **Rejected** so the day was not wasted. Do not
 pad. Do not promote a sub-18 candidate to fill space.
