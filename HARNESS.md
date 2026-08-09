@@ -6,7 +6,7 @@ is to surface something genuinely new and prove it is real — not to generate a
 tidy listicle. Depth and novelty are the only things that matter. A single
 verified, unclaimed, high-scoring find beats fifteen plausible-sounding names.
 
-Work through the four phases below **in order**. Do not skip phases. Do not
+Work through the phases below **in order**. Do not skip phases. Do not
 shortcut the verification rules. If you finish and nothing cleared the bar, say so
 plainly — a null day is a valid, honest outcome and the ledger still grows via
 Rejected.
@@ -88,10 +88,10 @@ Rules:
   note a one-line reason — these go to the ledger's **Rejected** section so we
   never re-litigate them.
 
-## Phase 3 — Deep-dive (top 2 only)
+## Phase 3 — Deep-dive (top 3)
 
-Take the two highest-scoring survivors. For each, verify and report — every point
-backed by a URL fetched this run:
+Take the **three highest-scoring survivors** (fewer only if fewer cleared 18/25).
+For each, verify and report — every point backed by a URL fetched this run:
 
 1. **Access mechanics** — API? bulk download? scrape? What auth is required? What
    do the ToS and `robots.txt` actually say? Rate limits?
@@ -104,9 +104,33 @@ backed by a URL fetched this run:
 5. **First analysis** — the natural first question and the identification strategy
    that answers it.
 
+## Phase 3.5 — Probe (collect & analyze a live sample)
+
+Verifying a landing page is not the same as touching the data. For **at least the
+top find** (and each deep-dived candidate where it is feasible), actually pull real
+records **this run** and analyze them. This is what turns a plausible-sounding name
+into a proven one.
+
+- **Collect a bounded sample.** Hit the API for a page or two, download a small
+  bulk subset, or scrape a handful of records — whatever the access path is. Stay
+  small and polite: honor `robots.txt`, ToS, and rate limits; cap the pull at a few
+  hundred records or a few MB. Never dump credentials; never hammer a host.
+- **Analyze it for real.** Load the sample (Bash / a short script) and compute
+  concrete numbers that *test the dataset's promise*: actual field names, record
+  volume, the time span present, how many distinct units and how many observations
+  per unit (the panel structure), missingness — at least one fact you could **not**
+  have gotten from the landing page.
+- **Produce one artifact.** A small table or a simple chart. Save the sample, any
+  script, and the output under `analysis/$RUN_DATE/` and commit it.
+- **Honesty rule.** If a live pull is genuinely infeasible today (hard auth, no
+  sample endpoint, real legal friction), say so explicitly and record exactly what
+  you attempted. An honest "could not probe, here's why" is fine. **Never fabricate
+  a number, a field name, or a record count** — every figure in the memo's evidence
+  line must come from data you actually pulled this run.
+
 ## Phase 4 — Memo + commit
 
-Write `memos/$RUN_DATE.md`, **≤800 words**, with **verified URLs mandatory** for
+Write `memos/$RUN_DATE.md`, **≤1100 words**, with **verified URLs mandatory** for
 every factual claim. Structure:
 
 ```
@@ -119,9 +143,18 @@ every factual claim. Structure:
 <2–3 tight paragraphs: what it is, why it is unclaimed and behaviorally revealed,
 access + cost, nearest paper + our difference, headline figure, first analysis.
 Every claim cited by a URL fetched this run.>
+**Evidence from a live sample:** <≥1 concrete figure computed from data pulled this
+run — field names, record count, time span, panel structure — linking to the
+artifact in `analysis/<RUN_DATE>/`. Or an explicit "could not probe: <why>".>
 
-## Runner-up: <name>
-<one paragraph, same discipline>
+## Runner-ups
+<the 2nd and 3rd deep-dived finds, one tight paragraph each, same discipline; each
+with its own evidence-from-a-live-sample line where a probe was feasible.>
+
+## Shortlist
+<≥5 further survivors or notable near-misses worth a look — one line each:
+name | score | what it is + why it's promising or where it fell short. This is the
+breadth layer: surface more options than the three deep-dives above.>
 
 ## Also screened
 <compact table: candidate | score | one-line disposition>
@@ -135,15 +168,18 @@ Then:
 1. **Append to `LEDGER.md`.** Add every surviving find to **Found**
    (`name | URL | layer | status: new`) and every worth-remembering kill to
    **Rejected** (`name | URL | reason`).
-2. **Commit and push to `main`.** Stage `memos/`, `LEDGER.md`, and any
+2. **Commit and push to `main`.** Stage `memos/`, `analysis/`, `LEDGER.md`, and any
    `FRONTIERS.md` edit; commit as `Daily hunt: <RUN_DATE> (frontier
    <FRONTIER_INDEX>)`; then `git push origin HEAD:main`.
 3. **End with the phone brief.** Your final message is a ≤120-word brief —
-   frontier, verdict, top find + score, runner-up, and a link to the committed
-   memo. This summary is what gets pushed to the phone.
+   frontier, verdict, top find + score, the headline number from the live probe,
+   the count of finds surfaced, and a link to the committed memo. This summary is
+   what gets pushed to the phone.
 
 ### If it is a null day
 
 Say so explicitly in the memo and the phone brief. Still record the screened
-candidates and their kill reasons in **Rejected** so the day was not wasted. Do not
-pad. Do not promote a sub-18 candidate to fill space.
+candidates and their kill reasons in **Rejected** so the day was not wasted. The
+deep-dive, the live probe, and the shortlist are all waived — there is nothing that
+cleared the bar to probe or rank. Do not pad. Do not promote a sub-18 candidate to
+fill space, and never run a token probe on a dead candidate just to have a number.

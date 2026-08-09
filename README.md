@@ -21,10 +21,14 @@ that executes [`HARNESS.md`](./HARNESS.md) with web search enabled. The run:
    candidate datasets via real web searches — no candidates from memory.
 3. **Screens** each candidate 1–5 on the five-point Willis rubric and kills
    anything under 18/25 or colliding with the ledger.
-4. **Deep-dives** the top two: access mechanics, collection cost, nearest existing
+4. **Deep-dives** the top three: access mechanics, collection cost, nearest existing
    paper, headline figure, first analysis.
-5. **Writes** `memos/YYYY-MM-DD.md`, appends to the ledger, commits both to `main`,
-   and pushes a short brief to your phone. A null day is allowed and beats a padded one.
+5. **Probes** the data for real — pulls a bounded live sample of the top find(s) and
+   computes concrete statistics (fields, volume, time span, panel structure), saving
+   the sample + analysis under `analysis/YYYY-MM-DD/`.
+6. **Writes** `memos/YYYY-MM-DD.md` (top three + a shortlist of further options +
+   the live-sample evidence), appends to the ledger, commits to `main`, and pushes a
+   short brief to your phone. A null day is allowed and beats a padded one.
 
 The anti-slop mechanics live in [`HARNESS.md`](./HARNESS.md#anti-slop-rules) and
 are explained in the spec below.
@@ -45,8 +49,9 @@ Relevance is scored against a fixed agenda so the hunt stays anchored:
 
 | Path | Role |
 |------|------|
-| `HARNESS.md` | The daily run prompt. The four mandatory phases + hard quality rules. Tune this like code. |
+| `HARNESS.md` | The daily run prompt. The mandatory phases (diverge → screen → deep-dive → probe → memo) + hard quality rules. Tune this like code. |
 | `LEDGER.md` | Versioned state. Found / Rejected / Agenda. Read first every run. |
+| `analysis/` | Per-run live-probe artifacts: the bounded data sample, any script, and its output (`analysis/YYYY-MM-DD/`). |
 | `FRONTIERS.md` | Ten search frontiers + the rotation rule. |
 | `memos/` | One dated memo per run (≤800 words, verified URLs mandatory). |
 | `META.md` | The weekly meta-review prompt: ranks the week's finds, flags harness drift, proposes frontier edits. |
