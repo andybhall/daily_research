@@ -45,8 +45,11 @@ arrival — do not surface it, do not re-litigate it.
 | Malaysian Election Corpus (MECo), 1955–2025 | https://arxiv.org/pdf/2505.06564 | representation | new |
 | EU "Have Your Say" public-consultation full-text corpus (all input to EU legislation + attachments, through May 2025) | https://zenodo.org/records/15864330 | governance | new |
 | Mexican municipal-elections precinct-level database (1994–2019; 456k precinct returns, 15.6k elections) | https://www.nature.com/articles/s41597-025-04918-9 | representation | new |
+| Opioid Industry Documents Archive (OIDA) — millions of discovery-disgorged internal corporate documents; bulk-open on AWS | https://registry.opendata.aws/oida/ | governance | new |
+| DataJud — Brazil CNJ National Judiciary Database (case metadata + docket movements, all courts, public API) | https://datajud-wiki.cnj.jus.br/api-publica/ | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
+<!-- Found delta 2026-08-09 (frontier 1): 2 added -->
 
 ## Rejected
 
@@ -73,8 +76,15 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | BICAM — Bulk Ingestion of Congressional Actions & Materials | https://pubmed.ncbi.nlm.nih.gov/41006307/ | Curated congressional research dataset; congressional data saturated. |
 | Telegram 2024 U.S. election corpus (~1B posts) | https://arxiv.org/pdf/2410.23638 | Constructed study corpus; platform exhaust (frontier 4), not a trawl deposit. |
 | Grand Débat National citizen-consultation corpus (GDN-CC) | https://arxiv.org/pdf/2601.14944 | Single 2019 event, already studied; not panel-able. |
+| Free Law Project judicial financial-disclosure DB (250k pp, 1.5M holdings, 2003–2020) | https://www.courtlistener.com/ | Collides with CourtListener seed; already mined by the WSJ recusal investigation. |
+| EOIR immigration-court asylum decisions / Deportation Data Project | https://www.openimmigration.us/ | Asylum-judge disparity ("Refugee Roulette") is among the most-studied legal datasets. |
+| "Lobbying by Brief" business-law amicus filings, 2005–2022 (NY/CA/DE/TX/NV) | https://scholar.smu.edu/smulr/vol78/iss1/4/ | No verifiable public deposit; data underlies a published law-review article. |
+| Amici Space Project — amicus signers, SCOTUS merits 1953–2013 | https://amicispace.ucmerced.edu/data | SCOTUS amicus heavily studied; coverage ends 2013. |
+| Debt Collection Lab — state civil-court default judgments | https://debtcollectionlab.org/research/ | Established research project (Pew/Wilf-Townsend); underlying dockets claimed. |
+| Pile of Law — 256GB open legal corpus | https://arxiv.org/pdf/2207.00220 | Heavily used for LLM training/filtering; not unclaimed. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
+<!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
 
 ---
 
