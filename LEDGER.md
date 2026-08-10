@@ -47,9 +47,15 @@ arrival — do not surface it, do not re-litigate it.
 | Mexican municipal-elections precinct-level database (1994–2019; 456k precinct returns, 15.6k elections) | https://www.nature.com/articles/s41597-025-04918-9 | representation | new |
 | Opioid Industry Documents Archive (OIDA) — millions of discovery-disgorged internal corporate documents; bulk-open on AWS | https://registry.opendata.aws/oida/ | governance | new |
 | DataJud — Brazil CNJ National Judiciary Database (case metadata + docket movements, all courts, public API) | https://datajud-wiki.cnj.jus.br/api-publica/ | governance | new |
+| FARA foreign-agent filings (registrants × foreign principals, 1942→2026; bulk CSV/XML + API) | https://efile.fara.gov/api | information | new |
+| India electoral bonds — SBI/ECI disclosure (company→party donations, 22,217 bonds, Apr 2019–Feb 2024) | https://www.kaggle.com/datasets/shaundanielll/electoral-bond-data-state-bank-of-india | representation | new |
+| GAO bid-protest decisions (firms contesting federal contract awards; 1,000+/yr) | https://www.gao.gov/legal/bid-protests/search | governance | new |
+| IRS 527 / Form 8872 — political-org contributions & expenditures (weekly bulk since 2000) | https://www.irs.gov/charities-non-profits/political-organizations/political-organization-filing-and-disclosure | representation | new |
+| World Bank debarment list + Contract Awards (FY2017+) — sanctioned firms + procurement awards | https://www.worldbank.org/en/projects-operations/procurement/debarred-firms | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
+<!-- Found delta 2026-08-10 (frontier 2): 5 added -->
 
 ## Rejected
 
@@ -82,9 +88,13 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Amici Space Project — amicus signers, SCOTUS merits 1953–2013 | https://amicispace.ucmerced.edu/data | SCOTUS amicus heavily studied; coverage ends 2013. |
 | Debt Collection Lab — state civil-court default judgments | https://debtcollectionlab.org/research/ | Established research project (Pew/Wilf-Townsend); underlying dockets claimed. |
 | Pile of Law — 256GB open legal corpus | https://arxiv.org/pdf/2207.00220 | Heavily used for LLM training/filtering; not unclaimed. |
+| ProZorro — Ukraine open procurement (tenders/bids since 2015) | https://www.kaggle.com/datasets/oleksastepaniuk/prozorro-public-procurement-dataset | Flagship OCDS open-contracting dataset; real prior use (CGD/DOZORRO) — not unclaimed. |
+| Brazil TSE campaign finance (DivulgaCandContas / dados abertos) | https://dadosabertos.tse.jus.br/ | Corporate-donation effects already mined (Boas/Hidalgo/Richardson); foundational but studied. |
+| Congressional stock trades (STOCK Act periodic transaction reports) | https://www.capitoltrades.com/ | Saturated — multiple papers + Quiver/CapitolTrades/Unusual Whales trackers. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
+<!-- Rejected delta 2026-08-10 (frontier 2): 3 added -->
 
 ---
 
