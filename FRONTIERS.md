@@ -20,6 +20,12 @@ five ideas every day — the frontier is a constraint, not a suggestion.
 
 ## How to use a frontier
 
+- **Hunt the AI angle within the frontier.** The hunt is now AI-focused (HARNESS
+  anti-slop rule 6): each frontier is a search territory, but every candidate must
+  have a clear AI nexus. Read each frontier as "where does AI show up *here*?" —
+  e.g., AI-generated ads in persuasion text, algorithmic decisions in legal exhaust,
+  AI-vendor money in the money trails, model marketplaces in platform exhaust. A
+  frontier with no AI-relevant corner today is a null day, not license to drift.
 - Do not treat the one-line description as the whole territory. Each frontier is a
   door into a genre. Push past the obvious first three sources.
 - Think in three passes within the frontier: **collector** (who is quietly hoarding

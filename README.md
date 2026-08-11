@@ -1,7 +1,9 @@
 # Daily Dataset Hunt
 
-An autonomous daily run that does genuinely deep discovery of **unclaimed datasets**
-for Free Systems research — without degrading into a listicle generator.
+An autonomous daily run that does genuinely deep discovery of **unclaimed,
+AI-relevant datasets** for Free Systems research — without degrading into a listicle
+generator. Every find must illuminate AI's role in political information,
+representation, or governance.
 
 The hard problem here is not scheduling. It is forcing **novelty** and **depth**
 every single day. Both are solved with **state + structure**, not with a bigger
@@ -27,23 +29,30 @@ that executes [`HARNESS.md`](./HARNESS.md) with web search enabled. The run:
    computes concrete statistics (fields, volume, time span, panel structure), saving
    the sample + analysis under `analysis/YYYY-MM-DD/`.
 6. **Writes** `memos/YYYY-MM-DD.md` (top three + a shortlist of further options +
-   the live-sample evidence), appends to the ledger, commits to `main`, and pushes a
-   short brief to your phone. A null day is allowed and beats a padded one.
+   the live-sample evidence), appends to the ledger, commits to `main`, and
+   **delivers the full memo straight into the chat window** (phone-readable Markdown,
+   not just a GitHub link), plus a short push notification. A null day is allowed and
+   beats a padded one.
 
 The anti-slop mechanics live in [`HARNESS.md`](./HARNESS.md#anti-slop-rules) and
 are explained in the spec below.
 
-## The three-layer research agenda
+## The research agenda: AI × three layers
 
-Relevance is scored against a fixed agenda so the hunt stays anchored:
+The hunt is **AI-focused** — every find must have a clear AI nexus (it reveals how AI
+behaves, how AI is built/deployed/governed, or how AI is reshaping the layers below).
+A dataset with no AI connection is dead on arrival. Relevance is then scored against
+three layers:
 
-- **Information** — how political information is produced, distributed, and
-  distorted (persuasion, advertising, media, disclosure, communications).
-- **Representation** — how citizen preferences and voices get expressed and
-  aggregated into collective choice (elections, participation, deliberation,
-  constituent contact).
+- **Information** — how political information is produced, distributed, and distorted
+  (persuasion, advertising, media, disclosure). *AI angle:* AI-generated persuasion,
+  synthetic media, chatbot/LLM outputs, automated content and its detection.
+- **Representation** — how preferences and voices get aggregated into collective
+  choice (elections, participation, deliberation, constituent contact). *AI angle:*
+  AI in campaigning/deliberation, algorithmic constituent contact.
 - **Governance** — how institutions make, contest, and enforce binding decisions
-  (courts, agencies, legislatures, procurement, corporate/DAO governance).
+  (courts, agencies, legislatures, procurement, corporate/DAO governance). *AI angle:*
+  algorithmic decision-making, AI procurement, AI law/regulation, model governance.
 
 ## Repo layout
 

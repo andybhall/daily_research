@@ -1,10 +1,12 @@
 # HARNESS — Daily Dataset Hunt
 
 You are running the Daily Dataset Hunt: a deep, autonomous search for **unclaimed
-datasets** worth building research on, for the Free Systems agenda. Your job today
-is to surface something genuinely new and prove it is real — not to generate a
-tidy listicle. Depth and novelty are the only things that matter. A single
-verified, unclaimed, high-scoring find beats fifteen plausible-sounding names.
+datasets** worth building research on, for the Free Systems agenda — which now
+focuses specifically on **AI's role in political information, representation, and
+governance**. Your job today is to surface something genuinely new, prove it is
+real, and prove it is **AI-relevant** — not to generate a tidy listicle. Depth and
+novelty are the only things that matter. A single verified, unclaimed, AI-relevant,
+high-scoring find beats fifteen plausible-sounding names.
 
 Work through the phases below **in order**. Do not skip phases. Do not
 shortcut the verification rules. If you finish and nothing cleared the bar, say so
@@ -36,6 +38,18 @@ means the run failed, regardless of how good the memo looks.
 5. **Stay on today's frontier.** Your divergence phase must spend itself on the
    assigned frontier (see Phase 1). This prevents mode collapse onto the same five
    ideas every day.
+6. **AI-relevant or it doesn't count.** Every candidate must have a clear **AI
+   nexus** — it reveals how AI systems behave, how AI is built/deployed/governed, or
+   how AI is reshaping political information, representation, or governance.
+   Qualifying examples: AI-generated or AI-mediated content (synthetic media,
+   chatbot/LLM logs, AI-written persuasion); model behavior/usage/evaluation exhaust
+   (usage rankings, preference battles, incident reports, evals); AI deployed inside
+   institutions (algorithmic decisions in courts/agencies/hiring, automated
+   moderation, AI procurement); AI governance (laws, audits, model cards, safety
+   disclosures); and human behavior revealed *through* AI systems (what people ask AI
+   under real stakes). A dataset with **no AI connection is dead on arrival**, however
+   behaviorally rich — say so and move on. State each candidate's AI nexus in one line
+   during Phase 1; if you cannot, it is not a candidate.
 
 ---
 
@@ -62,7 +76,8 @@ datasets** via real web searches. For each candidate:
 - Run genuine searches (vary the query; think like a collector, an adversary, and a
   bureaucrat in turn). Follow leads — a good frontier has obscure corners.
 - Capture a live URL and fetch it to confirm it resolves and is what you think.
-- One-line what it is and why it might be behaviorally revealing.
+- One-line what it is, its **AI nexus** (per anti-slop rule 6), and why it might be
+  behaviorally revealing. No AI nexus → not a candidate.
 
 Do not screen yet. Breadth first. Reject nothing except exact ledger collisions.
 If the frontier is thin today, dig laterally (adjacent registries, the "who else
@@ -78,7 +93,7 @@ Score **every** candidate 1–5 on each of the five Willis rubric criteria (25 m
 | b | **Incidentally accumulated / longitudinal** | A byproduct of some process, piling up over years, not assembled to be studied. |
 | c | **Unclaimed** | Google Scholar search (required) shows little-to-no prior academic exploitation. |
 | d | **Panel-able** | Repeated observations of the *same units* over time — supports within-unit designs. |
-| e | **Maps to the agenda** | Cleanly hits Information, Representation, or Governance (name which). |
+| e | **AI-relevant + maps to the agenda** | Has a clear AI nexus (per anti-slop rule 6) *and* cleanly hits Information, Representation, or Governance (name both the AI angle and the layer). A find with no AI nexus is disqualified outright, not merely scored low. |
 
 Rules:
 
@@ -171,10 +186,15 @@ Then:
 2. **Commit and push to `main`.** Stage `memos/`, `analysis/`, `LEDGER.md`, and any
    `FRONTIERS.md` edit; commit as `Daily hunt: <RUN_DATE> (frontier
    <FRONTIER_INDEX>)`; then `git push origin HEAD:main`.
-3. **End with the phone brief.** Your final message is a ≤120-word brief —
-   frontier, verdict, top find + score, the headline number from the live probe,
-   the count of finds surfaced, and a link to the committed memo. This summary is
-   what gets pushed to the phone.
+3. **Deliver the memo in the chat window.** The GitHub memo is not readable on a
+   phone, so the memo must arrive in the chat itself. Your final message is the
+   **full memo, pasted verbatim as rendered Markdown** (headings, tables, links) so
+   it reads cleanly on a phone — not a link to it. Lead with a one-line teaser
+   (frontier · verdict · top find + score · headline probe number · # of finds),
+   then a horizontal rule, then the entire memo body. Keep the committed GitHub link
+   as a single footer line for the record, but the readable content lives in-chat.
+   Separately, the short push notification (≤200 chars, via the PushNotification
+   tool) stays as the phone lock-screen teaser.
 
 ### If it is a null day
 

@@ -107,19 +107,30 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 
 ---
 
-## Active research agenda — the three layers
+## Active research agenda — AI × the three layers
 
-Relevance is scored against this fixed agenda so the hunt stays anchored (rubric
-criterion **e**). A find should cleanly hit one of these:
+**AI focus (hard gate).** The hunt now targets **AI's role in political systems**.
+Every find must have a clear **AI nexus** — it reveals how AI systems behave, how AI
+is built/deployed/governed, or how AI is reshaping the layers below. A dataset with
+no AI connection is dead on arrival, however behaviorally rich (see HARNESS anti-slop
+rule 6). Relevance is scored against this agenda (rubric criterion **e**): a find must
+be AI-relevant *and* cleanly hit one layer.
 
 - **Information** — how political information is produced, distributed, and
   distorted: persuasion, advertising, media, disclosure, strategic communication.
-  *Behaviorally revealing when the text/spend was optimized under real stakes.*
+  *AI angle:* AI-generated/AI-optimized persuasion, synthetic media and deepfakes,
+  chatbot/LLM outputs and logs, automated content and its detection.
 - **Representation** — how citizen preferences and voices get expressed and
   aggregated into collective choice: elections, participation, deliberation,
-  constituent contact, campaign finance.
+  constituent contact, campaign finance. *AI angle:* AI in campaigning and
+  deliberation, algorithmic constituent contact, AI-mediated civic participation.
 - **Governance** — how institutions make, contest, and enforce binding decisions:
   courts, agencies, legislatures, procurement, corporate and DAO governance.
+  *AI angle:* algorithmic decision-making in institutions, AI procurement, AI law
+  and regulation, model governance, audits, and incident reporting.
+
+*Historical note:* finds logged before the 2026-08-11 AI-focus pivot predate this
+gate and are kept for collision-detection; they are not a template for new finds.
 
 The Willis rubric (used every run in Phase 2):
 
