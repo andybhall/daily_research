@@ -52,10 +52,14 @@ arrival — do not surface it, do not re-litigate it.
 | GAO bid-protest decisions (firms contesting federal contract awards; 1,000+/yr) | https://www.gao.gov/legal/bid-protests/search | governance | new |
 | IRS 527 / Form 8872 — political-org contributions & expenditures (weekly bulk since 2000) | https://www.irs.gov/charities-non-profits/political-organizations/political-organization-filing-and-disclosure | representation | new |
 | World Bank debarment list + Contract Awards (FY2017+) — sanctioned firms + procurement awards | https://www.worldbank.org/en/projects-operations/procurement/debarred-firms | governance | new |
+| Snap Political & Advocacy Ads Library — political ad creative + spend + impressions + 20 targeting fields (yearly bulk since 2018) | https://www.snap.com/political-ads | information | new |
+| FCC OPIF Political Files — broadcast/cable political ad-buy filings (per station, ongoing; search API) | https://www.fcc.gov/search/api | information | new |
+| TikTok Commercial Content Library — DSA-mandated paid-ad creative + targeting + impressions (gated research API) | https://developers.tiktok.com/products/commercial-content-api | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
 <!-- Found delta 2026-08-10 (frontier 2): 5 added -->
+<!-- Found delta 2026-08-11 (frontier 3): 3 added -->
 
 ## Rejected
 
@@ -91,10 +95,15 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | ProZorro — Ukraine open procurement (tenders/bids since 2015) | https://www.kaggle.com/datasets/oleksastepaniuk/prozorro-public-procurement-dataset | Flagship OCDS open-contracting dataset; real prior use (CGD/DOZORRO) — not unclaimed. |
 | Brazil TSE campaign finance (DivulgaCandContas / dados abertos) | https://dadosabertos.tse.jus.br/ | Corporate-donation effects already mined (Boas/Hidalgo/Richardson); foundational but studied. |
 | Congressional stock trades (STOCK Act periodic transaction reports) | https://www.capitoltrades.com/ | Saturated — multiple papers + Quiver/CapitolTrades/Unusual Whales trackers. |
+| Upworthy Research Archive (32,487 headline A/B tests, 2013–2015) | https://www.nature.com/articles/s41597-021-00934-7 | Famous, heavily-used content-experiment benchmark — not unclaimed. |
+| Change.org petitions (text + signature outcomes) | https://reshare.ukdataservice.ac.uk/851617/ | Petition-success prediction is a saturated subfield (Zhao datasets, many papers). |
+| GoFundMe crowdfunding copy (text + funding outcomes) | https://arxiv.org/pdf/2505.11367 | Extensively studied (moral-framing, cancer-campaign success papers). |
+| SnorCall robocall honeypot corpus (232,723 robocalls) | https://www.usenix.org/system/files/usenixsecurity23-prasad.pdf | Ideal exhaust, but authors state the corpus cannot be released. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
 <!-- Rejected delta 2026-08-10 (frontier 2): 3 added -->
+<!-- Rejected delta 2026-08-11 (frontier 3): 4 added -->
 
 ---
 
