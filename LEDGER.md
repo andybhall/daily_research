@@ -55,11 +55,15 @@ arrival — do not surface it, do not re-litigate it.
 | Snap Political & Advocacy Ads Library — political ad creative + spend + impressions + 20 targeting fields (yearly bulk since 2018) | https://www.snap.com/political-ads | information | new |
 | FCC OPIF Political Files — broadcast/cable political ad-buy filings (per station, ongoing; search API) | https://www.fcc.gov/search/api | information | new |
 | TikTok Commercial Content Library — DSA-mandated paid-ad creative + targeting + impressions (gated research API) | https://developers.tiktok.com/products/commercial-content-api | information | new |
+| Hugging Face Hub metadata exhaust — models/datasets/Spaces: downloads, likes, licenses, authors, timestamps (public API) | https://huggingface.co/docs/hub/en/api | information | new |
+| DSA Transparency Database — content-moderation statements of reasons (700+ platforms, automated-decision flags; daily bulk) | https://transparency.dsa.ec.europa.eu/explore-data/download | governance | new |
+| X Community Notes public data — crowd notes + ratings, bridging-ranked, LLM "AI Note Writers" (daily bulk since 2021) | https://github.com/twitter/communitynotes | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
 <!-- Found delta 2026-08-10 (frontier 2): 5 added -->
 <!-- Found delta 2026-08-11 (frontier 3): 3 added -->
+<!-- Found delta 2026-08-12 (frontier 4, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -99,11 +103,14 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Change.org petitions (text + signature outcomes) | https://reshare.ukdataservice.ac.uk/851617/ | Petition-success prediction is a saturated subfield (Zhao datasets, many papers). |
 | GoFundMe crowdfunding copy (text + funding outcomes) | https://arxiv.org/pdf/2505.11367 | Extensively studied (moral-framing, cancer-campaign success papers). |
 | SnorCall robocall honeypot corpus (232,723 robocalls) | https://www.usenix.org/system/files/usenixsecurity23-prasad.pdf | Ideal exhaust, but authors state the corpus cannot be released. |
+| GPT Store custom-GPT metadata (GPTZoo 730k; Beetrove 349k) | https://arxiv.org/pdf/2405.15630 | Released research datasets already exist (GPTZoo/Beetrove) + multiple papers — claimed. |
+| AI Incident Database / OECD AI Incidents Monitor | https://oecd.ai/en/catalogue/tools/ai-incident-database | Curated collections (assembled to be studied), ~800–7k incidents; heavily used already. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
 <!-- Rejected delta 2026-08-10 (frontier 2): 3 added -->
 <!-- Rejected delta 2026-08-11 (frontier 3): 4 added -->
+<!-- Rejected delta 2026-08-12 (frontier 4): 2 added -->
 
 ---
 
