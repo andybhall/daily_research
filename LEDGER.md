@@ -58,12 +58,16 @@ arrival — do not surface it, do not re-litigate it.
 | Hugging Face Hub metadata exhaust — models/datasets/Spaces: downloads, likes, licenses, authors, timestamps (public API) | https://huggingface.co/docs/hub/en/api | information | new |
 | DSA Transparency Database — content-moderation statements of reasons (700+ platforms, automated-decision flags; daily bulk) | https://transparency.dsa.ec.europa.eu/explore-data/download | governance | new |
 | X Community Notes public data — crowd notes + ratings, bridging-ranked, LLM "AI Note Writers" (daily bulk since 2021) | https://github.com/twitter/communitynotes | information | new |
+| US Federal Agency AI Use Case Inventory — mandated annual inventory of government AI systems (1.7k→3.6k cases; consolidated CSV) | https://github.com/ombegov/2025-Federal-Agency-AI-Use-Case-Inventory | governance | new |
+| Netherlands Algorithm Register — public register of government algorithms/high-risk AI (~1,533; open-source platform) | https://algoritmes.overheid.nl/en | governance | new |
+| UK Algorithmic Transparency Recording Standard (ATRS) — mandatory public-sector algorithm-use records | https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
 <!-- Found delta 2026-08-10 (frontier 2): 5 added -->
 <!-- Found delta 2026-08-11 (frontier 3): 3 added -->
 <!-- Found delta 2026-08-12 (frontier 4, AI-focus): 3 added -->
+<!-- Found delta 2026-08-13 (frontier 5, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -105,12 +109,14 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | SnorCall robocall honeypot corpus (232,723 robocalls) | https://www.usenix.org/system/files/usenixsecurity23-prasad.pdf | Ideal exhaust, but authors state the corpus cannot be released. |
 | GPT Store custom-GPT metadata (GPTZoo 730k; Beetrove 349k) | https://arxiv.org/pdf/2405.15630 | Released research datasets already exist (GPTZoo/Beetrove) + multiple papers — claimed. |
 | AI Incident Database / OECD AI Incidents Monitor | https://oecd.ai/en/catalogue/tools/ai-incident-database | Curated collections (assembled to be studied), ~800–7k incidents; heavily used already. |
+| US Copyright Office generative-AI comment corpus (10,000+ comments) | https://www.copyright.gov/policy/artificial-intelligence/ | Sits inside the Regulations.gov seed genre — collision, not a distinct object. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
 <!-- Rejected delta 2026-08-10 (frontier 2): 3 added -->
 <!-- Rejected delta 2026-08-11 (frontier 3): 4 added -->
 <!-- Rejected delta 2026-08-12 (frontier 4): 2 added -->
+<!-- Rejected delta 2026-08-13 (frontier 5): 1 added -->
 
 ---
 

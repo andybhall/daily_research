@@ -1,0 +1,53 @@
+dimension,value,count
+agency,Department of Health and Human Services,271
+agency,Department of Veterans Affairs,229
+agency,Department of Homeland Security,183
+agency,Department of the Interior,180
+agency,United States Agency for International Development,137
+agency,Department of Agriculture,89
+agency,Department of Energy,79
+agency,Department of Labor,70
+agency,Department of Commerce,57
+agency,Federal Deposit Insurance Corporation,55
+agency,Department of the Treasury,54
+agency,Department of State,51
+agency,Board of Governors of the Federal Reserve System,50
+agency,Tennessee Valley Authority,39
+agency,Securities and Exchange Commission,28
+agency,General Services Administration,24
+agency,Social Security Administration,23
+agency,National Aeronautics and Space Administration,18
+agency,Federal Housing Finance Agency,18
+agency,Environmental Protection Agency,17
+agency,National Science Foundation,16
+agency,National Archives and Records Administration,9
+agency,Equal Employment Opportunity Commission,8
+agency,United States Agency for Global Media,8
+agency,Department of Housing and Urban Development,6
+agency,Federal Trade Commission,6
+agency,Presidio Trust,5
+agency,Consumer Financial Protection Bureau,4
+agency,Commodity Futures Trading Commission,4
+agency,Federal Energy Regulatory Commission,4
+agency,United States Trade and Development Agency,4
+agency,Office of Personnel Management,2
+agency,Election Assistance Commission,2
+agency,National Transportation Safety Board,2
+agency,Pension Benefit Guaranty Corporation,2
+agency,United States Commission on Civil Rights,2
+agency,Postal Regulatory Commission,1
+impact_type,Neither,1491
+impact_type,Both,150
+impact_type,Rights-Impacting,59
+impact_type,,39
+impact_type,Safety-impacting,13
+impact_type,Safety-Impacting,5
+dev_stage,Operation and Maintenance,627
+dev_stage,Acquisition and/or Development,351
+dev_stage,Initiated,329
+dev_stage,Implementation and Assessment,275
+dev_stage,Retired,133
+dev_stage,Planned,20
+dev_stage,In production,14
+dev_stage,In mission,4
+dev_stage,,4
