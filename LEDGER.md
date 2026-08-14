@@ -61,6 +61,9 @@ arrival — do not surface it, do not re-litigate it.
 | US Federal Agency AI Use Case Inventory — mandated annual inventory of government AI systems (1.7k→3.6k cases; consolidated CSV) | https://github.com/ombegov/2025-Federal-Agency-AI-Use-Case-Inventory | governance | new |
 | Netherlands Algorithm Register — public register of government algorithms/high-risk AI (~1,533; open-source platform) | https://algoritmes.overheid.nl/en | governance | new |
 | UK Algorithmic Transparency Recording Standard (ATRS) — mandatory public-sector algorithm-use records | https://www.gov.uk/government/collections/algorithmic-transparency-recording-standard-hub | governance | new |
+| L1B3RT4S — hobbyist LLM-jailbreak hoard, one file per AI vendor, 22 months of git history (elder-plinius) | https://github.com/elder-plinius/L1B3RT4S | governance | new |
+| Civitai community model archive — Stable-Diffusion checkpoints/LoRAs: downloads, licenses, base-model lineage, poi flag, tips (API) | https://civitai.com/api/v1/models | information | new |
+| Pixiv AI-generated artwork archive — user-tagged AI art on a hobbyist platform (~15.2M works, 16.2% AI-tagged; auth API) | https://arxiv.org/pdf/2402.18463 | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -68,6 +71,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-11 (frontier 3): 3 added -->
 <!-- Found delta 2026-08-12 (frontier 4, AI-focus): 3 added -->
 <!-- Found delta 2026-08-13 (frontier 5, AI-focus): 3 added -->
+<!-- Found delta 2026-08-14 (frontier 6, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -110,6 +114,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | GPT Store custom-GPT metadata (GPTZoo 730k; Beetrove 349k) | https://arxiv.org/pdf/2405.15630 | Released research datasets already exist (GPTZoo/Beetrove) + multiple papers — claimed. |
 | AI Incident Database / OECD AI Incidents Monitor | https://oecd.ai/en/catalogue/tools/ai-incident-database | Curated collections (assembled to be studied), ~800–7k incidents; heavily used already. |
 | US Copyright Office generative-AI comment corpus (10,000+ comments) | https://www.copyright.gov/policy/artificial-intelligence/ | Sits inside the Regulations.gov seed genre — collision, not a distinct object. |
+| DiffusionDB (14M Stable-Diffusion images + prompts) | https://github.com/poloclub/diffusiondb | Famous published prompt-gallery benchmark (ACL'23) — claimed. |
+| verazuo/jailbreak_llms (15,140 prompts, 1,405 jailbreaks) | https://github.com/verazuo/jailbreak_llms | The published CCS'24 jailbreak dataset — the claimed version of that genre. |
+| Lexica (5M+ AI-generated images + prompts) | https://lexica.art/ | Search-only; does not release its internal database in bulk. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -117,6 +124,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-11 (frontier 3): 4 added -->
 <!-- Rejected delta 2026-08-12 (frontier 4): 2 added -->
 <!-- Rejected delta 2026-08-13 (frontier 5): 1 added -->
+<!-- Rejected delta 2026-08-14 (frontier 6): 3 added -->
 
 ---
 

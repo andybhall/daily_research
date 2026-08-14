@@ -1,0 +1,31 @@
+dimension,value,count
+model_type,Checkpoint,65
+model_type,LORA,17
+model_type,TextualInversion,13
+model_type,Upscaler,2
+model_type,Controlnet,1
+model_type,Poses,1
+model_type,VAE,1
+base_model,SD 1.5,60
+base_model,SDXL 1.0,24
+base_model,Pony,24
+base_model,Illustrious,18
+base_model,SDXL Lightning,10
+base_model,Flux.1 D,7
+base_model,SD 1.5 LCM,6
+base_model,ZImageTurbo,6
+base_model,Other,5
+base_model,SDXL Hyper,4
+base_model,NoobAI,4
+base_model,Krea 2,3
+base_model,ZImageBase,3
+base_model,Anima,3
+base_model,SDXL 0.9,2
+base_model,SDXL 1.0 LCM,2
+base_model,Upscaler,2
+base_model,SD 1.5 Hyper,1
+base_model,Flux.1 Krea,1
+base_model,MiniMax H3,1
+base_model,Ernie,1
+base_model,Flux.1 S,1
+base_model,HiDream,1
