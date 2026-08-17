@@ -64,6 +64,9 @@ arrival — do not surface it, do not re-litigate it.
 | L1B3RT4S — hobbyist LLM-jailbreak hoard, one file per AI vendor, 22 months of git history (elder-plinius) | https://github.com/elder-plinius/L1B3RT4S | governance | new |
 | Civitai community model archive — Stable-Diffusion checkpoints/LoRAs: downloads, licenses, base-model lineage, poi flag, tips (API) | https://civitai.com/api/v1/models | information | new |
 | Pixiv AI-generated artwork archive — user-tagged AI art on a hobbyist platform (~15.2M works, 16.2% AI-tagged; auth API) | https://arxiv.org/pdf/2402.18463 | information | new |
+| AI shareholder resolutions & proxy voting — corporate-governance-of-AI proposals + votes (EDGAR DEF 14A + Form N-PX) | https://efts.sec.gov/LATEST/search-index?q=%22artificial+intelligence%22&forms=DEF+14A | governance | new |
+| Manifold Markets AI questions — play-money prediction market on AI/AGI (open API + bulk dumps since 2021) | https://docs.manifold.markets/api | information | new |
+| Metaculus AI questions — reputation-stakes forecasts on AI progress/governance (open API) | https://www.metaculus.com/api/ | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -72,6 +75,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-12 (frontier 4, AI-focus): 3 added -->
 <!-- Found delta 2026-08-13 (frontier 5, AI-focus): 3 added -->
 <!-- Found delta 2026-08-14 (frontier 6, AI-focus): 3 added -->
+<!-- Found delta 2026-08-17 (frontier 9, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -117,6 +121,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | DiffusionDB (14M Stable-Diffusion images + prompts) | https://github.com/poloclub/diffusiondb | Famous published prompt-gallery benchmark (ACL'23) — claimed. |
 | verazuo/jailbreak_llms (15,140 prompts, 1,405 jailbreaks) | https://github.com/verazuo/jailbreak_llms | The published CCS'24 jailbreak dataset — the claimed version of that genre. |
 | Lexica (5M+ AI-generated images + prompts) | https://lexica.art/ | Search-only; does not release its internal database in bulk. |
+| ISS Voting Analytics (general proxy-voting database) | https://library.maastrichtuniversity.nl/database/iss-voting-analysis/ | Standard, heavily-used proxy DB; the AI-proposal subset is the find, not the whole DB. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -125,6 +130,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-12 (frontier 4): 2 added -->
 <!-- Rejected delta 2026-08-13 (frontier 5): 1 added -->
 <!-- Rejected delta 2026-08-14 (frontier 6): 3 added -->
+<!-- Rejected delta 2026-08-17 (frontier 9): 1 added -->
 
 ---
 

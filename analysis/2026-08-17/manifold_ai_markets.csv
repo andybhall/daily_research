@@ -1,0 +1,13 @@
+dimension,value,count
+created_year,2022,19
+created_year,2023,346
+created_year,2024,232
+created_year,2025,139
+created_year,2026,102
+outcome_type,BINARY,610
+outcome_type,MULTIPLE_CHOICE,192
+outcome_type,POLL,18
+outcome_type,DATE,8
+outcome_type,MULTI_NUMERIC,4
+outcome_type,PSEUDO_NUMERIC,4
+outcome_type,NUMBER,2
