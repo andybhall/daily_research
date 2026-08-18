@@ -67,6 +67,9 @@ arrival — do not surface it, do not re-litigate it.
 | AI shareholder resolutions & proxy voting — corporate-governance-of-AI proposals + votes (EDGAR DEF 14A + Form N-PX) | https://efts.sec.gov/LATEST/search-index?q=%22artificial+intelligence%22&forms=DEF+14A | governance | new |
 | Manifold Markets AI questions — play-money prediction market on AI/AGI (open API + bulk dumps since 2021) | https://docs.manifold.markets/api | information | new |
 | Metaculus AI questions — reputation-stakes forecasts on AI progress/governance (open API) | https://www.metaculus.com/api/ | information | new |
+| Political Deepfakes Incident Database (PDID) — coded political deepfakes/cheapfakes, 2018→present (~939 img + 502 vid; GRAIL Lab) | https://www.grail-lab.org/project/political-deepfakes-incident-database | information | new |
+| Gen-Review — parallel human/AI peer-review corpus, ICLR-era (Harvard Dataverse, CC-BY, 1.6GB) | https://doi.org/10.7910/DVN/PYDPEZ | governance | new |
+| Human–AI political conversations — political subset (~3.9%) of real human-LLM chat corpora | https://arxiv.org/abs/2607.00551 | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -76,6 +79,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-13 (frontier 5, AI-focus): 3 added -->
 <!-- Found delta 2026-08-14 (frontier 6, AI-focus): 3 added -->
 <!-- Found delta 2026-08-17 (frontier 9, AI-focus): 3 added -->
+<!-- Found delta 2026-08-18 (frontier 10, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -122,6 +126,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | verazuo/jailbreak_llms (15,140 prompts, 1,405 jailbreaks) | https://github.com/verazuo/jailbreak_llms | The published CCS'24 jailbreak dataset — the claimed version of that genre. |
 | Lexica (5M+ AI-generated images + prompts) | https://lexica.art/ | Search-only; does not release its internal database in bulk. |
 | ISS Voting Analytics (general proxy-voting database) | https://library.maastrichtuniversity.nl/database/iss-voting-analysis/ | Standard, heavily-used proxy DB; the AI-proposal subset is the find, not the whole DB. |
+| USPED — 2024 US-election deepfakes corpus (231 items) | https://zenodo.org/records/15412865 | Curated corpus, not incidental exhaust; access restricted to vetted researchers. |
+| Nature 2025 "Persuading voters using human–AI dialogues" deposit | https://doi.org/10.7910/DVN/DODEXZ | Raw conversation transcripts withheld (dual-use); request-only, not openly usable. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -131,6 +137,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-13 (frontier 5): 1 added -->
 <!-- Rejected delta 2026-08-14 (frontier 6): 3 added -->
 <!-- Rejected delta 2026-08-17 (frontier 9): 1 added -->
+<!-- Rejected delta 2026-08-18 (frontier 10): 2 added -->
 
 ---
 
