@@ -70,6 +70,9 @@ arrival — do not surface it, do not re-litigate it.
 | Political Deepfakes Incident Database (PDID) — coded political deepfakes/cheapfakes, 2018→present (~939 img + 502 vid; GRAIL Lab) | https://www.grail-lab.org/project/political-deepfakes-incident-database | information | new |
 | Gen-Review — parallel human/AI peer-review corpus, ICLR-era (Harvard Dataverse, CC-BY, 1.6GB) | https://doi.org/10.7910/DVN/PYDPEZ | governance | new |
 | Human–AI political conversations — political subset (~3.9%) of real human-LLM chat corpora | https://arxiv.org/abs/2607.00551 | information | new |
+| AI Hallucination Cases Database (Charlotin) — court decisions worldwide citing AI-fabricated citations (1,934+; daily CSV) | https://www.damiencharlotin.com/hallucinations/ | governance | new |
+| AI copyright/IP litigation dockets — 70+ infringement suits vs AI companies (case trackers + PACER/RECAP) | https://www.mishcon.com/generative-ai-intellectual-property-cases-and-policy-tracker | governance | new |
+| Judicial AI standing orders — 300+ judges' AI-disclosure/certification requirements (RAILS/tracker) | https://trace.law/kb/court-ai-disclosure-orders | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -80,6 +83,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-14 (frontier 6, AI-focus): 3 added -->
 <!-- Found delta 2026-08-17 (frontier 9, AI-focus): 3 added -->
 <!-- Found delta 2026-08-18 (frontier 10, AI-focus): 3 added -->
+<!-- Found delta 2026-08-19 (frontier 1, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -128,6 +132,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | ISS Voting Analytics (general proxy-voting database) | https://library.maastrichtuniversity.nl/database/iss-voting-analysis/ | Standard, heavily-used proxy DB; the AI-proposal subset is the find, not the whole DB. |
 | USPED — 2024 US-election deepfakes corpus (231 items) | https://zenodo.org/records/15412865 | Curated corpus, not incidental exhaust; access restricted to vetted researchers. |
 | Nature 2025 "Persuading voters using human–AI dialogues" deposit | https://doi.org/10.7910/DVN/DODEXZ | Raw conversation transcripts withheld (dual-use); request-only, not openly usable. |
+| Pretrial risk-assessment / COMPAS-style tools in courts | https://www.mdpi.com/2078-2489/17/3/234 | Algorithmic-fairness literature (ProPublica COMPAS + many papers) is saturated. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -138,6 +143,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-14 (frontier 6): 3 added -->
 <!-- Rejected delta 2026-08-17 (frontier 9): 1 added -->
 <!-- Rejected delta 2026-08-18 (frontier 10): 2 added -->
+<!-- Rejected delta 2026-08-19 (frontier 1): 1 added -->
 
 ---
 
