@@ -73,6 +73,9 @@ arrival — do not surface it, do not re-litigate it.
 | AI Hallucination Cases Database (Charlotin) — court decisions worldwide citing AI-fabricated citations (1,934+; daily CSV) | https://www.damiencharlotin.com/hallucinations/ | governance | new |
 | AI copyright/IP litigation dockets — 70+ infringement suits vs AI companies (case trackers + PACER/RECAP) | https://www.mishcon.com/generative-ai-intellectual-property-cases-and-policy-tracker | governance | new |
 | Judicial AI standing orders — 300+ judges' AI-disclosure/certification requirements (RAILS/tracker) | https://trace.law/kb/court-ai-disclosure-orders | governance | new |
+| US federal AI procurement (USASpending AI slice) — agency×vendor×year AI-contract obligations (free API) | https://api.usaspending.gov/ | governance | new |
+| AI lobbying disclosures (LDA) — quarterly filings on "artificial intelligence" issues (Senate/House bulk) | https://lda.senate.gov/api/ | governance | new |
+| AI-safety / AI-policy philanthropy — Open Philanthropy/Coefficient Giving AI-risk grants database | https://www.openphilanthropy.org/grants/ | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -84,6 +87,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-17 (frontier 9, AI-focus): 3 added -->
 <!-- Found delta 2026-08-18 (frontier 10, AI-focus): 3 added -->
 <!-- Found delta 2026-08-19 (frontier 1, AI-focus): 3 added -->
+<!-- Found delta 2026-08-20 (frontier 2, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -133,6 +137,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | USPED — 2024 US-election deepfakes corpus (231 items) | https://zenodo.org/records/15412865 | Curated corpus, not incidental exhaust; access restricted to vetted researchers. |
 | Nature 2025 "Persuading voters using human–AI dialogues" deposit | https://doi.org/10.7910/DVN/DODEXZ | Raw conversation transcripts withheld (dual-use); request-only, not openly usable. |
 | Pretrial risk-assessment / COMPAS-style tools in courts | https://www.mdpi.com/2078-2489/17/3/234 | Algorithmic-fairness literature (ProPublica COMPAS + many papers) is saturated. |
+| Commercial federal-AI-contract trackers (Govly / Fed-Spend / Presenc) | https://fed-spend.com/blog/federal-ai-cybersecurity-contract-awards-2026 | Paywalled repackaging of open USASpending data — use the source API instead. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -144,6 +149,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-17 (frontier 9): 1 added -->
 <!-- Rejected delta 2026-08-18 (frontier 10): 2 added -->
 <!-- Rejected delta 2026-08-19 (frontier 1): 1 added -->
+<!-- Rejected delta 2026-08-20 (frontier 2): 1 added -->
 
 ---
 
