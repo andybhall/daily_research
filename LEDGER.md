@@ -76,6 +76,9 @@ arrival — do not surface it, do not re-litigate it.
 | US federal AI procurement (USASpending AI slice) — agency×vendor×year AI-contract obligations (free API) | https://api.usaspending.gov/ | governance | new |
 | AI lobbying disclosures (LDA) — quarterly filings on "artificial intelligence" issues (Senate/House bulk) | https://lda.senate.gov/api/ | governance | new |
 | AI-safety / AI-policy philanthropy — Open Philanthropy/Coefficient Giving AI-risk grants database | https://www.openphilanthropy.org/grants/ | governance | new |
+| Talk2AI — longitudinal human–AI persuasive conversations (3,080 convos, 770 people × 4 weekly sessions; GitHub) | https://arxiv.org/abs/2604.04354 | information | new |
+| The Levers of Political Persuasion (Science 2025) — 19 LLMs × 707 political issues, 76,977 responses, 466k fact-checked claims | https://www.science.org/doi/10.1126/science.aea3884 | information | new |
+| AI election-information audits — how AI assistants answer voter questions (States United/Reuters Inst./CDT; model×question×time) | https://statesunited.org/resources/ai-and-elections/ | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -88,6 +91,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-18 (frontier 10, AI-focus): 3 added -->
 <!-- Found delta 2026-08-19 (frontier 1, AI-focus): 3 added -->
 <!-- Found delta 2026-08-20 (frontier 2, AI-focus): 3 added -->
+<!-- Found delta 2026-08-21 (frontier 3, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -138,6 +142,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Nature 2025 "Persuading voters using human–AI dialogues" deposit | https://doi.org/10.7910/DVN/DODEXZ | Raw conversation transcripts withheld (dual-use); request-only, not openly usable. |
 | Pretrial risk-assessment / COMPAS-style tools in courts | https://www.mdpi.com/2078-2489/17/3/234 | Algorithmic-fairness literature (ProPublica COMPAS + many papers) is saturated. |
 | Commercial federal-AI-contract trackers (Govly / Fed-Spend / Presenc) | https://fed-spend.com/blog/federal-ai-cybersecurity-contract-awards-2026 | Paywalled repackaging of open USASpending data — use the source API instead. |
+| DebunkBot / Costello et al. conspiracy-debunking persuasion (Science 2024) | https://www.science.org/doi/10.1126/science.adq1814 | Famous, heavily-covered AI-persuasion flagship — claimed. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -150,6 +155,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-18 (frontier 10): 2 added -->
 <!-- Rejected delta 2026-08-19 (frontier 1): 1 added -->
 <!-- Rejected delta 2026-08-20 (frontier 2): 1 added -->
+<!-- Rejected delta 2026-08-21 (frontier 3): 1 added -->
 
 ---
 
