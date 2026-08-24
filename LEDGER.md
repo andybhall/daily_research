@@ -79,6 +79,9 @@ arrival — do not surface it, do not re-litigate it.
 | Talk2AI — longitudinal human–AI persuasive conversations (3,080 convos, 770 people × 4 weekly sessions; GitHub) | https://arxiv.org/abs/2604.04354 | information | new |
 | The Levers of Political Persuasion (Science 2025) — 19 LLMs × 707 political issues, 76,977 responses, 466k fact-checked claims | https://www.science.org/doi/10.1126/science.aea3884 | information | new |
 | AI election-information audits — how AI assistants answer voter questions (States United/Reuters Inst./CDT; model×question×time) | https://statesunited.org/resources/ai-and-elections/ | information | new |
+| SpeechMap.ai — AI refusal/compliance on controversial political speech (375 models, 795k responses, 2023→2026) | https://speechmap.ai/ | governance | new |
+| Leaked system-prompt archives — hobbyist hoard of frontier-AI system prompts, 20+ vendors, version panel 2022→2026 | https://leaked-system-prompts.com/ | governance | new |
+| TrackingAI.org — LLM political-bias tracker over time (Political Compass per model; Maxim Lott) | https://www.trackingai.org/home | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -92,6 +95,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-19 (frontier 1, AI-focus): 3 added -->
 <!-- Found delta 2026-08-20 (frontier 2, AI-focus): 3 added -->
 <!-- Found delta 2026-08-21 (frontier 3, AI-focus): 3 added -->
+<!-- Found delta 2026-08-24 (frontier 6, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -143,6 +147,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Pretrial risk-assessment / COMPAS-style tools in courts | https://www.mdpi.com/2078-2489/17/3/234 | Algorithmic-fairness literature (ProPublica COMPAS + many papers) is saturated. |
 | Commercial federal-AI-contract trackers (Govly / Fed-Spend / Presenc) | https://fed-spend.com/blog/federal-ai-cybersecurity-contract-awards-2026 | Paywalled repackaging of open USASpending data — use the source API instead. |
 | DebunkBot / Costello et al. conspiracy-debunking persuasion (Science 2024) | https://www.science.org/doi/10.1126/science.adq1814 | Famous, heavily-covered AI-persuasion flagship — claimed. |
+| David Rozado LLM political-orientation datasets | https://www.maximumtruth.org/p/my-new-tool-to-track-ai-bias-trackingaiorg | Published/claimed academic version of AI political-bias tracking (TrackingAI is the live hobbyist panel). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -156,6 +161,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-19 (frontier 1): 1 added -->
 <!-- Rejected delta 2026-08-20 (frontier 2): 1 added -->
 <!-- Rejected delta 2026-08-21 (frontier 3): 1 added -->
+<!-- Rejected delta 2026-08-24 (frontier 6): 1 added -->
 
 ---
 
