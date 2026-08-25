@@ -82,6 +82,9 @@ arrival — do not surface it, do not re-litigate it.
 | SpeechMap.ai — AI refusal/compliance on controversial political speech (375 models, 795k responses, 2023→2026) | https://speechmap.ai/ | governance | new |
 | Leaked system-prompt archives — hobbyist hoard of frontier-AI system prompts, 20+ vendors, version panel 2022→2026 | https://leaked-system-prompts.com/ | governance | new |
 | TrackingAI.org — LLM political-bias tracker over time (Political Compass per model; Maxim Lott) | https://www.trackingai.org/home | information | new |
+| China CAC generative-AI / algorithm registry — mandatory filings for all public gen-AI services (5,800+ entries; reg#/company/province/B2B-B2C) | https://beian.cac.gov.cn/ | governance | new |
+| European public-sector AI registers beyond NL — Germany (1,305 AI projects), France public-algorithm repos, EU JRC Public Sector Tech DB | https://wp.oecd.ai/app/uploads/2025/05/algorithmic-transparency-in-the-public-sector.pdf | governance | new |
+| India AI-in-elections — genAI campaign content (~$50M, ~40 campaigns) + Shakti fact-check collective, 2024 general election | https://www.techpolicy.press/indias-experiments-with-ai-in-the-2024-elections-the-good-the-bad-the-inbetween/ | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -96,6 +99,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-20 (frontier 2, AI-focus): 3 added -->
 <!-- Found delta 2026-08-21 (frontier 3, AI-focus): 3 added -->
 <!-- Found delta 2026-08-24 (frontier 6, AI-focus): 3 added -->
+<!-- Found delta 2026-08-25 (frontier 7, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -148,6 +152,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Commercial federal-AI-contract trackers (Govly / Fed-Spend / Presenc) | https://fed-spend.com/blog/federal-ai-cybersecurity-contract-awards-2026 | Paywalled repackaging of open USASpending data — use the source API instead. |
 | DebunkBot / Costello et al. conspiracy-debunking persuasion (Science 2024) | https://www.science.org/doi/10.1126/science.adq1814 | Famous, heavily-covered AI-persuasion flagship — claimed. |
 | David Rozado LLM political-orientation datasets | https://www.maximumtruth.org/p/my-new-tool-to-track-ai-bias-trackingaiorg | Published/claimed academic version of AI political-bias tracking (TrackingAI is the live hobbyist panel). |
+| EU AI Act high-risk AI systems database (Art. 71) | https://artificialintelligenceact.eu/article/71/ | Registration deferred from Aug 2026 to Dec 2027 — DB not yet populated; revisit when live. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -162,6 +167,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-20 (frontier 2): 1 added -->
 <!-- Rejected delta 2026-08-21 (frontier 3): 1 added -->
 <!-- Rejected delta 2026-08-24 (frontier 6): 1 added -->
+<!-- Rejected delta 2026-08-25 (frontier 7): 1 added -->
 
 ---
 
