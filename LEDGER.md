@@ -85,6 +85,9 @@ arrival — do not surface it, do not re-litigate it.
 | China CAC generative-AI / algorithm registry — mandatory filings for all public gen-AI services (5,800+ entries; reg#/company/province/B2B-B2C) | https://beian.cac.gov.cn/ | governance | new |
 | European public-sector AI registers beyond NL — Germany (1,305 AI projects), France public-algorithm repos, EU JRC Public Sector Tech DB | https://wp.oecd.ai/app/uploads/2025/05/algorithmic-transparency-in-the-public-sector.pdf | governance | new |
 | India AI-in-elections — genAI campaign content (~$50M, ~40 campaigns) + Shakti fact-check collective, 2024 general election | https://www.techpolicy.press/indias-experiments-with-ai-in-the-2024-elections-the-good-the-bad-the-inbetween/ | information | new |
+| Union AI provisions & NLRB AI filings — collectively-bargained AI rules (NewsGuild ~85-90; WGA/SAG-AFTRA/ILA) + labor-board disputes | https://allwork.space/2026/08/union-bargaining-tables-are-writing-americas-workplace-ai-rules | representation | new |
+| NYC Local Law 144 AEDT bias audits — mandated algorithmic-hiring bias audits (selection rates/impact ratios); ACLU tracker | https://github.com/aclu-national/tracking-ll144-bias-audits | governance | new |
+| Worker Info Exchange — gig-worker algorithmic-management data via 500+ subject access requests (Uber/Deliveroo/Amazon Flex…) | https://www.workerinfoexchange.org/ | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -100,6 +103,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-21 (frontier 3, AI-focus): 3 added -->
 <!-- Found delta 2026-08-24 (frontier 6, AI-focus): 3 added -->
 <!-- Found delta 2026-08-25 (frontier 7, AI-focus): 3 added -->
+<!-- Found delta 2026-08-26 (frontier 8, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -153,6 +157,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | DebunkBot / Costello et al. conspiracy-debunking persuasion (Science 2024) | https://www.science.org/doi/10.1126/science.adq1814 | Famous, heavily-covered AI-persuasion flagship — claimed. |
 | David Rozado LLM political-orientation datasets | https://www.maximumtruth.org/p/my-new-tool-to-track-ai-bias-trackingaiorg | Published/claimed academic version of AI political-bias tracking (TrackingAI is the live hobbyist panel). |
 | EU AI Act high-risk AI systems database (Art. 71) | https://artificialintelligenceact.eu/article/71/ | Registration deferred from Aug 2026 to Dec 2027 — DB not yet populated; revisit when live. |
+| Lightcast AI-skills job-postings data | https://lightcast.io/resources/blog/can-job-postings-data-track-ai-demand | Commercial + heavily used (Stanford AI Index); economic labor-market signal, not political agenda. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -168,6 +173,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-21 (frontier 3): 1 added -->
 <!-- Rejected delta 2026-08-24 (frontier 6): 1 added -->
 <!-- Rejected delta 2026-08-25 (frontier 7): 1 added -->
+<!-- Rejected delta 2026-08-26 (frontier 8): 1 added -->
 
 ---
 
