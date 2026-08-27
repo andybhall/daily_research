@@ -88,6 +88,9 @@ arrival — do not surface it, do not re-litigate it.
 | Union AI provisions & NLRB AI filings — collectively-bargained AI rules (NewsGuild ~85-90; WGA/SAG-AFTRA/ILA) + labor-board disputes | https://allwork.space/2026/08/union-bargaining-tables-are-writing-americas-workplace-ai-rules | representation | new |
 | NYC Local Law 144 AEDT bias audits — mandated algorithmic-hiring bias audits (selection rates/impact ratios); ACLU tracker | https://github.com/aclu-national/tracking-ll144-bias-audits | governance | new |
 | Worker Info Exchange — gig-worker algorithmic-management data via 500+ subject access requests (Uber/Deliveroo/Amazon Flex…) | https://www.workerinfoexchange.org/ | governance | new |
+| Corporate AI-risk disclosures (10-K, EDGAR) — firms naming AI as material risk (445→3,324/yr, 2019→2025; company×year panel) | https://efts.sec.gov/LATEST/search-index?q=%22artificial+intelligence%22&forms=10-K | governance | new |
+| AI agents as autonomous market actors — AI trading agents on prediction markets (Polystrat/Olas) + ai16z AI-run fund | https://www.coindesk.com/tech/2026/03/15/ai-agents-are-quietly-rewriting-prediction-market-trading | governance | new |
+| Bittensor dTAO on-chain AI-governance — subnet alpha-token markets + validator Senate votes (AI-native DAO governance) | https://bittensor.ai/subnets | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -104,6 +107,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-24 (frontier 6, AI-focus): 3 added -->
 <!-- Found delta 2026-08-25 (frontier 7, AI-focus): 3 added -->
 <!-- Found delta 2026-08-26 (frontier 8, AI-focus): 3 added -->
+<!-- Found delta 2026-08-27 (frontier 9, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -158,6 +162,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | David Rozado LLM political-orientation datasets | https://www.maximumtruth.org/p/my-new-tool-to-track-ai-bias-trackingaiorg | Published/claimed academic version of AI political-bias tracking (TrackingAI is the live hobbyist panel). |
 | EU AI Act high-risk AI systems database (Art. 71) | https://artificialintelligenceact.eu/article/71/ | Registration deferred from Aug 2026 to Dec 2027 — DB not yet populated; revisit when live. |
 | Lightcast AI-skills job-postings data | https://lightcast.io/resources/blog/can-job-postings-data-track-ai-demand | Commercial + heavily used (Stanford AI Index); economic labor-market signal, not political agenda. |
+| AI Disclosures Project / Mendeley AI-risk firm-year panel | https://data.mendeley.com/datasets/nf88fc7f24/1 | Released academic slice (~50-60 firms) of 10-K AI-risk disclosures; the full EDGAR universe is the find. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -174,6 +179,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-24 (frontier 6): 1 added -->
 <!-- Rejected delta 2026-08-25 (frontier 7): 1 added -->
 <!-- Rejected delta 2026-08-26 (frontier 8): 1 added -->
+<!-- Rejected delta 2026-08-27 (frontier 9): 1 added -->
 
 ---
 
