@@ -91,6 +91,7 @@ arrival — do not surface it, do not re-litigate it.
 | Corporate AI-risk disclosures (10-K, EDGAR) — firms naming AI as material risk (445→3,324/yr, 2019→2025; company×year panel) | https://efts.sec.gov/LATEST/search-index?q=%22artificial+intelligence%22&forms=10-K | governance | new |
 | AI agents as autonomous market actors — AI trading agents on prediction markets (Polystrat/Olas) + ai16z AI-run fund | https://www.coindesk.com/tech/2026/03/15/ai-agents-are-quietly-rewriting-prediction-market-trading | governance | new |
 | Bittensor dTAO on-chain AI-governance — subnet alpha-token markets + validator Senate votes (AI-native DAO governance) | https://bittensor.ai/subnets | governance | new |
+| Deepfakes in the 2025 Canadian Election — in-the-wild AI-image measurement, X/Bluesky/Reddit (187,778 posts; 5.9% deepfakes) + OpenFake detector | https://arxiv.org/abs/2512.13915 | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -108,6 +109,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-25 (frontier 7, AI-focus): 3 added -->
 <!-- Found delta 2026-08-26 (frontier 8, AI-focus): 3 added -->
 <!-- Found delta 2026-08-27 (frontier 9, AI-focus): 3 added -->
+<!-- Found delta 2026-08-28 (frontier 10, AI-focus): 1 added (thin day) -->
 
 ## Rejected
 
@@ -163,6 +165,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | EU AI Act high-risk AI systems database (Art. 71) | https://artificialintelligenceact.eu/article/71/ | Registration deferred from Aug 2026 to Dec 2027 — DB not yet populated; revisit when live. |
 | Lightcast AI-skills job-postings data | https://lightcast.io/resources/blog/can-job-postings-data-track-ai-demand | Commercial + heavily used (Stanford AI Index); economic labor-market signal, not political agenda. |
 | AI Disclosures Project / Mendeley AI-risk firm-year panel | https://data.mendeley.com/datasets/nf88fc7f24/1 | Released academic slice (~50-60 firms) of 10-K AI-risk disclosures; the full EDGAR universe is the find. |
+| OpenFake — open deepfake detector dataset (3M real + 1M synthetic images) | https://arxiv.org/html/2509.09495v2 | Constructed detection benchmark, not incidentally-accumulated exhaust. |
+| LLM voting-advice / political-bias audit corpora (EU VAA; parliamentary-record bias) | https://arxiv.org/html/2601.08785v1 | Constructed audits, crowded area; adjacent to 08-21 AI-election-audits + 08-24 TrackingAI finds. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -180,6 +184,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-25 (frontier 7): 1 added -->
 <!-- Rejected delta 2026-08-26 (frontier 8): 1 added -->
 <!-- Rejected delta 2026-08-27 (frontier 9): 1 added -->
+<!-- Rejected delta 2026-08-28 (frontier 10): 2 added -->
 
 ---
 
