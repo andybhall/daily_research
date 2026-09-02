@@ -98,6 +98,9 @@ arrival — do not surface it, do not re-litigate it.
 | MCP (Model Context Protocol) server registries — the AI-agent tool layer, version-stamped (official registry ~9,652 servers; open API) | https://registry.modelcontextprotocol.io/ | governance | new |
 | AI Agent Marketplace Index (DeepNLP, Hugging Face) — agent metadata + monthly web-performance metrics (rankings, stars, arXiv refs) | https://huggingface.co/datasets/DeepNLP/AI-Agent-Marketplace-Legal-Law-Agent | information | new |
 | AI-provider Usage-Policy / AUP change tracking — how AI cos revise permissible use over time (Anthropic/OpenAI; via Wayback + policy pages) | https://privacy.claude.com/en/articles/9301722-updates-to-our-acceptable-use-policy-now-usage-policy-consumer-terms-of-service-and-privacy-policy | governance | new |
+| State AI legislation corpus (NCSL AI Legislation Database) — state AI bills/laws, topic-tagged (1,208 bills/145 laws 2025; 1,561/84 by mid-2026) | https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database | governance | new |
+| Federal Register AI rulemaking — executive AI rules/proposed-rules/EOs/notices (open API; 57→309→182→224 docs/yr 2019-2026) | https://www.federalregister.gov/developers/documentation/api/v1 | governance | new |
+| Congressional AI hearings corpus — 28+ AI hearings + Schumer AI Insight Forums (transcripts/witnesses) | https://progresschamber.org/insights/we-used-ai-to-analyze-congressional-hearings-on-ai-heres-what-we-learned/ | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -118,6 +121,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-28 (frontier 10, AI-focus): 1 added (thin day) -->
 <!-- Found delta 2026-08-31 (frontier 3, AI-focus): 3 added -->
 <!-- Found delta 2026-09-01 (frontier 4, AI-focus): 3 added -->
+<!-- Found delta 2026-09-02 (frontier 5, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -177,6 +181,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | LLM voting-advice / political-bias audit corpora (EU VAA; parliamentary-record bias) | https://arxiv.org/html/2601.08785v1 | Constructed audits, crowded area; adjacent to 08-21 AI-election-audits + 08-24 TrackingAI finds. |
 | Twitter/X state-backed IO archive + AAAI labeled-IO datasets | https://ojs.aaai.org/index.php/ICWSM/article/download/35958/38112/40026 | Canonical general information-operations data, extensively studied; the AI-specific threat-report panel is the find. |
 | MCP security/measurement corpora (MCPCrawler; server-security studies) | https://arxiv.org/abs/2509.25292 | Claimed security-snapshot slice of the MCP ecosystem; the longitudinal governance panel is the find. |
+| MultiState / IAPP commercial state-AI-legislation trackers | https://www.multistate.ai/artificial-intelligence-ai-legislation | Commercial repackaging of public legislative data — use the NCSL database / LegiScan source. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -197,6 +202,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-28 (frontier 10): 2 added -->
 <!-- Rejected delta 2026-08-31 (frontier 3): 1 added -->
 <!-- Rejected delta 2026-09-01 (frontier 4): 1 added -->
+<!-- Rejected delta 2026-09-02 (frontier 5): 1 added -->
 
 ---
 
