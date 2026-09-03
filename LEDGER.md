@@ -101,6 +101,7 @@ arrival — do not surface it, do not re-litigate it.
 | State AI legislation corpus (NCSL AI Legislation Database) — state AI bills/laws, topic-tagged (1,208 bills/145 laws 2025; 1,561/84 by mid-2026) | https://www.ncsl.org/financial-services/artificial-intelligence-legislation-database | governance | new |
 | Federal Register AI rulemaking — executive AI rules/proposed-rules/EOs/notices (open API; 57→309→182→224 docs/yr 2019-2026) | https://www.federalregister.gov/developers/documentation/api/v1 | governance | new |
 | Congressional AI hearings corpus — 28+ AI hearings + Schumer AI Insight Forums (transcripts/witnesses) | https://progresschamber.org/insights/we-used-ai-to-analyze-congressional-hearings-on-ai-heres-what-we-learned/ | governance | new |
+| WikiProject AI Cleanup — volunteer catalog of AI-generated content polluting Wikipedia (flagged articles + AI "tells"; MediaWiki API) | https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -122,6 +123,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-08-31 (frontier 3, AI-focus): 3 added -->
 <!-- Found delta 2026-09-01 (frontier 4, AI-focus): 3 added -->
 <!-- Found delta 2026-09-02 (frontier 5, AI-focus): 3 added -->
+<!-- Found delta 2026-09-03 (frontier 6, AI-focus): 1 added (leaner day) -->
 
 ## Rejected
 
@@ -182,6 +184,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Twitter/X state-backed IO archive + AAAI labeled-IO datasets | https://ojs.aaai.org/index.php/ICWSM/article/download/35958/38112/40026 | Canonical general information-operations data, extensively studied; the AI-specific threat-report panel is the find. |
 | MCP security/measurement corpora (MCPCrawler; server-security studies) | https://arxiv.org/abs/2509.25292 | Claimed security-snapshot slice of the MCP ecosystem; the longitudinal governance panel is the find. |
 | MultiState / IAPP commercial state-AI-legislation trackers | https://www.multistate.ai/artificial-intelligence-ai-legislation | Commercial repackaging of public legislative data — use the NCSL database / LegiScan source. |
+| LLM benchmark aggregators (BenchLM, BenchmarkAggregator, internal.ai) | https://benchlm.ai/ | Derivative collector panels of public benchmarks; ledger-adjacent to OpenRouter/LMArena seeds. |
+| NewsGuard AI Content Farm / UAIN tracker (3,749 AI-slop news sites) | https://www.newsguardtech.com/special-reports/ai-tracking-center/ | On-agenda but commercial/contact-for-access — not an open or hobbyist dataset. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -203,6 +207,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-08-31 (frontier 3): 1 added -->
 <!-- Rejected delta 2026-09-01 (frontier 4): 1 added -->
 <!-- Rejected delta 2026-09-02 (frontier 5): 1 added -->
+<!-- Rejected delta 2026-09-03 (frontier 6): 2 added -->
 
 ---
 
