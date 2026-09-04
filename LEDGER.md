@@ -102,6 +102,9 @@ arrival — do not surface it, do not re-litigate it.
 | Federal Register AI rulemaking — executive AI rules/proposed-rules/EOs/notices (open API; 57→309→182→224 docs/yr 2019-2026) | https://www.federalregister.gov/developers/documentation/api/v1 | governance | new |
 | Congressional AI hearings corpus — 28+ AI hearings + Schumer AI Insight Forums (transcripts/witnesses) | https://progresschamber.org/insights/we-used-ai-to-analyze-congressional-hearings-on-ai-heres-what-we-learned/ | governance | new |
 | WikiProject AI Cleanup — volunteer catalog of AI-generated content polluting Wikipedia (flagged articles + AI "tells"; MediaWiki API) | https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup | information | new |
+| EU AI-lobbying / Big Tech influence on the AI Act — Transparency Register + Commission meeting records (€151M spend; AI = #1 lobbied file) | https://www.integritywatch.eu/ecmeetings.php | governance | new |
+| OECD.AI national AI policy database — 900+ national AI policies/initiatives across 80+ jurisdictions (live comparative panel) | https://oecd.ai/en/dashboards/national | governance | new |
+| EU GPAI Code of Practice signatories — who signed/refused the EU voluntary GP-AI code (26 signed by Aug 2025; Meta refused; xAI partial) | https://digital-strategy.ec.europa.eu/en/policies/signatory-taskforce-gpai-code-practice | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -124,6 +127,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-01 (frontier 4, AI-focus): 3 added -->
 <!-- Found delta 2026-09-02 (frontier 5, AI-focus): 3 added -->
 <!-- Found delta 2026-09-03 (frontier 6, AI-focus): 1 added (leaner day) -->
+<!-- Found delta 2026-09-04 (frontier 7, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -186,6 +190,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | MultiState / IAPP commercial state-AI-legislation trackers | https://www.multistate.ai/artificial-intelligence-ai-legislation | Commercial repackaging of public legislative data — use the NCSL database / LegiScan source. |
 | LLM benchmark aggregators (BenchLM, BenchmarkAggregator, internal.ai) | https://benchlm.ai/ | Derivative collector panels of public benchmarks; ledger-adjacent to OpenRouter/LMArena seeds. |
 | NewsGuard AI Content Farm / UAIN tracker (3,749 AI-slop news sites) | https://www.newsguardtech.com/special-reports/ai-tracking-center/ | On-agenda but commercial/contact-for-access — not an open or hobbyist dataset. |
+| Japan AI Promotion Act / South Korea AI Basic Act | https://www.trade.gov/market-intelligence/south-korea-ai-basic-act | New Asian AI laws, but no public registry/disclosure dataset yet — revisit when compliance data materializes. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -208,6 +213,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-01 (frontier 4): 1 added -->
 <!-- Rejected delta 2026-09-02 (frontier 5): 1 added -->
 <!-- Rejected delta 2026-09-03 (frontier 6): 2 added -->
+<!-- Rejected delta 2026-09-04 (frontier 7): 1 added -->
 
 ---
 
