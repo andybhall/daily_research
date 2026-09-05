@@ -183,10 +183,17 @@ Then:
 1. **Append to `LEDGER.md`.** Add every surviving find to **Found**
    (`name | URL | layer | status: new`) and every worth-remembering kill to
    **Rejected** (`name | URL | reason`).
-2. **Commit and push to `main`.** Stage `memos/`, `analysis/`, `LEDGER.md`, and any
-   `FRONTIERS.md` edit; commit as `Daily hunt: <RUN_DATE> (frontier
+2. **Rebuild the public site.** Run `python3 site/build_site.py` (stdlib-only, no
+   deps) to regenerate `docs/` — the landing feed, per-memo pages, and the ledger
+   page — from the memos + `LEDGER.md`. This is what publishes to the public website
+   ([GitHub Pages, served from `main` / `docs`](https://andybhall.github.io/daily_research/)).
+   On a **null day** still rebuild so the site shows the null entry. If the build
+   errors, fix the generator (or the memo it choked on) before committing — a broken
+   site is a failed run.
+3. **Commit and push to `main`.** Stage `memos/`, `analysis/`, `docs/`, `LEDGER.md`,
+   and any `FRONTIERS.md` edit; commit as `Daily hunt: <RUN_DATE> (frontier
    <FRONTIER_INDEX>)`; then `git push origin HEAD:main`.
-3. **Deliver the memo in the chat window.** The GitHub memo is not readable on a
+4. **Deliver the memo in the chat window.** The GitHub memo is not readable on a
    phone, so the memo must arrive in the chat itself. Your final message is the
    **full memo, pasted verbatim as rendered Markdown** (headings, tables, links) so
    it reads cleanly on a phone — not a link to it. Lead with a one-line teaser

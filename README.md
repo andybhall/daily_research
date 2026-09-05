@@ -63,7 +63,22 @@ three layers:
 | `analysis/` | Per-run live-probe artifacts: the bounded data sample, any script, and its output (`analysis/YYYY-MM-DD/`). |
 | `FRONTIERS.md` | Ten search frontiers + the rotation rule. |
 | `memos/` | One dated memo per run (≤800 words, verified URLs mandatory). |
+| `site/build_site.py` | Stdlib-only static-site generator: turns the memos + ledger into the public website. |
+| `docs/` | The generated public site (GitHub Pages source). Rebuilt and committed every run — do not hand-edit. |
 | `META.md` | The weekly meta-review prompt: ranks the week's finds, flags harness drift, proposes frontier edits. |
+
+## The public website
+
+Every run regenerates a static site into `docs/` (`python3 site/build_site.py`, run in
+HARNESS Phase 4) and commits it, so the site updates daily with no extra infrastructure —
+no GitHub Actions, no external host. It publishes via **GitHub Pages** at
+**https://andybhall.github.io/daily_research/** — a landing feed of daily briefs (date,
+frontier, verdict, top find + score), a full page per memo, and a rendered Ledger page.
+
+**One-time setup (repo owner, ~30 seconds):** GitHub → the repo's **Settings → Pages →
+Build and deployment → Source: "Deploy from a branch" → Branch: `main`, Folder: `/docs`
+→ Save.** The site goes live within a minute and every subsequent daily commit updates it.
+(A `docs/.nojekyll` file is included so Pages serves the raw HTML as-is.)
 
 ## Operating it
 
