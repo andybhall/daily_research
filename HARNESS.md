@@ -137,6 +137,12 @@ into a proven one.
   have gotten from the landing page.
 - **Produce one artifact.** A small table or a simple chart. Save the sample, any
   script, and the output under `analysis/$RUN_DATE/` and commit it.
+- **Emit a chart data block.** From the numbers you actually pulled, add one
+  fenced ` ```chart ` block to the memo (format in Phase 4) so the public site
+  renders a real graph of the find — a growth curve, a category breakdown, a
+  panel count. Use only figures you probed this run; **never invent a point.** A
+  clean series of a few points beats a padded one. If you genuinely could not
+  probe, omit the block — the Willis-rubric chart still renders on every memo.
 - **Honesty rule.** If a live pull is genuinely infeasible today (hard auth, no
   sample endpoint, real legal friction), say so explicitly and record exactly what
   you attempted. An honest "could not probe, here's why" is fine. **Never fabricate
@@ -161,6 +167,7 @@ Every claim cited by a URL fetched this run.>
 **Evidence from a live sample:** <≥1 concrete figure computed from data pulled this
 run — field names, record count, time span, panel structure — linking to the
 artifact in `analysis/<RUN_DATE>/`. Or an explicit "could not probe: <why>".>
+<optional graph: a fenced chart block here — see "Chart data block" below>
 
 ## Runner-ups
 <the 2nd and 3rd deep-dived finds, one tight paragraph each, same discipline; each
@@ -178,14 +185,30 @@ breadth layer: surface more options than the three deep-dives above.>
 <what was appended to Found and Rejected>
 ```
 
+**Chart data block.** Whenever you probed a real series, drop a fenced code block
+(info string `chart`) right after the evidence line. The site parses it into an
+inline graph on the memo page; it never renders numbers you did not compute. One
+clean series only (bars: cap ~8 categories). Every figure must be one you pulled
+this run — **never invent a point.** The format:
+
+    ```chart
+    title: <short, specific title — what the graph shows>
+    type: line            # line = time series / growth; bar = categories
+    unit: <e.g. filings, $M, cases, models>
+    x: <comma-separated labels — years, months, or category names>
+    y: <comma-separated REAL numbers you pulled this run>
+    source: analysis/<RUN_DATE>/<file>.csv
+    ```
+
 Then:
 
 1. **Append to `LEDGER.md`.** Add every surviving find to **Found**
    (`name | URL | layer | status: new`) and every worth-remembering kill to
    **Rejected** (`name | URL | reason`).
 2. **Rebuild the public site.** Run `python3 site/build_site.py` (stdlib-only, no
-   deps) to regenerate `docs/` — the landing feed, per-memo pages, and the ledger
-   page — from the memos + `LEDGER.md`. This is what publishes to the public website
+   deps) to regenerate `docs/` — the landing feed, per-memo pages (each with a
+   Willis-rubric chart plus any `chart` block you emitted), and the ledger page —
+   from the memos + `LEDGER.md`. This is what publishes to the public website
    ([GitHub Pages, served from `main` / `docs`](https://andybhall.github.io/daily_research/)).
    On a **null day** still rebuild so the site shows the null entry. If the build
    errors, fix the generator (or the memo it choked on) before committing — a broken

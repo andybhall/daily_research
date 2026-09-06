@@ -4,6 +4,11 @@
 Reads memos/*.md + LEDGER.md and writes a public site into docs/ (served by
 GitHub Pages from main/docs). Stdlib-only — no external dependencies.
 
+Design goals: clean, unadorned, technical-report look; scannable card feed;
+a real graph on every memo (the Willis-rubric breakdown), a scores-over-time
+chart on the landing page, and inline content charts wherever a memo embeds a
+```chart block (a small, honest data series pulled during that day's probe).
+
 Run from the repo root:  python3 site/build_site.py
 """
 import html
@@ -20,28 +25,252 @@ SITE_TAGLINE = ("An autonomous daily search for unclaimed, AI-relevant datasets 
                 "representation, and governance.")
 REPO_URL = "https://github.com/andybhall/daily_research"
 
+RUBRIC_LABELS = [
+    ("a", "Behaviorally revealed"),
+    ("b", "Longitudinal / incidental"),
+    ("c", "Unclaimed"),
+    ("d", "Panel-able"),
+    ("e", "AI × agenda"),
+]
+
+# ---------------------------------------------------------------------------
+# Number / formatting helpers
+# ---------------------------------------------------------------------------
+
+def _fmt_num(v: float) -> str:
+    if abs(v - round(v)) < 1e-9:
+        return f"{int(round(v)):,}"
+    return f"{v:,.1f}"
+
+
+def _nice_ceiling(v: float) -> float:
+    """Smallest 'nice' number (1/2/5 x 10^k) >= v, for a clean top gridline."""
+    if v <= 0:
+        return 1.0
+    import math
+    exp = math.floor(math.log10(v))
+    base = 10 ** exp
+    for mult in (1, 2, 2.5, 5, 10):
+        if mult * base >= v - 1e-9:
+            return mult * base
+    return 10 * base
+
+
+def _median(xs):
+    xs = sorted(xs)
+    n = len(xs)
+    if not n:
+        return 0
+    mid = n // 2
+    return xs[mid] if n % 2 else (xs[mid - 1] + xs[mid]) / 2
+
+
+# ---------------------------------------------------------------------------
+# SVG charts (single-series, one accent hue -> CVD-safe by construction).
+# All colors reference CSS custom properties so charts follow the page theme.
+# ---------------------------------------------------------------------------
+
+def svg_rubric(subs: dict, total) -> str:
+    """Horizontal bar chart of the five Willis criteria (each 0-5)."""
+    W, top, rh = 460, 30, 30
+    lx, bx0, bx1 = 178, 178, 410
+    rows = len(RUBRIC_LABELS)
+    h = top + rows * rh + 6
+    p = [f'<svg class="chart chart-rubric" viewBox="0 0 {W} {h}" role="img" '
+         f'aria-label="Willis rubric breakdown, {total} out of 25">']
+    p.append(f'<text x="0" y="18" class="c-title">Willis rubric &mdash; {total}/25</text>')
+    for i, (k, label) in enumerate(RUBRIC_LABELS):
+        v = subs.get(k, 0)
+        cy = top + i * rh + rh / 2
+        p.append(f'<text x="{lx-12}" y="{cy+4:.0f}" class="c-lab" text-anchor="end">{html.escape(label)}</text>')
+        p.append(f'<rect x="{bx0}" y="{cy-7:.0f}" width="{bx1-bx0}" height="14" rx="7" class="c-track"/>')
+        w = (bx1 - bx0) * v / 5
+        p.append(f'<rect x="{bx0}" y="{cy-7:.0f}" width="{w:.1f}" height="14" rx="7" class="c-bar">'
+                 f'<title>{html.escape(label)}: {v}/5</title></rect>')
+        p.append(f'<text x="{bx1+10}" y="{cy+4:.0f}" class="c-val">{v}</text>')
+    p.append('</svg>')
+    return "".join(p)
+
+
+def svg_sparkbars(subs: dict) -> str:
+    """Tiny 5-bar glyph of the rubric shape, for feed cards."""
+    W, H, bw, gap = 68, 24, 9, 4
+    p = [f'<svg class="spark" viewBox="0 0 {W} {H}" role="img" aria-label="rubric shape" focusable="false">']
+    for i, (k, _) in enumerate(RUBRIC_LABELS):
+        v = subs.get(k, 0)
+        x = i * (bw + gap)
+        bh = max(2.0, (H - 2) * v / 5)
+        p.append(f'<rect x="{x}" y="{H-bh:.1f}" width="{bw}" height="{bh:.1f}" rx="2" class="c-bar"/>')
+    p.append('</svg>')
+    return "".join(p)
+
+
+def svg_timeline(chron: list) -> str:
+    """Top-find score (0-25) over time. chron is oldest->newest."""
+    W, H = 660, 220
+    padL, padR, padT, padB = 40, 16, 20, 30
+    x0, x1, y0, y1 = padL, W - padR, padT, H - padB
+    n = len(chron)
+
+    def X(i):
+        return x0 + (x1 - x0) * (i / (n - 1) if n > 1 else 0.5)
+
+    def Y(v):
+        return y1 - (y1 - y0) * (v / 25)
+
+    p = [f'<svg class="chart chart-timeline" viewBox="0 0 {W} {H}" role="img" '
+         f'aria-label="Top-find Willis score over time, out of 25">']
+    p.append(f'<text x="0" y="12" class="c-title">Top-find score over time &mdash; out of 25</text>')
+    # gridlines + y ticks
+    for val, dashed in ((25, False), (18, True), (0, False)):
+        y = Y(val)
+        cls = "c-grid-kill" if dashed else "c-grid"
+        p.append(f'<line x1="{x0}" x2="{x1}" y1="{y:.1f}" y2="{y:.1f}" class="{cls}"/>')
+        p.append(f'<text x="{x0-8}" y="{y+4:.1f}" class="c-tick" text-anchor="end">{val}</text>')
+    p.append(f'<text x="{x1}" y="{Y(18)-5:.1f}" class="c-note" text-anchor="end">kill line 18</text>')
+    # trend line through scored days
+    pts = [(X(i), Y(m["total"])) for i, m in enumerate(chron) if m["total"]]
+    if len(pts) >= 2:
+        d = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
+        p.append(f'<path d="{d}" class="c-line"/>')
+    # marks
+    for i, m in enumerate(chron):
+        x = X(i)
+        if m["total"]:
+            title = f'{m["pretty"]} — {m["topfind"]}: {m["total"]}/25'
+            p.append(f'<circle cx="{x:.1f}" cy="{Y(m["total"]):.1f}" r="4" class="c-dot">'
+                     f'<title>{html.escape(title)}</title></circle>')
+        else:
+            p.append(f'<circle cx="{x:.1f}" cy="{Y(0):.1f}" r="4" class="c-dot-null">'
+                     f'<title>{html.escape(m["pretty"])} — null day</title></circle>')
+    # x labels: first, last, and a few between (avoid crowding the last tick)
+    step = max(1, round(n / 5))
+    idxs = list(range(0, n, step))
+    if (n - 1) not in idxs:
+        if idxs and (n - 1 - idxs[-1]) < step * 0.5:
+            idxs[-1] = n - 1
+        else:
+            idxs.append(n - 1)
+    for i in idxs:
+        if 0 <= i < n:
+            p.append(f'<text x="{X(i):.1f}" y="{y1+18:.0f}" class="c-tick" '
+                     f'text-anchor="middle">{html.escape(chron[i]["short"])}</text>')
+    p.append('</svg>')
+    return "".join(p)
+
+
+def svg_line(x_labels, y_vals, unit="") -> str:
+    W, H = 660, 254
+    padL, padR, padT, padB = 52, 16, 24, 34
+    x0, x1, y0, y1 = padL, W - padR, padT, H - padB
+    n = len(x_labels)
+    top = _nice_ceiling(max(y_vals)) if y_vals else 1
+
+    def X(i):
+        return x0 + (x1 - x0) * (i / (n - 1) if n > 1 else 0.5)
+
+    def Y(v):
+        return y1 - (y1 - y0) * (v / top)
+
+    p = [f'<svg class="chart chart-line" viewBox="0 0 {W} {H}" role="img" '
+         f'aria-label="line chart">']
+    for frac in (0, 0.5, 1.0):
+        val = top * frac
+        y = Y(val)
+        p.append(f'<line x1="{x0}" x2="{x1}" y1="{y:.1f}" y2="{y:.1f}" class="c-grid"/>')
+        p.append(f'<text x="{x0-8}" y="{y+4:.1f}" class="c-tick" text-anchor="end">{_fmt_num(val)}</text>')
+    if unit:
+        p.append(f'<text x="{x0-8}" y="{y0-10:.1f}" class="c-note" text-anchor="end">{html.escape(unit)}</text>')
+    pts = [(X(i), Y(v)) for i, v in enumerate(y_vals)]
+    if len(pts) >= 2:
+        d = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
+        p.append(f'<path d="{d}" class="c-line"/>')
+    for i, v in enumerate(y_vals):
+        lbl = x_labels[i] if i < len(x_labels) else ""
+        p.append(f'<circle cx="{X(i):.1f}" cy="{Y(v):.1f}" r="3.5" class="c-dot">'
+                 f'<title>{html.escape(str(lbl))}: {_fmt_num(v)}{" " + unit if unit else ""}</title></circle>')
+    step = max(1, round(n / 8))
+    for i in range(n):
+        if i % step == 0 or i == n - 1:
+            p.append(f'<text x="{X(i):.1f}" y="{y1+18:.0f}" class="c-tick" '
+                     f'text-anchor="middle">{html.escape(str(x_labels[i]))}</text>')
+    p.append('</svg>')
+    return "".join(p)
+
+
+def svg_barh(labels, vals, unit="", cap=8) -> str:
+    pairs = list(zip(labels, vals))[:cap]
+    rows = len(pairs)
+    W, padT, padB, rh = 660, 12, 12, 30
+    lx, bx0, bx1 = 210, 210, 560
+    H = padT + rows * rh + padB
+    top = _nice_ceiling(max(v for _, v in pairs)) if pairs else 1
+    p = [f'<svg class="chart chart-barh" viewBox="0 0 {W} {H}" role="img" aria-label="bar chart">']
+    for i, (lab, v) in enumerate(pairs):
+        cy = padT + i * rh + rh / 2
+        short = lab if len(str(lab)) <= 30 else str(lab)[:29] + "…"
+        p.append(f'<text x="{lx-12}" y="{cy+4:.0f}" class="c-lab" text-anchor="end">{html.escape(short)}</text>')
+        p.append(f'<rect x="{bx0}" y="{cy-8:.0f}" width="{bx1-bx0}" height="16" rx="4" class="c-track"/>')
+        w = (bx1 - bx0) * v / top
+        p.append(f'<rect x="{bx0}" y="{cy-8:.0f}" width="{w:.1f}" height="16" rx="4" class="c-bar">'
+                 f'<title>{html.escape(str(lab))}: {_fmt_num(v)}{" " + unit if unit else ""}</title></rect>')
+        p.append(f'<text x="{bx0+w+8:.1f}" y="{cy+4:.0f}" class="c-val">{_fmt_num(v)}</text>')
+    p.append('</svg>')
+    return "".join(p)
+
+
+def render_chart_block(meta: dict) -> str:
+    """Turn a parsed ```chart block into a <figure> with an SVG."""
+    ctype = meta.get("type", "line").lower()
+    title = meta.get("title", "")
+    unit = meta.get("unit", "")
+    note = meta.get("note", "")
+    source = meta.get("source", "")
+    xs = [s.strip() for s in re.split(r"[,|]", meta.get("x", "")) if s.strip()]
+    raw_y = [s.strip() for s in re.split(r"[,|]", meta.get("y", "")) if s.strip()]
+    ys = []
+    for s in raw_y:
+        try:
+            ys.append(float(s.replace(",", "")))
+        except ValueError:
+            ys.append(0.0)
+    if not xs or not ys:
+        return ""
+    if ctype == "bar":
+        svg = svg_barh(xs, ys, unit=unit)
+    else:
+        svg = svg_line(xs, ys, unit=unit)
+    cap_bits = []
+    if note:
+        cap_bits.append(html.escape(note))
+    if source:
+        href = source if source.startswith("http") else f"../{source}"
+        cap_bits.append(f'<a href="{html.escape(href, quote=True)}" rel="noopener">source</a>')
+    cap = f'<figcaption>{" &middot; ".join(cap_bits)}</figcaption>' if cap_bits else ""
+    t = f'<div class="fig-title">{html.escape(title)}</div>' if title else ""
+    return f'<figure class="chart-fig">{t}{svg}{cap}</figure>'
+
+
 # ---------------------------------------------------------------------------
 # Minimal, bounded Markdown -> HTML for the memo subset we author:
-# headings, bold, italic, inline code, links, bullet lists, tables, blockquotes, hr.
+# headings, bold, italic, inline code, links, lists, tables, blockquotes, hr,
+# fenced code, and our ```chart data blocks.
 # ---------------------------------------------------------------------------
 
 def _inline(text: str) -> str:
-    """Inline formatting on an already-plain (unescaped) string."""
     out = html.escape(text, quote=False)
-    # inline code first (protect its contents from further formatting)
     codes = []
+
     def _stash_code(m):
         codes.append(m.group(1))
         return f"\x00CODE{len(codes)-1}\x00"
+
     out = re.sub(r"`([^`]+)`", _stash_code, out)
-    # links [text](url)
     out = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)",
                  lambda m: f'<a href="{html.escape(m.group(2), quote=True)}" '
                            f'rel="noopener">{m.group(1)}</a>', out)
-    # bold then italic
     out = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", out)
     out = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", out)
-    # restore code
     for i, c in enumerate(codes):
         out = out.replace(f"\x00CODE{i}\x00", f"<code>{html.escape(c, quote=False)}</code>")
     return out
@@ -54,18 +283,37 @@ def md_to_html(md: str) -> str:
         line = lines[i]
         stripped = line.strip()
 
-        # blank
         if not stripped:
             i += 1
             continue
 
-        # horizontal rule
+        # fenced block ``` ... ```  (info string may be "chart")
+        m = re.match(r"```+\s*(\w*)\s*$", stripped)
+        if m:
+            info = m.group(1).lower()
+            i += 1
+            buf = []
+            while i < n and not re.match(r"```+\s*$", lines[i].strip()):
+                buf.append(lines[i])
+                i += 1
+            i += 1  # closing fence
+            if info == "chart":
+                meta = {}
+                for b in buf:
+                    if ":" in b:
+                        k, v = b.split(":", 1)
+                        meta[k.strip().lower()] = v.strip()
+                out.append(render_chart_block(meta))
+            else:
+                code = html.escape("\n".join(buf), quote=False)
+                out.append(f"<pre><code>{code}</code></pre>")
+            continue
+
         if re.fullmatch(r"-{3,}", stripped):
             out.append("<hr>")
             i += 1
             continue
 
-        # heading
         m = re.match(r"(#{1,6})\s+(.*)", stripped)
         if m:
             lvl = len(m.group(1))
@@ -73,15 +321,16 @@ def md_to_html(md: str) -> str:
             i += 1
             continue
 
-        # table: current line has pipes and next line is a separator row
         if "|" in line and i + 1 < n and re.match(r"\s*\|?[\s:|-]*-[\s:|-]*\|?\s*$", lines[i+1]) and "|" in lines[i+1]:
             def cells(row):
                 row = row.strip()
-                if row.startswith("|"): row = row[1:]
-                if row.endswith("|"): row = row[:-1]
+                if row.startswith("|"):
+                    row = row[1:]
+                if row.endswith("|"):
+                    row = row[:-1]
                 return [c.strip() for c in row.split("|")]
             header = cells(line)
-            i += 2  # skip header + separator
+            i += 2
             body = []
             while i < n and "|" in lines[i] and lines[i].strip():
                 body.append(cells(lines[i]))
@@ -95,7 +344,6 @@ def md_to_html(md: str) -> str:
                        f"<tbody>{rows}</tbody></table></div>")
             continue
 
-        # blockquote (may span multiple lines)
         if stripped.startswith(">"):
             buf = []
             while i < n and lines[i].strip().startswith(">"):
@@ -104,7 +352,6 @@ def md_to_html(md: str) -> str:
             out.append(f"<blockquote>{_inline(' '.join(b.strip() for b in buf))}</blockquote>")
             continue
 
-        # bullet list
         if re.match(r"[-*]\s+", stripped):
             items = []
             while i < n and re.match(r"\s*[-*]\s+", lines[i]):
@@ -113,7 +360,6 @@ def md_to_html(md: str) -> str:
             out.append("<ul>" + "".join(f"<li>{_inline(it)}</li>" for it in items) + "</ul>")
             continue
 
-        # ordered list
         if re.match(r"\d+\.\s+", stripped):
             items = []
             while i < n and re.match(r"\s*\d+\.\s+", lines[i]):
@@ -122,10 +368,9 @@ def md_to_html(md: str) -> str:
             out.append("<ol>" + "".join(f"<li>{_inline(it)}</li>" for it in items) + "</ol>")
             continue
 
-        # paragraph (gather until blank / block start)
         buf = [stripped]
         i += 1
-        while i < n and lines[i].strip() and not re.match(r"(#{1,6}\s|[-*]\s|>|\d+\.\s)", lines[i].strip()) \
+        while i < n and lines[i].strip() and not re.match(r"(#{1,6}\s|[-*]\s|>|\d+\.\s|```)", lines[i].strip()) \
                 and not re.fullmatch(r"-{3,}", lines[i].strip()) and "|" not in lines[i]:
             buf.append(lines[i].strip())
             i += 1
@@ -134,72 +379,191 @@ def md_to_html(md: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Memo parsing + page rendering
+# Memo parsing
 # ---------------------------------------------------------------------------
 
 def parse_memo(path: Path) -> dict:
     text = path.read_text(encoding="utf-8")
-    d = path.stem  # YYYY-MM-DD
+    d = path.stem
+
     def find(pat, default=""):
         m = re.search(pat, text, re.M)
         return m.group(1).strip() if m else default
+
     frontier = find(r"^\*\*Frontier:\*\*\s*(.+)$")
     verdict = find(r"^\*\*Verdict:\*\*\s*(.+)$")
     topfind = find(r"^##\s*Top find:\s*(.+)$") or find(r"^##\s*Top finds?:?\s*(.+)$")
     score = find(r"\*\*Score:\s*([0-9]+/25)\*\*")
-    try:
-        pretty = datetime.strptime(d, "%Y-%m-%d").strftime("%B %-d, %Y")
-    except ValueError:
-        pretty = d
-    return {"date": d, "pretty": pretty, "frontier": frontier, "verdict": verdict,
-            "topfind": topfind, "score": score, "body_html": md_to_html(text)}
 
+    subs, total = {}, None
+    ms = re.search(r"\*\*Score:\s*(\d+)/25\*\*\s*\(a(\d)\s*b(\d)\s*c(\d)\s*d(\d)\s*e(\d)\)", text)
+    if ms:
+        total = int(ms.group(1))
+        subs = {k: int(ms.group(j)) for j, k in enumerate(("a", "b", "c", "d", "e"), start=2)}
+
+    fnum = None
+    mf = re.match(r"\s*(\d+)\.", frontier)
+    if mf:
+        fnum = int(mf.group(1))
+
+    null_day = bool(re.search(r"null day", verdict, re.I)) or total is None
+
+    try:
+        dt = datetime.strptime(d, "%Y-%m-%d")
+        pretty = dt.strftime("%B %-d, %Y")
+        short = dt.strftime("%b %-d")
+    except ValueError:
+        pretty = short = d
+
+    # body for the memo page: drop the H1 + Frontier + Verdict (shown in header)
+    body_lines = []
+    for ln in text.split("\n"):
+        s = ln.strip()
+        if s.startswith("# Dataset Hunt") or s.startswith("**Frontier:**") or s.startswith("**Verdict:**"):
+            continue
+        body_lines.append(ln)
+    body_md = "\n".join(body_lines).lstrip("\n")
+
+    return {"date": d, "pretty": pretty, "short": short, "frontier": frontier,
+            "fnum": fnum, "verdict": verdict, "topfind": topfind, "score": score,
+            "subs": subs, "total": total, "null_day": null_day,
+            "body_html": md_to_html(body_md)}
+
+
+# ---------------------------------------------------------------------------
+# CSS + page shell
+# ---------------------------------------------------------------------------
 
 CSS = """
-:root{--bg:#faf9f7;--fg:#1a1a1a;--muted:#5c5c5c;--line:#e3e0da;--card:#fff;--accent:#8a5a2b;--accent2:#b5843f;--code:#f0ede8}
-@media (prefers-color-scheme:dark){:root{--bg:#14140f;--fg:#ececec;--muted:#a5a5a5;--line:#2c2c26;--card:#1c1c17;--accent:#d9a45b;--accent2:#c98f42;--code:#22221c}}
+:root{color-scheme:light;
+ --bg:#f5f6f8;--surface:#ffffff;--fg:#15171c;--muted:#5c626d;--line:#e3e6eb;
+ --accent:#2a6fd6;--accent-weak:#e7eefb;--accent-ink:#fff;--code:#eef1f5}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;
+ --bg:#0c0d10;--surface:#15171b;--fg:#eceef2;--muted:#969ba6;--line:#252932;
+ --accent:#5192f0;--accent-weak:#16223a;--accent-ink:#0c0d10;--code:#1b1e24}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
-.wrap{max-width:820px;margin:0 auto;padding:0 20px}
-header.site{border-bottom:1px solid var(--line);padding:34px 0 22px;margin-bottom:8px}
-header.site h1{margin:0;font-size:26px;letter-spacing:-.02em}
-header.site h1 a{color:var(--fg);text-decoration:none}
-header.site p{color:var(--muted);margin:.5em 0 0;font-size:15px}
-nav.top{margin-top:14px;font-size:14px}
-nav.top a{color:var(--accent);text-decoration:none;margin-right:16px}
-nav.top a:hover{text-decoration:underline}
-a{color:var(--accent)}
-h2{font-size:21px;letter-spacing:-.01em;margin:1.6em 0 .5em}
-h3{font-size:17px;margin:1.4em 0 .4em}
+body{margin:0;background:var(--bg);color:var(--fg);
+ font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+ -webkit-text-size-adjust:100%}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+.wrap.narrow{max-width:760px}
+
+header.site{padding:30px 0 20px;border-bottom:1px solid var(--line);margin-bottom:26px}
+header.site h1{margin:0;font-size:23px;letter-spacing:-.02em;font-weight:680}
+header.site h1 a{color:var(--fg)}
+header.site .tag{color:var(--muted);margin:.45em 0 0;font-size:14.5px;max-width:70ch}
+nav.top{margin-top:16px;font-size:14px;display:flex;gap:20px}
+nav.top a{color:var(--muted);font-weight:550}
+nav.top a:hover{color:var(--accent);text-decoration:none}
+
+h2{font-size:20px;letter-spacing:-.01em;margin:1.7em 0 .5em;font-weight:640}
+h3{font-size:16.5px;margin:1.5em 0 .4em;font-weight:620}
 hr{border:0;border-top:1px solid var(--line);margin:2em 0}
-blockquote{margin:1em 0;padding:.4em 1em;border-left:3px solid var(--accent2);background:var(--card);color:var(--muted);border-radius:0 6px 6px 0}
-code{background:var(--code);padding:.12em .38em;border-radius:4px;font-size:.88em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-.table-wrap{overflow-x:auto;margin:1.1em 0}
+p{margin:.7em 0}
+blockquote{margin:1.1em 0;padding:.7em 1.1em;border-left:3px solid var(--accent);
+ background:var(--accent-weak);border-radius:0 8px 8px 0}
+blockquote p{margin:.2em 0}
+code{background:var(--code);padding:.12em .38em;border-radius:4px;font-size:.87em;
+ font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--code);padding:14px 16px;border-radius:8px;overflow-x:auto;font-size:13px}
+pre code{background:none;padding:0}
+.table-wrap{overflow-x:auto;margin:1.2em 0}
 table{border-collapse:collapse;width:100%;font-size:14px}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
-th{background:var(--card);font-weight:600}
-ul,ol{padding-left:1.3em}
-li{margin:.28em 0}
-.feed{list-style:none;padding:0;margin:18px 0}
-.feed li{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:16px 18px;margin:0 0 14px}
-.feed .date{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
-.feed .frontier{font-size:13px;color:var(--accent2);margin:.15em 0 .5em}
-.feed h2{margin:.1em 0 .35em;font-size:18px}
-.feed h2 a{color:var(--fg);text-decoration:none}
-.feed h2 a:hover{color:var(--accent)}
-.feed .verdict{margin:.2em 0;color:var(--fg)}
-.feed .meta{font-size:13.5px;color:var(--muted);margin-top:.5em}
-.badge{display:inline-block;background:var(--accent);color:#fff;border-radius:20px;padding:1px 9px;font-size:12px;font-weight:600;margin-left:6px}
-footer.site{border-top:1px solid var(--line);margin:40px 0 60px;padding-top:18px;color:var(--muted);font-size:13px}
-.backlink{display:inline-block;margin:18px 0 4px;font-size:14px}
-.memo :first-child{margin-top:.2em}
+th,td{border-bottom:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{font-weight:620;color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.03em}
+ul,ol{padding-left:1.25em}
+li{margin:.3em 0}
+
+/* stat tiles */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:0 0 24px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:15px 17px}
+.stat .n{font-size:27px;font-weight:680;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat .k{color:var(--muted);font-size:12.5px;margin-top:2px;text-transform:uppercase;letter-spacing:.03em}
+
+/* overview chart panel */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+ padding:16px 18px;margin:0 0 26px}
+.section-label{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;
+ color:var(--muted);margin:0 0 12px;font-weight:600}
+
+/* feed cards */
+.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;
+ list-style:none;padding:0;margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+ padding:16px 17px;display:flex;flex-direction:column;transition:border-color .15s}
+.card:hover{border-color:var(--accent)}
+.card a.block{color:inherit}
+.card .row{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.chip{font-size:11.5px;font-weight:600;color:var(--accent);background:var(--accent-weak);
+ border-radius:20px;padding:2px 9px;white-space:nowrap}
+.card .date{font-size:12px;color:var(--muted);margin-left:auto;font-variant-numeric:tabular-nums}
+.card h2{font-size:16px;margin:0 0 6px;line-height:1.35;font-weight:620}
+.card h2 a{color:var(--fg)}
+.card h2 a:hover{color:var(--accent);text-decoration:none}
+.card .say{color:var(--muted);font-size:13.5px;line-height:1.5;margin:0 0 12px;flex:1}
+.card .foot{display:flex;align-items:center;gap:10px;margin-top:auto;
+ padding-top:11px;border-top:1px solid var(--line)}
+.card .foot .badge{margin-left:auto}
+.badge{display:inline-block;background:var(--accent);color:var(--accent-ink);
+ border-radius:20px;padding:2px 10px;font-size:12px;font-weight:640;font-variant-numeric:tabular-nums}
+.badge.null{background:var(--muted)}
+
+/* memo page */
+.memo-head .kicker{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+.memo-head .kicker .date{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.memo-head .lead{font-size:21px;line-height:1.4;letter-spacing:-.01em;font-weight:600;margin:0 0 22px}
+.lead-band{display:grid;grid-template-columns:1.4fr .9fr;gap:18px;
+ background:var(--surface);border:1px solid var(--line);border-radius:12px;
+ padding:18px 20px;margin:0 0 8px;align-items:center}
+.lead-band .score{text-align:center;border-left:1px solid var(--line);padding-left:18px}
+.lead-band .score .n{font-size:40px;font-weight:700;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+.lead-band .score .n small{font-size:19px;color:var(--muted);font-weight:600}
+.lead-band .score .k{color:var(--muted);font-size:12px;margin-top:5px;text-transform:uppercase;letter-spacing:.04em}
+.null-band{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+ padding:16px 20px;margin:0 0 8px;color:var(--muted)}
+.memo article{margin-top:22px}
+.memo article :first-child{margin-top:0}
+
+/* charts */
+.chart{display:block;width:100%;height:auto;margin:2px auto}
+svg text{font-family:inherit}
+svg .c-title{fill:var(--fg);font-size:13px;font-weight:640}
+svg .c-lab{fill:var(--muted);font-size:12px}
+svg .c-val{fill:var(--fg);font-size:12px;font-weight:640;font-variant-numeric:tabular-nums}
+svg .c-tick{fill:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+svg .c-note{fill:var(--muted);font-size:10.5px}
+svg .c-track{fill:var(--accent-weak)}
+svg .c-bar{fill:var(--accent)}
+svg .c-grid{stroke:var(--line);stroke-width:1}
+svg .c-grid-kill{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3;opacity:.6}
+svg .c-line{fill:none;stroke:var(--accent);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+svg .c-dot{fill:var(--accent);stroke:var(--surface);stroke-width:1.5}
+svg .c-dot-null{fill:var(--surface);stroke:var(--muted);stroke-width:1.5}
+.spark{width:68px;height:24px}
+.chart-fig{margin:1.6em 0;background:var(--surface);border:1px solid var(--line);
+ border-radius:12px;padding:16px 18px 10px}
+.chart-fig .fig-title{font-size:14px;font-weight:620;margin-bottom:6px;color:var(--fg)}
+.chart-fig figcaption{color:var(--muted);font-size:12px;margin-top:4px}
+
+.backlink{display:inline-block;margin:26px 0 4px;font-size:14px;font-weight:550}
+footer.site{border-top:1px solid var(--line);margin:44px 0 60px;padding-top:18px;
+ color:var(--muted);font-size:13px}
+
+@media (max-width:560px){
+ .lead-band{grid-template-columns:1fr}
+ .lead-band .score{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:14px}
+}
 """
 
-def page(title, body, rel="", description=None):
+
+def page(title, body, rel="", description=None, wide=True):
     desc = html.escape(description or SITE_TAGLINE, quote=True)
     nav = (f'<nav class="top"><a href="{rel}index.html">Home</a>'
            f'<a href="{rel}ledger.html">Ledger</a>'
            f'<a href="{REPO_URL}" rel="noopener">GitHub</a></nav>')
+    wrapcls = "wrap" if wide else "wrap narrow"
     return f"""<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -207,14 +571,18 @@ def page(title, body, rel="", description=None):
 <meta name="description" content="{desc}">
 <meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{desc}">
 <link rel="stylesheet" href="{rel}style.css">
-</head><body><div class="wrap">
+</head><body><div class="{wrapcls}">
 <header class="site"><h1><a href="{rel}index.html">{html.escape(SITE_TITLE)}</a></h1>
-<p>{html.escape(SITE_TAGLINE)}</p>{nav}</header>
+<p class="tag">{html.escape(SITE_TAGLINE)}</p>{nav}</header>
 {body}
-<footer class="site">Autonomous daily research · memos and ledger are versioned in
+<footer class="site">Autonomous daily research &middot; memos and ledger are versioned in
 <a href="{REPO_URL}" rel="noopener">git</a>. Built {date.today().isoformat()}.</footer>
 </div></body></html>"""
 
+
+# ---------------------------------------------------------------------------
+# Build
+# ---------------------------------------------------------------------------
 
 def build():
     memo_files = sorted((p for p in MEMOS.glob("*.md") if p.stem[0].isdigit()),
@@ -225,34 +593,78 @@ def build():
     (DOCS / ".nojekyll").write_text("")
     (DOCS / "style.css").write_text(CSS)
 
-    # per-memo pages
+    # ---- per-memo pages ----
     for m in memos:
-        body = f'<article class="memo">{m["body_html"]}</article>' \
-               f'<a class="backlink" href="../index.html">&larr; All briefs</a>'
+        kicker = (f'<div class="kicker"><span class="chip">Frontier {m["fnum"]}</span>'
+                  if m["fnum"] else '<div class="kicker">')
+        if m["fnum"]:
+            fname = re.sub(r"^\d+\.\s*", "", m["frontier"])
+            kicker += f'<span class="date">{html.escape(m["pretty"])}</span></div>'
+            fline = f'<p class="section-label" style="margin-top:-6px">{_inline(fname)}</p>'
+        else:
+            kicker += f'<span class="date">{html.escape(m["pretty"])}</span></div>'
+            fline = ""
+        lead = f'<p class="lead">{_inline(m["verdict"])}</p>' if m["verdict"] else ""
+
+        if m["subs"]:
+            band = (f'<div class="lead-band"><div class="rubric">{svg_rubric(m["subs"], m["total"])}</div>'
+                    f'<div class="score"><div class="n">{m["total"]}<small>/25</small></div>'
+                    f'<div class="k">Willis score</div></div></div>')
+        else:
+            band = '<div class="null-band">Null day &mdash; nothing cleared the bar. The screened candidates are recorded below and in the ledger.</div>'
+
+        body = (f'<div class="memo-head">{kicker}{fline}{lead}</div>{band}'
+                f'<div class="memo"><article>{m["body_html"]}</article></div>'
+                f'<a class="backlink" href="../index.html">&larr; All briefs</a>')
         (DOCS / "memo" / f'{m["date"]}.html').write_text(
-            page(f'Dataset Hunt — {m["pretty"]}', body, rel="../",
-                 description=m["verdict"] or SITE_TAGLINE))
+            page(f'{m["topfind"] or "Null day"} — {m["pretty"]}', body, rel="../",
+                 description=m["verdict"] or SITE_TAGLINE, wide=False))
 
-    # index feed
-    items = []
+    # ---- landing page ----
+    chron = list(reversed(memos))
+    totals = [m["total"] for m in memos if m["total"]]
+    frontiers = {m["fnum"] for m in memos if m["fnum"]}
+    stats = [
+        (str(len(memos)), "briefs"),
+        (f'{_fmt_num(_median(totals))}', "median score"),
+        (f'{max(totals)}', "top score"),
+        (f'{len(frontiers)}/10', "frontiers explored"),
+    ]
+    stat_html = "".join(f'<div class="stat"><div class="n">{v}</div><div class="k">{k}</div></div>'
+                        for v, k in stats)
+
+    cards = []
     for m in memos:
-        score = f'<span class="badge">{html.escape(m["score"])}</span>' if m["score"] else ""
-        tf = f'<div class="meta">Top find: {_inline(m["topfind"])}{score}</div>' if m["topfind"] else ""
-        items.append(
-            f'<li><div class="date">{html.escape(m["pretty"])}</div>'
-            f'<div class="frontier">{_inline(m["frontier"])}</div>'
-            f'<h2><a href="memo/{m["date"]}.html">{_inline(m["verdict"] or m["date"])}</a></h2>'
-            f'{tf}</li>')
-    index_body = (f'<p style="color:var(--muted)">{len(memos)} daily briefs · '
-                  f'newest first.</p><ul class="feed">{"".join(items)}</ul>')
-    (DOCS / "index.html").write_text(page(SITE_TITLE, index_body))
+        fnum = f'<span class="chip">Frontier {m["fnum"]}</span>' if m["fnum"] else ""
+        spark = svg_sparkbars(m["subs"]) if m["subs"] else ""
+        if m["null_day"] and not m["total"]:
+            badge = '<span class="badge null">null</span>'
+            head = "Null day"
+        else:
+            badge = f'<span class="badge">{html.escape(m["score"])}</span>' if m["score"] else ""
+            head = m["topfind"] or m["verdict"] or m["date"]
+        say = m["verdict"] if m["verdict"] else ""
+        cards.append(
+            f'<li class="card">'
+            f'<div class="row">{fnum}<span class="date">{html.escape(m["short"])}</span></div>'
+            f'<h2><a href="memo/{m["date"]}.html">{_inline(head)}</a></h2>'
+            f'<p class="say">{_inline(say)}</p>'
+            f'<div class="foot">{spark}{badge}</div></li>')
 
-    # ledger page
+    index_body = (
+        f'<div class="stats">{stat_html}</div>'
+        f'<div class="panel"><div class="section-label">The hunt at a glance</div>'
+        f'{svg_timeline(chron)}</div>'
+        f'<div class="section-label">Daily briefs &middot; newest first</div>'
+        f'<ul class="feed">{"".join(cards)}</ul>')
+    (DOCS / "index.html").write_text(page(SITE_TITLE, index_body, wide=True))
+
+    # ---- ledger page ----
     ledger_md = (ROOT / "LEDGER.md").read_text(encoding="utf-8")
     (DOCS / "ledger.html").write_text(
         page("Ledger — The Daily Dataset Hunt",
-             f'<article class="memo">{md_to_html(ledger_md)}</article>',
-             description="Every dataset the hunt has found or rejected."))
+             f'<div class="memo"><article>{md_to_html(ledger_md)}</article></div>',
+             description="Every dataset the hunt has found or rejected.", wide=False))
 
     print(f"Built docs/: {len(memos)} memos + index + ledger")
 
