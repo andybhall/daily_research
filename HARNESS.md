@@ -155,6 +155,10 @@ Write `memos/$RUN_DATE.md`, **≤1100 words**, with **verified URLs mandatory** 
 every factual claim. Structure:
 
 ```
+---
+title: <plain, specific name of the dataset — what it is, in a few words, no jargon or dashes-of-pitch>
+summary: <one plain sentence stating what the data actually is and what it shows — a description, not a pitch>
+---
 # Dataset Hunt — <RUN_DATE>
 
 **Frontier:** <n. name>
@@ -184,6 +188,13 @@ breadth layer: surface more options than the three deep-dives above.>
 ## Ledger delta
 <what was appended to Found and Rejected>
 ```
+
+**Front-matter (`title` + `summary`) is what the public site leads with.** The site
+uses the plain `title` as the headline and the `summary` as the one-line description
+on both the landing feed and the memo page — it no longer surfaces the frontier or
+verdict at the top. So write the `title` and `summary` for a reader who knows nothing:
+name the dataset plainly and say what it is and what it shows. No jargon, no
+frontier/verdict framing, no "nobody has built this" pitch — just the data.
 
 **Chart data block.** Whenever you probed a real series, drop a fenced code block
 (info string `chart`) right after the evidence line. The site parses it into an

@@ -72,11 +72,12 @@ three layers:
 Every run regenerates a static site into `docs/` (`python3 site/build_site.py`, run in
 HARNESS Phase 4) and commits it, so the site updates daily with no extra infrastructure —
 no GitHub Actions, no external host. It publishes via **GitHub Pages** at
-**https://andybhall.github.io/daily_research/** — a landing feed of scannable brief
-cards, summary stats, and a scores-over-time chart; a full page per memo carrying a
-Willis-rubric graph plus any data chart from that day's probe; and a rendered Ledger
-page. All charts are inline SVG built from real, committed numbers — the generator
-never invents a data point.
+**https://andybhall.github.io/daily_research/** — a landing feed of dataset cards
+(each a plain title + one-line description of the data, with a rubric sparkline and
+score), a full page per memo leading with the title, a plain summary, a Willis-rubric
+graph, and any data chart from that day's probe, and a rendered Ledger page. Each memo
+carries `title` / `summary` front-matter that the site leads with; all charts are
+inline SVG built from real, committed numbers — the generator never invents a data point.
 
 **One-time setup (repo owner, ~30 seconds):** GitHub → the repo's **Settings → Pages →
 Build and deployment → Source: "Deploy from a branch" → Branch: `main`, Folder: `/docs`

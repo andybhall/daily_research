@@ -383,8 +383,19 @@ def md_to_html(md: str) -> str:
 # ---------------------------------------------------------------------------
 
 def parse_memo(path: Path) -> dict:
-    text = path.read_text(encoding="utf-8")
+    raw = path.read_text(encoding="utf-8")
     d = path.stem
+
+    # optional YAML-ish front-matter: --- \n title: .. \n summary: .. \n ---
+    fm, text = {}, raw
+    if raw.startswith("---\n"):
+        end = raw.find("\n---", 4)
+        if end != -1:
+            for line in raw[4:end].split("\n"):
+                if ":" in line:
+                    k, v = line.split(":", 1)
+                    fm[k.strip().lower()] = v.strip()
+            text = raw[end + 4:].lstrip("\n")
 
     def find(pat, default=""):
         m = re.search(pat, text, re.M)
@@ -424,8 +435,12 @@ def parse_memo(path: Path) -> dict:
         body_lines.append(ln)
     body_md = "\n".join(body_lines).lstrip("\n")
 
+    title = fm.get("title") or topfind or d
+    summary = fm.get("summary") or verdict
+
     return {"date": d, "pretty": pretty, "short": short, "frontier": frontier,
             "fnum": fnum, "verdict": verdict, "topfind": topfind, "score": score,
+            "title": title, "summary": summary,
             "subs": subs, "total": total, "null_day": null_day,
             "body_html": md_to_html(body_md)}
 
@@ -511,9 +526,9 @@ li{margin:.3em 0}
 .badge.null{background:var(--muted)}
 
 /* memo page */
-.memo-head .kicker{display:flex;gap:10px;align-items:center;margin-bottom:12px}
-.memo-head .kicker .date{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
-.memo-head .lead{font-size:21px;line-height:1.4;letter-spacing:-.01em;font-weight:600;margin:0 0 22px}
+.memo-head .title{font-size:28px;line-height:1.18;letter-spacing:-.02em;font-weight:700;margin:0 0 12px}
+.memo-head .desc{font-size:17.5px;line-height:1.5;color:var(--fg);margin:0 0 10px;max-width:64ch}
+.memo-head .meta{font-size:12.5px;color:var(--muted);margin:0 0 20px;font-variant-numeric:tabular-nums}
 .lead-band{display:grid;grid-template-columns:1.4fr .9fr;gap:18px;
  background:var(--surface);border:1px solid var(--line);border-radius:12px;
  padding:18px 20px;margin:0 0 8px;align-items:center}
@@ -595,16 +610,9 @@ def build():
 
     # ---- per-memo pages ----
     for m in memos:
-        kicker = (f'<div class="kicker"><span class="chip">Frontier {m["fnum"]}</span>'
-                  if m["fnum"] else '<div class="kicker">')
-        if m["fnum"]:
-            fname = re.sub(r"^\d+\.\s*", "", m["frontier"])
-            kicker += f'<span class="date">{html.escape(m["pretty"])}</span></div>'
-            fline = f'<p class="section-label" style="margin-top:-6px">{_inline(fname)}</p>'
-        else:
-            kicker += f'<span class="date">{html.escape(m["pretty"])}</span></div>'
-            fline = ""
-        lead = f'<p class="lead">{_inline(m["verdict"])}</p>' if m["verdict"] else ""
+        head = (f'<div class="memo-head"><h1 class="title">{_inline(m["title"])}</h1>'
+                f'<p class="desc">{_inline(m["summary"])}</p>'
+                f'<div class="meta">{html.escape(m["pretty"])}</div></div>')
 
         if m["subs"]:
             band = (f'<div class="lead-band"><div class="rubric">{svg_rubric(m["subs"], m["total"])}</div>'
@@ -613,50 +621,29 @@ def build():
         else:
             band = '<div class="null-band">Null day &mdash; nothing cleared the bar. The screened candidates are recorded below and in the ledger.</div>'
 
-        body = (f'<div class="memo-head">{kicker}{fline}{lead}</div>{band}'
+        body = (f'{head}{band}'
                 f'<div class="memo"><article>{m["body_html"]}</article></div>'
-                f'<a class="backlink" href="../index.html">&larr; All briefs</a>')
+                f'<a class="backlink" href="../index.html">&larr; All datasets</a>')
         (DOCS / "memo" / f'{m["date"]}.html').write_text(
-            page(f'{m["topfind"] or "Null day"} — {m["pretty"]}', body, rel="../",
-                 description=m["verdict"] or SITE_TAGLINE, wide=False))
+            page(f'{m["title"]}', body, rel="../",
+                 description=m["summary"] or SITE_TAGLINE, wide=False))
 
     # ---- landing page ----
-    chron = list(reversed(memos))
-    totals = [m["total"] for m in memos if m["total"]]
-    frontiers = {m["fnum"] for m in memos if m["fnum"]}
-    stats = [
-        (str(len(memos)), "briefs"),
-        (f'{_fmt_num(_median(totals))}', "median score"),
-        (f'{max(totals)}', "top score"),
-        (f'{len(frontiers)}/10', "frontiers explored"),
-    ]
-    stat_html = "".join(f'<div class="stat"><div class="n">{v}</div><div class="k">{k}</div></div>'
-                        for v, k in stats)
-
     cards = []
     for m in memos:
-        fnum = f'<span class="chip">Frontier {m["fnum"]}</span>' if m["fnum"] else ""
         spark = svg_sparkbars(m["subs"]) if m["subs"] else ""
         if m["null_day"] and not m["total"]:
             badge = '<span class="badge null">null</span>'
-            head = "Null day"
         else:
             badge = f'<span class="badge">{html.escape(m["score"])}</span>' if m["score"] else ""
-            head = m["topfind"] or m["verdict"] or m["date"]
-        say = m["verdict"] if m["verdict"] else ""
         cards.append(
             f'<li class="card">'
-            f'<div class="row">{fnum}<span class="date">{html.escape(m["short"])}</span></div>'
-            f'<h2><a href="memo/{m["date"]}.html">{_inline(head)}</a></h2>'
-            f'<p class="say">{_inline(say)}</p>'
+            f'<div class="row"><span class="date">{html.escape(m["short"])}</span></div>'
+            f'<h2><a href="memo/{m["date"]}.html">{_inline(m["title"])}</a></h2>'
+            f'<p class="say">{_inline(m["summary"])}</p>'
             f'<div class="foot">{spark}{badge}</div></li>')
 
-    index_body = (
-        f'<div class="stats">{stat_html}</div>'
-        f'<div class="panel"><div class="section-label">The hunt at a glance</div>'
-        f'{svg_timeline(chron)}</div>'
-        f'<div class="section-label">Daily briefs &middot; newest first</div>'
-        f'<ul class="feed">{"".join(cards)}</ul>')
+    index_body = f'<ul class="feed">{"".join(cards)}</ul>'
     (DOCS / "index.html").write_text(page(SITE_TITLE, index_body, wide=True))
 
     # ---- ledger page ----

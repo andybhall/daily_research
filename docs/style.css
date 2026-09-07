@@ -75,9 +75,9 @@ li{margin:.3em 0}
 .badge.null{background:var(--muted)}
 
 /* memo page */
-.memo-head .kicker{display:flex;gap:10px;align-items:center;margin-bottom:12px}
-.memo-head .kicker .date{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
-.memo-head .lead{font-size:21px;line-height:1.4;letter-spacing:-.01em;font-weight:600;margin:0 0 22px}
+.memo-head .title{font-size:28px;line-height:1.18;letter-spacing:-.02em;font-weight:700;margin:0 0 12px}
+.memo-head .desc{font-size:17.5px;line-height:1.5;color:var(--fg);margin:0 0 10px;max-width:64ch}
+.memo-head .meta{font-size:12.5px;color:var(--muted);margin:0 0 20px;font-variant-numeric:tabular-nums}
 .lead-band{display:grid;grid-template-columns:1.4fr .9fr;gap:18px;
  background:var(--surface);border:1px solid var(--line);border-radius:12px;
  padding:18px 20px;margin:0 0 8px;align-items:center}
