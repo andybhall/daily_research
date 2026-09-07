@@ -1,0 +1,5 @@
+{
+  "endo_election_process": "raw_data/claude-3-5-sonnet/endo/election process/19a46277fdcf02038ab52a97afca1c1decfad113f0b064494c0553c77aae546c/0a92afda014271c7c0078dfe976ae231ca8ba4d9ef4ec74cf5bc00a6635db979.csv",
+  "exo_election_integrity": "raw_data/claude-3-5-sonnet/exo/election integrity/2fe2893b0cad5ee4cf3d98414e0926687cad7103f88b0a61007783a01fa67c23/0a92afda014271c7c0078dfe976ae231ca8ba4d9ef4ec74cf5bc00a6635db979.csv",
+  "exo_predictions": "raw_data/claude-3-5-sonnet/exo/predictions/00480c2a6b298b315ce1785aee44cbfd71b07ee9c8dcde142647ab6c1e976d1a/0a92afda014271c7c0078dfe976ae231ca8ba4d9ef4ec74cf5bc00a6635db979.csv"
+}

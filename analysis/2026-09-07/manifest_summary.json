@@ -1,0 +1,38 @@
+{
+  "dataset": "sarahcen/llm-election-data-2024",
+  "pulled": "2026-09-07",
+  "total_question_csv_files": 91998,
+  "files_per_model": {
+    "claude-3-5-sonnet": 12638,
+    "claude-3-haiku": 12638,
+    "claude-3-opus": 10152,
+    "claude-sonnet-with-internet": 12638,
+    "gemini-1.0-pro-with-internet": 12638,
+    "gemini-1.0-pro": 12638,
+    "gpt-3.5-turbo": 12638,
+    "gpt-4-turbo": 6018
+  },
+  "files_per_condition": {
+    "baseline": 256,
+    "endo": 25322,
+    "exo": 66420
+  },
+  "files_per_topic": {
+    "baseline: GSM8K_multiple_choice": 64,
+    "baseline: medQA_direct_answer": 64,
+    "baseline: natural_QA_open_answer": 64,
+    "baseline: natural_QA_short_answer": 64,
+    "endo: candidates": 2112,
+    "endo: election process": 2816,
+    "endo: issues": 2992,
+    "endo: llm policies and reflection": 17402,
+    "exo: analysis": 528,
+    "exo: candidates": 10208,
+    "exo: election integrity": 1056,
+    "exo: election issues": 11662,
+    "exo: events": 770,
+    "exo: exit polls": 25256,
+    "exo: predictions": 16940
+  },
+  "note": "Full 18MB manifest not committed; these aggregates computed from it this run."
+}

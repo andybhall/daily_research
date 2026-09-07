@@ -1,0 +1,16 @@
+topic,distinct_questions
+exo: exit polls,164
+endo: llm policies and reflection,113
+exo: predictions,110
+exo: election issues,69
+exo: candidates,58
+endo: issues,17
+endo: election process,16
+endo: candidates,12
+baseline: GSM8K_multiple_choice,8
+baseline: medQA_direct_answer,8
+baseline: natural_QA_open_answer,8
+baseline: natural_QA_short_answer,8
+exo: election integrity,6
+exo: events,5
+exo: analysis,3

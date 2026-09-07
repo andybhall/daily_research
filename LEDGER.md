@@ -105,6 +105,7 @@ arrival — do not surface it, do not re-litigate it.
 | EU AI-lobbying / Big Tech influence on the AI Act — Transparency Register + Commission meeting records (€151M spend; AI = #1 lobbied file) | https://www.integritywatch.eu/ecmeetings.php | governance | new |
 | OECD.AI national AI policy database — 900+ national AI policies/initiatives across 80+ jurisdictions (live comparative panel) | https://oecd.ai/en/dashboards/national | governance | new |
 | EU GPAI Code of Practice signatories — who signed/refused the EU voluntary GP-AI code (26 signed by Aug 2025; Meta refused; xAI partial) | https://digital-strategy.ec.europa.eu/en/policies/signatory-taskforce-gpai-code-practice | governance | new |
+| LLM Election Data 2024 (Cen et al., MIT) — 8 LLMs × ~600 US-election questions, near-daily Jul–Nov 2024 (91,998 question-runs, 112 snapshots/question, partisan-steering panel) | https://huggingface.co/datasets/sarahcen/llm-election-data-2024 | information | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -128,6 +129,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-02 (frontier 5, AI-focus): 3 added -->
 <!-- Found delta 2026-09-03 (frontier 6, AI-focus): 1 added (leaner day) -->
 <!-- Found delta 2026-09-04 (frontier 7, AI-focus): 3 added -->
+<!-- Found delta 2026-09-07 (frontier 10, AI-focus): 1 added (lean day, well-mined frontier) -->
 
 ## Rejected
 
@@ -191,6 +193,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | LLM benchmark aggregators (BenchLM, BenchmarkAggregator, internal.ai) | https://benchlm.ai/ | Derivative collector panels of public benchmarks; ledger-adjacent to OpenRouter/LMArena seeds. |
 | NewsGuard AI Content Farm / UAIN tracker (3,749 AI-slop news sites) | https://www.newsguardtech.com/special-reports/ai-tracking-center/ | On-agenda but commercial/contact-for-access — not an open or hobbyist dataset. |
 | Japan AI Promotion Act / South Korea AI Basic Act | https://www.trade.gov/market-intelligence/south-korea-ai-basic-act | New Asian AI laws, but no public registry/disclosure dataset yet — revisit when compliance data materializes. |
+| ShareChat — 142,808 real shared chatbot conversations (multi-platform, 101 languages) | https://arxiv.org/html/2512.17843v2 | Genuine AI exhaust, but paper says "will be publicly available" — no DOI/download yet, unverifiable today. Revisit on release. |
+| Synthetic candidates & political parties (Zenodo 19521950) | https://zenodo.org/records/19521950 | First catalog of AI-run parties/candidates, but ~10 curated cases — cross-sectional, not panel-able. |
+| Microsoft Copilot election answers, 2023 (Zenodo 10517697) | https://zenodo.org/records/10517697/latest | Constructed RAG audit (experts posed questions) already worked by AlgorithmWatch; not incidental, not unclaimed. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -214,6 +219,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-02 (frontier 5): 1 added -->
 <!-- Rejected delta 2026-09-03 (frontier 6): 2 added -->
 <!-- Rejected delta 2026-09-04 (frontier 7): 1 added -->
+<!-- Rejected delta 2026-09-07 (frontier 10): 3 added -->
 
 ---
 
