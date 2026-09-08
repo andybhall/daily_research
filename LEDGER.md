@@ -106,6 +106,9 @@ arrival — do not surface it, do not re-litigate it.
 | OECD.AI national AI policy database — 900+ national AI policies/initiatives across 80+ jurisdictions (live comparative panel) | https://oecd.ai/en/dashboards/national | governance | new |
 | EU GPAI Code of Practice signatories — who signed/refused the EU voluntary GP-AI code (26 signed by Aug 2025; Meta refused; xAI partial) | https://digital-strategy.ec.europa.eu/en/policies/signatory-taskforce-gpai-code-practice | governance | new |
 | LLM Election Data 2024 (Cen et al., MIT) — 8 LLMs × ~600 US-election questions, near-daily Jul–Nov 2024 (91,998 question-runs, 112 snapshots/question, partisan-steering panel) | https://huggingface.co/datasets/sarahcen/llm-election-data-2024 | information | new |
+| Algorithmic Contestability Cases Database (Stewart, FAccT'26) — 168 coded lawsuits/regulatory actions over automated decisions (hiring/credit/CJ/benefits/housing/health), 2012–2025; dockets + outcomes + algorithm_type; CC-BY | https://zenodo.org/records/18340254 | governance | new |
+| DAIL — Database of AI Litigation (GW Ethical Tech Initiative) — living tracker of ~260 AI-litigation cases from complaint forward (algorithmic hiring/credit/sentencing + generative-AI + companion liability) | https://etidail.com/ | governance | new |
+| S.T.O.P. BIPA Litigation Tracker — 182 Illinois biometric-privacy suits, 51 facial-geometry/facial-recognition (Excel + PDF download) | https://www.stopspying.org/bipa-litigation-tracker | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -130,6 +133,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-03 (frontier 6, AI-focus): 1 added (leaner day) -->
 <!-- Found delta 2026-09-04 (frontier 7, AI-focus): 3 added -->
 <!-- Found delta 2026-09-07 (frontier 10, AI-focus): 1 added (lean day, well-mined frontier) -->
+<!-- Found delta 2026-09-08 (frontier 1, AI-focus): 3 added -->
 
 ## Rejected
 
@@ -196,6 +200,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | ShareChat — 142,808 real shared chatbot conversations (multi-platform, 101 languages) | https://arxiv.org/html/2512.17843v2 | Genuine AI exhaust, but paper says "will be publicly available" — no DOI/download yet, unverifiable today. Revisit on release. |
 | Synthetic candidates & political parties (Zenodo 19521950) | https://zenodo.org/records/19521950 | First catalog of AI-run parties/candidates, but ~10 curated cases — cross-sectional, not panel-able. |
 | Microsoft Copilot election answers, 2023 (Zenodo 10517697) | https://zenodo.org/records/10517697/latest | Constructed RAG audit (experts posed questions) already worked by AlgorithmWatch; not incidental, not unclaimed. |
+| FTC algorithmic-disgorgement orders (Everalbum, Cambridge Analytica, Kurbo/WW, Ring, Edmodo, Rite Aid) | https://www.ftc.gov/ | ~7 orders — vivid AI-governance remedy but tiny N and already worked by law reviews (Richmond JOLT, SSRN). Not panel-able/unclaimed. |
+| AI Lawsuit Tracker / Attorney-Match / MassTort AI-harm trackers | https://ailawsuittracker.com/ | Commercial SEO / lawyer-referral repackaging of public dockets — use DAIL or the dockets directly. |
+| Cambridge Law Corpus (250k UK court cases) | https://arxiv.org/pdf/2309.12269 | Legal-AI training/annotation corpus, heavily used; general case law, not AI-litigation exhaust. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -220,6 +227,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-03 (frontier 6): 2 added -->
 <!-- Rejected delta 2026-09-04 (frontier 7): 1 added -->
 <!-- Rejected delta 2026-09-07 (frontier 10): 3 added -->
+<!-- Rejected delta 2026-09-08 (frontier 1): 3 added -->
 
 ---
 
