@@ -109,6 +109,8 @@ arrival — do not surface it, do not re-litigate it.
 | Algorithmic Contestability Cases Database (Stewart, FAccT'26) — 168 coded lawsuits/regulatory actions over automated decisions (hiring/credit/CJ/benefits/housing/health), 2012–2025; dockets + outcomes + algorithm_type; CC-BY | https://zenodo.org/records/18340254 | governance | new |
 | DAIL — Database of AI Litigation (GW Ethical Tech Initiative) — living tracker of ~260 AI-litigation cases from complaint forward (algorithmic hiring/credit/sentencing + generative-AI + companion liability) | https://etidail.com/ | governance | new |
 | S.T.O.P. BIPA Litigation Tracker — 182 Illinois biometric-privacy suits, 51 facial-geometry/facial-recognition (Excel + PDF download) | https://www.stopspying.org/bipa-litigation-tracker | governance | new |
+| Leading the Future — AI-industry super PAC campaign finance (FEC C00916114 + Think Big / American Mission PAC network; $75.8M receipts 2026 cycle, ~20 itemized donors dominated by a16z + OpenAI figures) | https://www.fec.gov/data/committee/C00916114/ | representation | new |
+| Good Jobs First data-center subsidy tracker — 251 AI/data-center subsidy awards, 16 states, 2020–2026 (up to $8.2B Amazon/Indiana); Subsidy Tracker fields company/state/year/value/program | https://goodjobsfirst.org/subsidy-tracker/ | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -134,6 +136,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-04 (frontier 7, AI-focus): 3 added -->
 <!-- Found delta 2026-09-07 (frontier 10, AI-focus): 1 added (lean day, well-mined frontier) -->
 <!-- Found delta 2026-09-08 (frontier 1, AI-focus): 3 added -->
+<!-- Found delta 2026-09-09 (frontier 2, AI-focus): 2 added -->
 
 ## Rejected
 
@@ -203,6 +206,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | FTC algorithmic-disgorgement orders (Everalbum, Cambridge Analytica, Kurbo/WW, Ring, Edmodo, Rite Aid) | https://www.ftc.gov/ | ~7 orders — vivid AI-governance remedy but tiny N and already worked by law reviews (Richmond JOLT, SSRN). Not panel-able/unclaimed. |
 | AI Lawsuit Tracker / Attorney-Match / MassTort AI-harm trackers | https://ailawsuittracker.com/ | Commercial SEO / lawyer-referral repackaging of public dockets — use DAIL or the dockets directly. |
 | Cambridge Law Corpus (250k UK court cases) | https://arxiv.org/pdf/2309.12269 | Legal-AI training/annotation corpus, heavily used; general case law, not AI-litigation exhaust. |
+| Granted AI federal-awards aggregator (NSF Awards + NIH RePORTER) | https://grantedai.com/federal-awards | Commercial repackaging of open federal grant data — use the source APIs (NSF Awards, NIH RePORTER). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -228,6 +232,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-04 (frontier 7): 1 added -->
 <!-- Rejected delta 2026-09-07 (frontier 10): 3 added -->
 <!-- Rejected delta 2026-09-08 (frontier 1): 3 added -->
+<!-- Rejected delta 2026-09-09 (frontier 2): 1 added -->
 
 ---
 
