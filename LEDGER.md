@@ -137,6 +137,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-07 (frontier 10, AI-focus): 1 added (lean day, well-mined frontier) -->
 <!-- Found delta 2026-09-08 (frontier 1, AI-focus): 3 added -->
 <!-- Found delta 2026-09-09 (frontier 2, AI-focus): 2 added -->
+<!-- Found delta 2026-09-10 (frontier 3, AI-focus): 0 added (null day — frontier mined out) -->
 
 ## Rejected
 
@@ -207,6 +208,10 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | AI Lawsuit Tracker / Attorney-Match / MassTort AI-harm trackers | https://ailawsuittracker.com/ | Commercial SEO / lawyer-referral repackaging of public dockets — use DAIL or the dockets directly. |
 | Cambridge Law Corpus (250k UK court cases) | https://arxiv.org/pdf/2309.12269 | Legal-AI training/annotation corpus, heavily used; general case law, not AI-litigation exhaust. |
 | Granted AI federal-awards aggregator (NSF Awards + NIH RePORTER) | https://grantedai.com/federal-awards | Commercial repackaging of open federal grant data — use the source APIs (NSF Awards, NIH RePORTER). |
+| LLM-Generated Persuasion Attacks corpus (Aptima) | https://arxiv.org/pdf/2511.19488 | Synthetic benchmark — messages generated to study/detect manipulation, explicitly not harvested from deployed platforms. OpenFake-genre kill. |
+| LLM-persuasion lab-experiment cluster (Nature Comms 2025; PNAS 2412815122; arXiv 2606.05961) | https://www.nature.com/articles/s41467-025-61345-5 | Constructed one-shot AI-persuasion experiments; crowded and adjacent to Levers of Political Persuasion + Talk2AI (already Found). |
+| AgoraSpeech — human+AI political-discourse annotation (Zenodo) | https://zenodo.org/ | Constructed multi-annotated corpus assembled to be studied; not incidental exhaust. |
+| Audio-deepfake detection corpora (DeepSpeak; MLADDC) | https://arxiv.org/pdf/2606.10911 | Constructed detection benchmarks, not deployed exhaust; audio, not persuasion text. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -233,6 +238,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-07 (frontier 10): 3 added -->
 <!-- Rejected delta 2026-09-08 (frontier 1): 3 added -->
 <!-- Rejected delta 2026-09-09 (frontier 2): 1 added -->
+<!-- Rejected delta 2026-09-10 (frontier 3): 4 added (null day) -->
 
 ---
 
