@@ -111,6 +111,7 @@ arrival — do not surface it, do not re-litigate it.
 | S.T.O.P. BIPA Litigation Tracker — 182 Illinois biometric-privacy suits, 51 facial-geometry/facial-recognition (Excel + PDF download) | https://www.stopspying.org/bipa-litigation-tracker | governance | new |
 | Leading the Future — AI-industry super PAC campaign finance (FEC C00916114 + Think Big / American Mission PAC network; $75.8M receipts 2026 cycle, ~20 itemized donors dominated by a16z + OpenAI figures) | https://www.fec.gov/data/committee/C00916114/ | representation | new |
 | Good Jobs First data-center subsidy tracker — 251 AI/data-center subsidy awards, 16 states, 2020–2026 (up to $8.2B Amazon/Indiana); Subsidy Tracker fields company/state/year/value/program | https://goodjobsfirst.org/subsidy-tracker/ | governance | new |
+| AI model-card safety disclosures (Hugging Face) — governance CONTENT of model-card READMEs (risk/safety/intended-use/training-data sections) as a longitudinal disclosure panel; distinct from HF popularity metadata (08-12). Probe: top-60 models, 60% eval vs 3% safety sections | https://huggingface.co/api/models | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -138,6 +139,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-08 (frontier 1, AI-focus): 3 added -->
 <!-- Found delta 2026-09-09 (frontier 2, AI-focus): 2 added -->
 <!-- Found delta 2026-09-10 (frontier 3, AI-focus): 0 added (null day — frontier mined out) -->
+<!-- Found delta 2026-09-11 (frontier 4, AI-focus): 1 added -->
 
 ## Rejected
 
@@ -212,6 +214,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | LLM-persuasion lab-experiment cluster (Nature Comms 2025; PNAS 2412815122; arXiv 2606.05961) | https://www.nature.com/articles/s41467-025-61345-5 | Constructed one-shot AI-persuasion experiments; crowded and adjacent to Levers of Political Persuasion + Talk2AI (already Found). |
 | AgoraSpeech — human+AI political-discourse annotation (Zenodo) | https://zenodo.org/ | Constructed multi-annotated corpus assembled to be studied; not incidental exhaust. |
 | Audio-deepfake detection corpora (DeepSpeak; MLADDC) | https://arxiv.org/pdf/2606.10911 | Constructed detection benchmarks, not deployed exhaust; audio, not persuasion text. |
+| AI Transparency Atlas — model-card scoring framework (50 models) | https://arxiv.org/html/2512.12443v1 | A scoring layer over model cards, not a standalone exhaust dataset (N=50); the raw HF model cards are the object (Found 09-11). Nearest-work to the disclosure-panel find. |
+| AI companion-app review corpora (Character.AI/Replika/Nomi; App Store + Play) | https://www.aicompanionpick.com/ | No released dataset (blog/marketing roundups only); weak political-agenda fit. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -239,6 +243,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-08 (frontier 1): 3 added -->
 <!-- Rejected delta 2026-09-09 (frontier 2): 1 added -->
 <!-- Rejected delta 2026-09-10 (frontier 3): 4 added (null day) -->
+<!-- Rejected delta 2026-09-11 (frontier 4): 2 added -->
 
 ---
 
