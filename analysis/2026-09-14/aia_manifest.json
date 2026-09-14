@@ -1,0 +1,280 @@
+{
+ "count": 30,
+ "by_year": {
+  "2020": 2,
+  "2021": 2,
+  "2022": 6,
+  "2023": 1,
+  "2024": 7,
+  "2025": 8,
+  "2026": 4
+ },
+ "records": [
+  {
+   "title": "Algorithmic Impact Assessment",
+   "org": "Treasury Board of Canada Secretariat",
+   "created": "2020-01-30",
+   "formats": [
+    "HTML",
+    "XLS"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment Results - Griffeye Tool",
+   "org": "Royal Canadian Mounted Police",
+   "created": "2024-03-26",
+   "formats": [
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Export Compliance Dashboard",
+   "org": "Canada Border Services Agency",
+   "created": "2025-10-24",
+   "formats": [
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment Results - Mental Health Benefit",
+   "org": "Veterans Affairs Canada",
+   "created": "2022-12-09",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment \u2013 Integrity trends analysis tool ",
+   "org": "Immigration, Refugees and Citizenship Canada",
+   "created": "2022-12-28",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - ATIP Online Request Service",
+   "org": "Treasury Board of Canada Secretariat",
+   "created": "2020-01-31",
+   "formats": [
+    "CSV",
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - CBSA Traveller Compliance Indicator",
+   "org": "Canada Border Services Agency",
+   "created": "2026-08-18",
+   "formats": [
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Claim Summary Tool (CST)",
+   "org": "Veterans Affairs Canada",
+   "created": "2026-02-23",
+   "formats": [
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - LMIA Summary of Information",
+   "org": "Employment and Social Development Canada",
+   "created": "2025-10-02",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessments Results - Voice 2 Text application",
+   "org": "Royal Canadian Mounted Police",
+   "created": "2024-12-20",
+   "formats": [
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment \u2013 Pre-load Air Cargo Targeting",
+   "org": "Transport Canada",
+   "created": "2024-03-05",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment Results - Administrative Activities Support Tool",
+   "org": "Immigration, Refugees and Citizenship Canada",
+   "created": "2025-03-28",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Employment Insurance Machine Learning Workload",
+   "org": "Employment and Social Development Canada",
+   "created": "2024-04-16",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment \u2013 Internal Activity and Access Monitoring",
+   "org": "Employment and Social Development Canada",
+   "created": "2025-11-06",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Non-Competitive Local Licensing Process (NCLL)",
+   "org": "Innovation, Science and Economic Development Canada",
+   "created": "2026-05-21",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - ArriveCAN Proof of Vaccination Recognition",
+   "org": "Public Health Agency of Canada",
+   "created": "2021-10-27",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - CBSA Assessment and Revenue Management (CARM)",
+   "org": "Canada Border Services Agency",
+   "created": "2025-12-09",
+   "formats": [
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Record of Employments (ROE) Comments Assessment",
+   "org": "Employment and Social Development Canada",
+   "created": "2022-01-13",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Repayment Assistance Plan \u2013 Enhanced Verification Model",
+   "org": "Employment and Social Development Canada",
+   "created": "2025-05-16",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment \u2013 Advanced Analytics Triage of Visitor Record Applications",
+   "org": "Immigration, Refugees and Citizenship Canada",
+   "created": "2022-10-07",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Temporary Foreign Worker Program Case Selection Algorithm",
+   "org": "Employment and Social Development Canada",
+   "created": "2025-06-06",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Electronic Social Insurance Number Automation (eSINa)",
+   "org": "Employment and Social Development Canada",
+   "created": "2025-10-02",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Client Reporting and Engagement System (CRES)/ReportIn",
+   "org": "Canada Border Services Agency",
+   "created": "2024-11-13",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Spouse or Common-Law Partner in Canada Advanced Analytics",
+   "org": "Immigration, Refugees and Citizenship Canada",
+   "created": "2021-08-05",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Automation Tools to Help Process Privately Sponsored Refugee Applications",
+   "org": "Immigration, Refugees and Citizenship Canada",
+   "created": "2022-12-16",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment Results - Automation Development to Support Disability Benefit Decision Making",
+   "org": "Veterans Affairs Canada",
+   "created": "2024-01-08",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "GC HR and Pay - Algorithmic Impact Assessment (AIA), Compensation Virtual Assistant (CVA)",
+   "org": "Public Services and Procurement Canada",
+   "created": "2026-03-27",
+   "formats": [
+    "DOCX",
+    "JSON"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Advanced Analytics Triage of Overseas Temporary Resident Visa Applications",
+   "org": "Immigration, Refugees and Citizenship Canada",
+   "created": "2022-01-21",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "Algorithmic Impact Assessment - Automated Triage and Positive Eligibility Determinations of In-Canada Work Permit Applications",
+   "org": "Immigration, Refugees and Citizenship Canada",
+   "created": "2023-09-25",
+   "formats": [
+    "JSON",
+    "PDF"
+   ]
+  },
+  {
+   "title": "GC HR and Pay - Algorithmic Impact Assessment (AIA), Leveraging Artificial Intelligence (AI) for backlog reduction: AI assistant prototype",
+   "org": "Public Services and Procurement Canada",
+   "created": "2024-04-18",
+   "formats": [
+    "HTML",
+    "JSON",
+    "PDF"
+   ]
+  }
+ ]
+}
