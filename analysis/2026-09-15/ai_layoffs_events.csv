@@ -1,0 +1,48 @@
+company,sector,date,jobs_cut
+Monday.com,technology,Jul 2026,3300
+Microsoft,technology,Jul 2026,20
+Oracle,technology,Jun 2026,9000
+GitLab,technology,Jun 2026,21000
+Intuit,technology,May 2026,350
+Cisco,technology,May 2026,3000
+PayPal,finance,May 2026,4000
+Coinbase,finance,May 2026,4760
+Meta,technology,Apr 2026,700
+Snap,technology,Apr 2026,8000
+Block,finance,Feb 2026,1000
+Amazon,logistics,Jan 2026,4000
+Pinterest,technology,Jan 2026,16000
+Dow,manufacturing,Jan 2026,780
+HP,technology,Nov 2025,4500
+IBM,technology,Nov 2025,5000
+Chegg,education,Oct 2025,2700
+Amazon,technology,Oct 2025,388
+C.H. Robinson,logistics,Oct 2025,14000
+Accenture,technology,Sep 2025,1400
+Salesforce,technology,Sep 2025,11000
+Microsoft,technology,Jul 2025,4000
+Indeed,technology,Jul 2025,9000
+Klarna,finance,May 2025,1300
+Chegg,education,May 2025,2000
+Microsoft,technology,May 2025,248
+CrowdStrike,technology,May 2025,6000
+UPS,logistics,Apr 2025,500
+Coinbase,finance,Feb 2025,62242
+PayPal,finance,Jan 2025,48786
+WPP,creative,Oct 2024,2000
+Cisco,technology,Aug 2024,5000
+Intuit,finance,Jul 2024,4000
+Teleperformance,customer service,Mar 2024,1800
+Klarna,finance,Feb 2024,2300
+Concentrix,customer service,Feb 2024,700
+Dell,technology,Feb 2024,4000
+Workday,technology,Feb 2024,6000
+PayPal,finance,Jan 2024,1750
+UPS,logistics,Jan 2024,2500
+Microsoft,technology,Jan 2024,12000
+Chegg,education,Jan 2024,1900
+Duolingo,education,Jan 2024,80
+Spotify,creative,Dec 2023,200
+Sports Illustrated,creative,Nov 2023,1500
+Getty Images,creative,Oct 2023,100
+Ikea,retail,Sep 2023,500
