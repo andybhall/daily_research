@@ -114,6 +114,7 @@ arrival — do not surface it, do not re-litigate it.
 | AI model-card safety disclosures (Hugging Face) — governance CONTENT of model-card READMEs (risk/safety/intended-use/training-data sections) as a longitudinal disclosure panel; distinct from HF popularity metadata (08-12). Probe: top-60 models, 60% eval vs 3% safety sections | https://huggingface.co/api/models | governance | new |
 | Canada Algorithmic Impact Assessment (AIA) registry — 30 published, scored risk questionnaires (~79 coded fields each) for federal automated-decision systems, 2020→2026; open CKAN/JSON; concentrated in immigration/benefits/border | https://open.canada.ca/data/en/dataset?q=algorithmic+impact+assessment | governance | new |
 | AI-attributed layoffs (corporate self-disclosures) — companies tying job cuts to AI/automation on the record (Challenger: 101,743 US cuts through 6/2026, #1 reason 4 mos; DisplaceIndex: 377k/57 cos); buildable from SEC 8-Ks / earnings calls / WARN | https://displaceindex.com/trends/ai-layoffs-tracker/ | governance | new |
+| Board AI-oversight & director-AI-expertise disclosures (DEF 14A) — corporate-governance-STRUCTURE leg of AI accountability; EDGAR FTS "oversight of artificial intelligence" 0→57 (2022→2026); distinct from 08-17 resolutions/votes and 08-27 10-K risk | https://efts.sec.gov/LATEST/search-index?q=%22oversight+of+artificial+intelligence%22&forms=DEF+14A | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -144,6 +145,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-11 (frontier 4, AI-focus): 1 added -->
 <!-- Found delta 2026-09-14 (frontier 7, AI-focus): 1 added -->
 <!-- Found delta 2026-09-15 (frontier 8, AI-focus): 1 added -->
+<!-- Found delta 2026-09-16 (frontier 9, AI-focus): 1 added -->
 
 ## Rejected
 
@@ -222,6 +224,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | AI companion-app review corpora (Character.AI/Replika/Nomi; App Store + Play) | https://www.aicompanionpick.com/ | No released dataset (blog/marketing roundups only); weak political-agenda fit. |
 | Brazil (CNJ 615) / Australia (high-risk guardrails) / Peru public-sector AI registers | https://oecd.ai/en/dashboards/national | Legislated or planned, but no public register/disclosure dataset published yet — revisit when disclosures materialize. (Korea/Japan already logged.) |
 | Algorithmic-management / worker-surveillance analyses (UC Berkeley Labor Center; AI Now) | https://laborcenter.berkeley.edu/data-algorithms-at-work/ | Policy primers and qualitative studies, not datasets; adjacent to Worker Info Exchange (already Found). |
+| AI shareholder-proposal SEC no-action letters | https://news.ballotpedia.org/2026/08/19/sec-makes-shareholder-proposal-no-action-pause-permanent/ | SEC permanently ended the no-action referee process (Aug 2026); the historical AI-proposal set is closed and tiny — not a growing panel. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -252,6 +255,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-11 (frontier 4): 2 added -->
 <!-- Rejected delta 2026-09-14 (frontier 7): 1 added -->
 <!-- Rejected delta 2026-09-15 (frontier 8): 1 added -->
+<!-- Rejected delta 2026-09-16 (frontier 9): 1 added -->
 
 ---
 
