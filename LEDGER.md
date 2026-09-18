@@ -116,6 +116,8 @@ arrival — do not surface it, do not re-litigate it.
 | AI-attributed layoffs (corporate self-disclosures) — companies tying job cuts to AI/automation on the record (Challenger: 101,743 US cuts through 6/2026, #1 reason 4 mos; DisplaceIndex: 377k/57 cos); buildable from SEC 8-Ks / earnings calls / WARN | https://displaceindex.com/trends/ai-layoffs-tracker/ | governance | new |
 | Board AI-oversight & director-AI-expertise disclosures (DEF 14A) — corporate-governance-STRUCTURE leg of AI accountability; EDGAR FTS "oversight of artificial intelligence" 0→57 (2022→2026); distinct from 08-17 resolutions/votes and 08-27 10-K risk | https://efts.sec.gov/LATEST/search-index?q=%22oversight+of+artificial+intelligence%22&forms=DEF+14A | governance | new |
 | "@Grok is this true?" LLM fact-checking requests on X — organic user requests for AI fact-checks (Grok/Perplexity), ~1.4–1.7M Feb–Sep 2025 (7.6% of bot interactions; partisan asymmetry; Grok↔Community-Notes decline); Renault/Rand/Mosleh (OSF); raw X data not openly redistributable | https://osf.io/preprints/psyarxiv/85quw_v1 | information | new |
+| In re ChatGPT Product Liability Cases (JCCP 5431) — first coordinated AI-chatbot-harm mass tort; 23 cases (12 wrongful-death/suicide, 11 psych-injury) vs OpenAI/Altman + Microsoft, 4 CA counties; SF Superior Court ref CJC25005431 | https://reason.com/wp-content/uploads/2026/06/chatgpt-product-liability-cases-coordination.pdf | governance | new |
+| AI-litigation discovery documents (NYT/Authors Guild v OpenAI, 1:25-md-03143 SDNY) — internal AI-company records disgorged in copyright discovery (78M-convo copyright-eval DB; Project Giraffe; destroyed Books1/Books2); mostly sealed/redacted | https://www.courtlistener.com/docket/69879510/in-re-openai-inc-copyright-infringement-litigation/ | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -148,6 +150,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-15 (frontier 8, AI-focus): 1 added -->
 <!-- Found delta 2026-09-16 (frontier 9, AI-focus): 1 added -->
 <!-- Found delta 2026-09-17 (frontier 10, AI-focus): 1 added -->
+<!-- Found delta 2026-09-18 (frontier 1, AI-focus): 2 added -->
 
 ## Rejected
 
@@ -228,6 +231,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Algorithmic-management / worker-surveillance analyses (UC Berkeley Labor Center; AI Now) | https://laborcenter.berkeley.edu/data-algorithms-at-work/ | Policy primers and qualitative studies, not datasets; adjacent to Worker Info Exchange (already Found). |
 | AI shareholder-proposal SEC no-action letters | https://news.ballotpedia.org/2026/08/19/sec-makes-shareholder-proposal-no-action-pause-permanent/ | SEC permanently ended the no-action referee process (Aug 2026); the historical AI-proposal set is closed and tiny — not a growing panel. |
 | ParlaSpoof-BR / DeepFakeX / IssueBench | https://arxiv.org/pdf/2503.02857 | Constructed detection/eval benchmarks (voice-clone spoofing, synthetic deepfake videos, LLM issue-bias prompts) — synthetic, not incidental exhaust. OpenFake-genre kill. |
+| Algorithmic-pricing antitrust litigation (RealPage et al.) | https://www.multifamilydive.com/news/algorithmic-rent-pricing-lawsuit-tracker/826178/ | Algorithmic-collusion theory rests on nonpublic data-pooling, not an AI/ML nexus (courts say so); off-agenda under anti-slop rule 6. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -260,6 +264,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-15 (frontier 8): 1 added -->
 <!-- Rejected delta 2026-09-16 (frontier 9): 1 added -->
 <!-- Rejected delta 2026-09-17 (frontier 10): 1 added -->
+<!-- Rejected delta 2026-09-18 (frontier 1): 1 added -->
 
 ---
 
