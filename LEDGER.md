@@ -151,6 +151,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-16 (frontier 9, AI-focus): 1 added -->
 <!-- Found delta 2026-09-17 (frontier 10, AI-focus): 1 added -->
 <!-- Found delta 2026-09-18 (frontier 1, AI-focus): 2 added -->
+<!-- Found delta 2026-09-21 (frontier 4, AI-focus): 0 added (null day — fresh objects off-agenda or unreleased) -->
 
 ## Rejected
 
@@ -232,6 +233,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | AI shareholder-proposal SEC no-action letters | https://news.ballotpedia.org/2026/08/19/sec-makes-shareholder-proposal-no-action-pause-permanent/ | SEC permanently ended the no-action referee process (Aug 2026); the historical AI-proposal set is closed and tiny — not a growing panel. |
 | ParlaSpoof-BR / DeepFakeX / IssueBench | https://arxiv.org/pdf/2503.02857 | Constructed detection/eval benchmarks (voice-clone spoofing, synthetic deepfake videos, LLM issue-bias prompts) — synthetic, not incidental exhaust. OpenFake-genre kill. |
 | Algorithmic-pricing antitrust litigation (RealPage et al.) | https://www.multifamilydive.com/news/algorithmic-rent-pricing-lawsuit-tracker/826178/ | Algorithmic-collusion theory rests on nonpublic data-pooling, not an AI/ML nexus (courts say so); off-agenda under anti-slop rule 6. |
+| Character.AI community-bot corpus (3.06M–5.76M user-built bots) | https://arxiv.org/html/2505.13354v1 | Superb platform exhaust, but roleplay/anime/fiction content with no prominent political personas (off political agenda, e≈2); also academic-gated, not openly released. |
+| TikTok/YouTube AI-content disclosure labels | https://storrito.com/resources/tiktoks-2026-ai-labeling-rules-and-what-they-signal-for-platform-governance/ | On-agenda (synthetic-media governance) but no open dataset — platform aggregate stats + tiny hand-collected study samples; not probe-able. |
+| AI model release/pricing trackers (Evertune / LLM-Pricing-Tracker / Axis / BenchLM) | https://github.com/jayyao97/llm-pricing-tracker | Market-structure exhaust, weak political nexus (economic/technical); adjacent to OpenRouter/HF; BenchLM-genre already rejected. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -265,6 +269,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-16 (frontier 9): 1 added -->
 <!-- Rejected delta 2026-09-17 (frontier 10): 1 added -->
 <!-- Rejected delta 2026-09-18 (frontier 1): 1 added -->
+<!-- Rejected delta 2026-09-21 (frontier 4): 3 added (null day) -->
 
 ---
 
