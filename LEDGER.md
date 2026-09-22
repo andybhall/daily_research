@@ -118,6 +118,7 @@ arrival — do not surface it, do not re-litigate it.
 | "@Grok is this true?" LLM fact-checking requests on X — organic user requests for AI fact-checks (Grok/Perplexity), ~1.4–1.7M Feb–Sep 2025 (7.6% of bot interactions; partisan asymmetry; Grok↔Community-Notes decline); Renault/Rand/Mosleh (OSF); raw X data not openly redistributable | https://osf.io/preprints/psyarxiv/85quw_v1 | information | new |
 | In re ChatGPT Product Liability Cases (JCCP 5431) — first coordinated AI-chatbot-harm mass tort; 23 cases (12 wrongful-death/suicide, 11 psych-injury) vs OpenAI/Altman + Microsoft, 4 CA counties; SF Superior Court ref CJC25005431 | https://reason.com/wp-content/uploads/2026/06/chatgpt-product-liability-cases-coordination.pdf | governance | new |
 | AI-litigation discovery documents (NYT/Authors Guild v OpenAI, 1:25-md-03143 SDNY) — internal AI-company records disgorged in copyright discovery (78M-convo copyright-eval DB; Project Giraffe; destroyed Books1/Books2); mostly sealed/redacted | https://www.courtlistener.com/docket/69879510/in-re-openai-inc-copyright-infringement-litigation/ | governance | new |
+| GAO federal-AI oversight recommendations — GAO's status-tracked AI audit recommendations to agencies (Open/Closed-Implemented/Not); ~50 AI products since 2018; flagship 35 recs/19 agencies (17 impl/15 open/3 not); Recommendations Database | https://www.gao.gov/reports-testimonies/recommendations-database | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -152,6 +153,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-17 (frontier 10, AI-focus): 1 added -->
 <!-- Found delta 2026-09-18 (frontier 1, AI-focus): 2 added -->
 <!-- Found delta 2026-09-21 (frontier 4, AI-focus): 0 added (null day — fresh objects off-agenda or unreleased) -->
+<!-- Found delta 2026-09-22 (frontier 5, AI-focus): 1 added -->
 
 ## Rejected
 
@@ -236,6 +238,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Character.AI community-bot corpus (3.06M–5.76M user-built bots) | https://arxiv.org/html/2505.13354v1 | Superb platform exhaust, but roleplay/anime/fiction content with no prominent political personas (off political agenda, e≈2); also academic-gated, not openly released. |
 | TikTok/YouTube AI-content disclosure labels | https://storrito.com/resources/tiktoks-2026-ai-labeling-rules-and-what-they-signal-for-platform-governance/ | On-agenda (synthetic-media governance) but no open dataset — platform aggregate stats + tiny hand-collected study samples; not probe-able. |
 | AI model release/pricing trackers (Evertune / LLM-Pricing-Tracker / Axis / BenchLM) | https://github.com/jayyao97/llm-pricing-tracker | Market-structure exhaust, weak political nexus (economic/technical); adjacent to OpenRouter/HF; BenchLM-genre already rejected. |
+| White House visitor logs / AI-executive meetings | https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html | No released dataset under the current administration (Biden-era WH visitor logs discontinued/not published for AI access); journalism-only, not probe-able. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -270,6 +273,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-17 (frontier 10): 1 added -->
 <!-- Rejected delta 2026-09-18 (frontier 1): 1 added -->
 <!-- Rejected delta 2026-09-21 (frontier 4): 3 added (null day) -->
+<!-- Rejected delta 2026-09-22 (frontier 5): 1 added -->
 
 ---
 
