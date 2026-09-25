@@ -121,6 +121,7 @@ arrival — do not surface it, do not re-litigate it.
 | GAO federal-AI oversight recommendations — GAO's status-tracked AI audit recommendations to agencies (Open/Closed-Implemented/Not); ~50 AI products since 2018; flagship 35 recs/19 agencies (17 impl/15 open/3 not); Recommendations Database | https://www.gao.gov/reports-testimonies/recommendations-database | governance | new |
 | Decensored / "abliterated" open-model ecosystem (Hugging Face) — hobbyist-published guardrail-removed open models; >1,000 models, ~38M downloads (top-500×2 deduped=963); top publishers HauhauCS/DavidAU/huihui-ai/mradermacher; Heretic tool | https://huggingface.co/models?search=abliterated | governance | new |
 | Brazilian electoral deepfake jurisprudence corpus (Zenodo 22013413) — 129 coded TSE/TRE decisions, resolutions & laws on election deepfakes, 2023–2026 (47 judicial precedents; themes deepfake/free-speech/satire); non-US, Portuguese; CC-BY | https://zenodo.org/records/22013413 | governance | new |
+| AI/ML H-1B labor market (DOL OFLC LCA disclosure data) — AI-talent import as regulatory exhaust; FY2025 7,536 AI/ML filings (+168% since FY2020), $277K avg (+131% premium), concentrated Amazon/Apple/Microsoft + CA/WA; bulk .xlsx FY2008-2025 (employer×role×wage×worksite) | https://www.dol.gov/agencies/eta/foreign-labor/performance | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -158,6 +159,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-22 (frontier 5, AI-focus): 1 added -->
 <!-- Found delta 2026-09-23 (frontier 6, AI-focus): 1 added -->
 <!-- Found delta 2026-09-24 (frontier 7, AI-focus): 1 added -->
+<!-- Found delta 2026-09-25 (frontier 8, AI-focus): 1 added -->
 
 ## Rejected
 
@@ -245,6 +247,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | White House visitor logs / AI-executive meetings | https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html | No released dataset under the current administration (Biden-era WH visitor logs discontinued/not published for AI access); journalism-only, not probe-able. |
 | Hobbyist LLM political-compass / political-bias projects (AUTOMATIC1111, BennettPhil, WaPo eval) | https://github.com/AUTOMATIC1111/llm-political-compass | Saturated genre colliding with TrackingAI.org (Found 08-24), SpeechMap (08-24) and the Rozado political-orientation reject; constructed quizzes, not fresh exhaust. |
 | EU AI Act GPAI systemic-risk model list (AI Office) | https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers | Enforcement from Aug 2026, but still no official public registry of designated/notified systemic-risk models; the ~12-model count is a law-firm estimate, not a dataset — revisit if the AI Office publishes one. |
+| Colorado AI Act (SB 26-189) employment / ADMT deployer disclosures | https://en.wikipedia.org/wiki/Colorado_AI_Act | Not effective until Jan 1 2027, and the 2026 rewrite dropped impact-assessment/registry requirements; no deployer dataset to pull yet — revisit when it takes effect. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -282,6 +285,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-22 (frontier 5): 1 added -->
 <!-- Rejected delta 2026-09-23 (frontier 6): 1 added -->
 <!-- Rejected delta 2026-09-24 (frontier 7): 1 added -->
+<!-- Rejected delta 2026-09-25 (frontier 8): 1 added -->
 
 ---
 
