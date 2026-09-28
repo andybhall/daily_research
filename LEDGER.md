@@ -160,6 +160,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-23 (frontier 6, AI-focus): 1 added -->
 <!-- Found delta 2026-09-24 (frontier 7, AI-focus): 1 added -->
 <!-- Found delta 2026-09-25 (frontier 8, AI-focus): 1 added -->
+<!-- Found delta 2026-09-28 (frontier 1, AI-focus): 0 added (null day — frontier mined out) -->
 
 ## Rejected
 
@@ -248,6 +249,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Hobbyist LLM political-compass / political-bias projects (AUTOMATIC1111, BennettPhil, WaPo eval) | https://github.com/AUTOMATIC1111/llm-political-compass | Saturated genre colliding with TrackingAI.org (Found 08-24), SpeechMap (08-24) and the Rozado political-orientation reject; constructed quizzes, not fresh exhaust. |
 | EU AI Act GPAI systemic-risk model list (AI Office) | https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers | Enforcement from Aug 2026, but still no official public registry of designated/notified systemic-risk models; the ~12-model count is a law-firm estimate, not a dataset — revisit if the AI Office publishes one. |
 | Colorado AI Act (SB 26-189) employment / ADMT deployer disclosures | https://en.wikipedia.org/wiki/Colorado_AI_Act | Not effective until Jan 1 2027, and the 2026 rewrite dropped impact-assessment/registry requirements; no deployer dataset to pull yet — revisit when it takes effect. |
+| AI voice-cloning / right-of-publicity litigation (ELVIS Act; NO FAKES Act; label + voice-actor suits) | https://voxbooster.com/blog/voice-cloning-legal-cases-2026-recap/ | No centralized open dataset (law-firm blog roundups); small N; sits inside DAIL's AI-litigation index (Found 09-08). |
+| State-AG / multi-regulator AI enforcement actions (Troutman / AILawsuitTracker / ailawsbystate) | https://asksentinel.troutman.com/ | On-agenda but behind commercial trackers; no open aggregated dataset; ~11–130 actions scattered across AG press releases. |
+| AI/deepfake evidence-authentication cases (Fed. R. Evid. 901(c)/707) | https://natlawreview.com/article/ai-generated-deepfakes-court-emerging-threat-evidence-authenticity | Commentary + proposed rule amendments, not a dataset of cases. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -286,6 +290,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-23 (frontier 6): 1 added -->
 <!-- Rejected delta 2026-09-24 (frontier 7): 1 added -->
 <!-- Rejected delta 2026-09-25 (frontier 8): 1 added -->
+<!-- Rejected delta 2026-09-28 (frontier 1): 3 added (null day) -->
 
 ---
 
