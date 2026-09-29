@@ -161,6 +161,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-24 (frontier 7, AI-focus): 1 added -->
 <!-- Found delta 2026-09-25 (frontier 8, AI-focus): 1 added -->
 <!-- Found delta 2026-09-28 (frontier 1, AI-focus): 0 added (null day — frontier mined out) -->
+<!-- Found delta 2026-09-29 (frontier 2, AI-focus): 0 added (null day — frontier mined out) -->
 
 ## Rejected
 
@@ -252,6 +253,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | AI voice-cloning / right-of-publicity litigation (ELVIS Act; NO FAKES Act; label + voice-actor suits) | https://voxbooster.com/blog/voice-cloning-legal-cases-2026-recap/ | No centralized open dataset (law-firm blog roundups); small N; sits inside DAIL's AI-litigation index (Found 09-08). |
 | State-AG / multi-regulator AI enforcement actions (Troutman / AILawsuitTracker / ailawsbystate) | https://asksentinel.troutman.com/ | On-agenda but behind commercial trackers; no open aggregated dataset; ~11–130 actions scattered across AG press releases. |
 | AI/deepfake evidence-authentication cases (Fed. R. Evid. 901(c)/707) | https://natlawreview.com/article/ai-generated-deepfakes-court-emerging-threat-evidence-authenticity | Commentary + proposed rule amendments, not a dataset of cases. |
+| Gulf sovereign-wealth AI investment (MGX $100B; PIF/Humain; stakes in OpenAI/Anthropic/xAI) | https://www.forbes.com/sites/guneyyildiz/2026/07/03/abu-dhabis-49-billion-ai-fund-and-its-sovereign-rivals/ | On-agenda (foreign AI money/influence) but no open dataset — announced deals only; CFIUS review not public. |
+| AI-safety funding ecosystem beyond Open Phil (SFF / Longview / Tallinn grantors) | https://aisafety.com/funding | Same genre as the logged Open Philanthropy grants find (08-20); no aggregated open dataset; SFF small ($5–15M/yr). |
+| Frontier-AI vendors' federal contracts (GSA OneGov; DoD $200M each) | https://fedscoop.com/gsa-openai-google-alphabet-anthropic-multiple-award-schedule-federal-government/ | Subset of the USASpending AI-procurement find (08-20); OneGov token deals aren't standard obligations to pull. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -291,6 +295,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-24 (frontier 7): 1 added -->
 <!-- Rejected delta 2026-09-25 (frontier 8): 1 added -->
 <!-- Rejected delta 2026-09-28 (frontier 1): 3 added (null day) -->
+<!-- Rejected delta 2026-09-29 (frontier 2): 3 added (null day) -->
 
 ---
 
