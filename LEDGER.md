@@ -162,6 +162,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-25 (frontier 8, AI-focus): 1 added -->
 <!-- Found delta 2026-09-28 (frontier 1, AI-focus): 0 added (null day — frontier mined out) -->
 <!-- Found delta 2026-09-29 (frontier 2, AI-focus): 0 added (null day — frontier mined out) -->
+<!-- Found delta 2026-09-30 (frontier 3, AI-focus): 0 added (null day — frontier mined out) -->
 
 ## Rejected
 
@@ -256,6 +257,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Gulf sovereign-wealth AI investment (MGX $100B; PIF/Humain; stakes in OpenAI/Anthropic/xAI) | https://www.forbes.com/sites/guneyyildiz/2026/07/03/abu-dhabis-49-billion-ai-fund-and-its-sovereign-rivals/ | On-agenda (foreign AI money/influence) but no open dataset — announced deals only; CFIUS review not public. |
 | AI-safety funding ecosystem beyond Open Phil (SFF / Longview / Tallinn grantors) | https://aisafety.com/funding | Same genre as the logged Open Philanthropy grants find (08-20); no aggregated open dataset; SFF small ($5–15M/yr). |
 | Frontier-AI vendors' federal contracts (GSA OneGov; DoD $200M each) | https://fedscoop.com/gsa-openai-google-alphabet-anthropic-multiple-award-schedule-federal-government/ | Subset of the USASpending AI-procurement find (08-20); OneGov token deals aren't standard obligations to pull. |
+| WMP 2026 AI political-ad tracking (164 AI ads, ~$80M, 69% undisclosed) | https://mediaproject.wesleyan.edu/releases-090426/ | Aggregates only — no ad-level open dataset; spend via licensed AdImpact; access by email; heavily-claimed flagship project (fails unclaimed + open). |
+| Archive of Political Emails (2M+ fundraising emails since 2019) | https://politicalemails.org/messages | Clean open exhaust but only indirect AI nexus (persuasion text, not AI data); genre already seeded (Princeton 2020 corpus). |
+| AI-personalized political SMS / candidate-voice text bots | https://www.npr.org/2026/07/12/nx-s1-5867763/ai-artificial-intelligence-data-texts-bots-voters-campaigns | Intrinsic AI nexus, on-agenda, but no released corpus — vendor campaign practice, not a dataset. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -296,6 +300,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-25 (frontier 8): 1 added -->
 <!-- Rejected delta 2026-09-28 (frontier 1): 3 added (null day) -->
 <!-- Rejected delta 2026-09-29 (frontier 2): 3 added (null day) -->
+<!-- Rejected delta 2026-09-30 (frontier 3): 3 added (null day) -->
 
 ---
 
