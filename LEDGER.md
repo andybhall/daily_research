@@ -163,6 +163,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-28 (frontier 1, AI-focus): 0 added (null day — frontier mined out) -->
 <!-- Found delta 2026-09-29 (frontier 2, AI-focus): 0 added (null day — frontier mined out) -->
 <!-- Found delta 2026-09-30 (frontier 3, AI-focus): 0 added (null day — frontier mined out) -->
+<!-- Found delta 2026-10-01 (frontier 4, AI-focus): 0 added (null day — frontier mined out) -->
 
 ## Rejected
 
@@ -260,6 +261,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | WMP 2026 AI political-ad tracking (164 AI ads, ~$80M, 69% undisclosed) | https://mediaproject.wesleyan.edu/releases-090426/ | Aggregates only — no ad-level open dataset; spend via licensed AdImpact; access by email; heavily-claimed flagship project (fails unclaimed + open). |
 | Archive of Political Emails (2M+ fundraising emails since 2019) | https://politicalemails.org/messages | Clean open exhaust but only indirect AI nexus (persuasion text, not AI data); genre already seeded (Princeton 2020 corpus). |
 | AI-personalized political SMS / candidate-voice text bots | https://www.npr.org/2026/07/12/nx-s1-5867763/ai-artificial-intelligence-data-texts-bots-voters-campaigns | Intrinsic AI nexus, on-agenda, but no released corpus — vendor campaign practice, not a dataset. |
+| GPT Store daily archive (AINativeLab/gptstore-data-backup) | https://github.com/AINativeLab/gptstore-data-backup | Open Willis-genre archive but off-agenda — generic categories, no political/campaign/government tagging (cf. 09-21 Character.AI). |
+| Midas Project AI Policy Watchtower (RSP/ToS/safety-commitment diffs) | https://www.themidasproject.com/watchtower | On-agenda (model-governance/incident-reporting diffs) but web-only, ~60 curated entries, no download/API — not open incidental exhaust. |
+| C2PA content credentials (provenance manifests) | https://en.wikipedia.org/wiki/Content_Credentials | An open standard/format, not a dataset — no probe-able manifest corpus to analyze. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -301,6 +305,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-28 (frontier 1): 3 added (null day) -->
 <!-- Rejected delta 2026-09-29 (frontier 2): 3 added (null day) -->
 <!-- Rejected delta 2026-09-30 (frontier 3): 3 added (null day) -->
+<!-- Rejected delta 2026-10-01 (frontier 4): 3 added (null day) -->
 
 ---
 
