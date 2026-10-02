@@ -122,6 +122,7 @@ arrival — do not surface it, do not re-litigate it.
 | Decensored / "abliterated" open-model ecosystem (Hugging Face) — hobbyist-published guardrail-removed open models; >1,000 models, ~38M downloads (top-500×2 deduped=963); top publishers HauhauCS/DavidAU/huihui-ai/mradermacher; Heretic tool | https://huggingface.co/models?search=abliterated | governance | new |
 | Brazilian electoral deepfake jurisprudence corpus (Zenodo 22013413) — 129 coded TSE/TRE decisions, resolutions & laws on election deepfakes, 2023–2026 (47 judicial precedents; themes deepfake/free-speech/satire); non-US, Portuguese; CC-BY | https://zenodo.org/records/22013413 | governance | new |
 | AI/ML H-1B labor market (DOL OFLC LCA disclosure data) — AI-talent import as regulatory exhaust; FY2025 7,536 AI/ML filings (+168% since FY2020), $277K avg (+131% premium), concentrated Amazon/Apple/Microsoft + CA/WA; bulk .xlsx FY2008-2025 (employer×role×wage×worksite) | https://www.dol.gov/agencies/eta/foreign-labor/performance | governance | new |
+| Public comments on federal AI rulemakings (regulations.gov API) — open longitudinal panel of who contests U.S. AI governance; Copyright Office AI NOI (COLC-2023-0006) = 10,371 comments (verified live) vs NIST AI EO RFI 214 / OMB M-24-10 196; AI-generated mass comments now distorting the channel (GAO Jul 2026); docket×commenter×org×position×date | https://www.regulations.gov | governance | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -164,6 +165,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-29 (frontier 2, AI-focus): 0 added (null day — frontier mined out) -->
 <!-- Found delta 2026-09-30 (frontier 3, AI-focus): 0 added (null day — frontier mined out) -->
 <!-- Found delta 2026-10-01 (frontier 4, AI-focus): 0 added (null day — frontier mined out) -->
+<!-- Found delta 2026-10-02 (frontier 5, AI-focus): 1 added -->
 
 ## Rejected
 
