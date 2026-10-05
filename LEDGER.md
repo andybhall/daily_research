@@ -123,6 +123,7 @@ arrival — do not surface it, do not re-litigate it.
 | Brazilian electoral deepfake jurisprudence corpus (Zenodo 22013413) — 129 coded TSE/TRE decisions, resolutions & laws on election deepfakes, 2023–2026 (47 judicial precedents; themes deepfake/free-speech/satire); non-US, Portuguese; CC-BY | https://zenodo.org/records/22013413 | governance | new |
 | AI/ML H-1B labor market (DOL OFLC LCA disclosure data) — AI-talent import as regulatory exhaust; FY2025 7,536 AI/ML filings (+168% since FY2020), $277K avg (+131% premium), concentrated Amazon/Apple/Microsoft + CA/WA; bulk .xlsx FY2008-2025 (employer×role×wage×worksite) | https://www.dol.gov/agencies/eta/foreign-labor/performance | governance | new |
 | Public comments on federal AI rulemakings (regulations.gov API) — open longitudinal panel of who contests U.S. AI governance; Copyright Office AI NOI (COLC-2023-0006) = 10,371 comments (verified live) vs NIST AI EO RFI 214 / OMB M-24-10 196; AI-generated mass comments now distorting the channel (GAO Jul 2026); docket×commenter×org×position×date | https://www.regulations.gov | governance | new |
+| AI & algorithmic-management clauses in CBAs (WageIndicator / UNI Europa / FES) — coded cross-national record of what labor bargains for on workplace AI; 3,600+ CBAs across 76 countries since 2011; clauses on data protection/monitoring/algorithmic mgmt/human oversight/training; 2024 survey (148 affiliates/32 countries) 20% have AI clauses, 42% negotiating; CESSDA-archived. Deposited intl. counterpart to the 08-26 US union-AI find | https://www.uni-europa.org/news/a-database-of-ai-and-algorithmic-management-in-collective-bargaining-agreements/ | representation | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
 <!-- Found delta 2026-08-09 (frontier 1): 2 added -->
@@ -166,6 +167,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-09-30 (frontier 3, AI-focus): 0 added (null day — frontier mined out) -->
 <!-- Found delta 2026-10-01 (frontier 4, AI-focus): 0 added (null day — frontier mined out) -->
 <!-- Found delta 2026-10-02 (frontier 5, AI-focus): 1 added -->
+<!-- Found delta 2026-10-05 (frontier 8, AI-focus): 1 added -->
 
 ## Rejected
 
@@ -266,6 +268,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | GPT Store daily archive (AINativeLab/gptstore-data-backup) | https://github.com/AINativeLab/gptstore-data-backup | Open Willis-genre archive but off-agenda — generic categories, no political/campaign/government tagging (cf. 09-21 Character.AI). |
 | Midas Project AI Policy Watchtower (RSP/ToS/safety-commitment diffs) | https://www.themidasproject.com/watchtower | On-agenda (model-governance/incident-reporting diffs) but web-only, ~60 curated entries, no download/API — not open incidental exhaust. |
 | C2PA content credentials (provenance manifests) | https://en.wikipedia.org/wiki/Content_Credentials | An open standard/format, not a dataset — no probe-able manifest corpus to analyze. |
+| NLRB algorithmic-management / electronic-surveillance framework (GC 23-02) | https://natlawreview.com/article/rescinded-guidance-unpacking-nlrb-acting-general-counsel-cowens-policy-overhaul | Guidance rescinded under the current acting GC — no AI-tagged case dataset accruing behind it (revisit if reinstated). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -308,6 +311,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-09-29 (frontier 2): 3 added (null day) -->
 <!-- Rejected delta 2026-09-30 (frontier 3): 3 added (null day) -->
 <!-- Rejected delta 2026-10-01 (frontier 4): 3 added (null day) -->
+<!-- Rejected delta 2026-10-05 (frontier 8): 1 added -->
 
 ---
 
