@@ -169,6 +169,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-02 (frontier 5, AI-focus): 1 added -->
 <!-- Found delta 2026-10-05 (frontier 8, AI-focus): 1 added -->
 <!-- Found delta 2026-10-06 (frontier 9, AI-focus): 0 added (null day — frontier mined out + 14a-8 being rescinded) -->
+<!-- Found delta 2026-10-07 (frontier 10, AI-focus): 0 added (null day — trawl yielded only constructed/claimed/curated/restricted deposits) -->
 
 ## Rejected
 
@@ -272,6 +273,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | NLRB algorithmic-management / electronic-surveillance framework (GC 23-02) | https://natlawreview.com/article/rescinded-guidance-unpacking-nlrb-acting-general-counsel-cowens-policy-overhaul | Guidance rescinded under the current acting GC — no AI-tagged case dataset accruing behind it (revisit if reinstated). |
 | SEC no-action letters on AI shareholder proposals (14a-8 resolution disputes) | https://www.skadden.com/insights/publications/2026/08/sec-staff-withdraws-from-the-shareholder-proposal-process | SEC permanently withdrew from the 14a-8 no-action process (Aug 2026) + proposed rescinding Rule 14a-8 — no AI-exclusion-dispute dataset accruing (revisit only if restored). |
 | AI agents trading political prediction markets (Polymarket on-chain) | https://www.coindesk.com/tech/2026/03/15/ai-agents-are-quietly-rewriting-prediction-market-trading | Open market data not intrinsically AI; AI-agent identification is vendor-estimated heuristics, not a clean labeled open dataset; adjacent to 08-27 market-agents; agenda-soft. |
+| Synthetic candidates & political parties (Zenodo 19521950) | https://zenodo.org/records/19521950 | Novel Representation-layer object (AI running as candidates/parties) but a 10-case curated catalog (21 kB), not incidental exhaust, not panel-able (~15/25); revisit if it grows into a longitudinal registry. |
+| "Synthetic Politics" AI-generated political images on X (arXiv 2502.11248) | https://arxiv.org/abs/2502.11248 | Real exhaust genre but no public dataset released; authors' own 2024 analysis (claimed, not fresh). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -316,6 +319,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-01 (frontier 4): 3 added (null day) -->
 <!-- Rejected delta 2026-10-05 (frontier 8): 1 added -->
 <!-- Rejected delta 2026-10-06 (frontier 9): 2 added (null day) -->
+<!-- Rejected delta 2026-10-07 (frontier 10): 2 added (null day) -->
 
 ---
 
