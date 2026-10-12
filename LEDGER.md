@@ -172,6 +172,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-07 (frontier 10, AI-focus): 0 added (null day — trawl yielded only constructed/claimed/curated/restricted deposits) -->
 <!-- Found delta 2026-10-08 (frontier 1, AI-focus): 0 added (null day — frontier mined out; only commercial trackers / paywalled / already-logged / shrinking FTC set) -->
 <!-- Found delta 2026-10-09 (frontier 2, AI-focus): 0 added (null day — AI-money story mined; FEC data maximally claimed + other-half of 09-09 find) -->
+<!-- Found delta 2026-10-12 (frontier 5, AI-focus): 0 added (null day — rich institutional-record objects logged; remaining corners unreleased/thin/dispersed) -->
 
 ## Rejected
 
@@ -280,6 +281,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | FTC AI enforcement consent decrees (Rite Aid / Evolv / DoNotPay / Sitejabber / accessiBe / Rytr) | https://www.hklaw.com/en/insights/publications/2026/08/a-look-at-the-ftcs-current-approach-to-ai-regulation | Real primary-source governance exhaust but ~10 actions, un-deposited (assemble from FTC.gov), subset of 09-28 enforcement reject, and shrinking under the AI Action Plan rollback (Rytr order vacated); revisit if a deposited accruing corpus emerges. |
 | Commercial AI-litigation trackers (AI Lawsuit Tracker 246 cases; regulations.ai 280 actions; gemmozero/ai-litigation-2026 paywalled) | https://ailawsuittracker.com/cases/ | Repackaging of public CourtListener/PACER dockets / paywalled vendor feed — not open primary deposits; genre rejected 09-08 & 09-28. |
 | AI-industry employee/exec political giving (FEC individual itemized) + Public First Action (AI-safety super PAC) | https://sfstandard.com/2026/07/18/ai-s-new-political-donor-class-already-outspending-big-tech-s-last-one/ | Real 2026 story (AI donor class; safety-vs-acceleration cleavage) but FEC individual data is maximally mined + AI slice already journalistically built this cycle (fails unclaimed); Public First Action is the other-half of the 09-09 Leading the Future find (update, not new object); AI nexus only via employer. |
+| California AB 302 high-risk automated-decision-system inventory (CDT, annual) | https://www.cdt.ca.gov/wp-content/uploads/2026/06/High-Risk-ADS-Report-for-Program-Year-2025.pdf | Distinct state-level object (algorithmic decision-making in state institutions) but a thin self-reported annual PDF (PY2024 found zero systems), not a machine-readable panel; known undercount; revisit if a future program year yields a substantive list. |
+| Federal Chief AI Officer roster / CAIO Council | https://www.meritalk.com/articles/meet-the-expanded-roster-of-federal-agency-caios/ | No official 2026 roster or council-membership list published; partial agency-by-agency reporting, not a deposited dataset. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -327,6 +330,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-07 (frontier 10): 2 added (null day) -->
 <!-- Rejected delta 2026-10-08 (frontier 1): 2 added (null day) -->
 <!-- Rejected delta 2026-10-09 (frontier 2): 1 added (null day) -->
+<!-- Rejected delta 2026-10-12 (frontier 5): 2 added (null day) -->
 
 ---
 
