@@ -175,6 +175,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-12 (frontier 5, AI-focus): 0 added (null day — rich institutional-record objects logged; remaining corners unreleased/thin/dispersed) -->
 <!-- Found delta 2026-10-13 (frontier 6, AI-focus): 0 added (null day — strong hobbyist AI hoards logged; best fresh candidate collides with TrackingAI) -->
 <!-- Found delta 2026-10-14 (frontier 7, AI-focus): 0 added (null day — EU high-risk DB delayed to 2027; other registers pre-existing; India enforcement aggregates-only) -->
+<!-- Found delta 2026-10-15 (frontier 8, AI-focus): 0 added (null day — on-agenda AI-labor objects logged; WARN AI fields return zero; data-worker organizing not a dataset) -->
 
 ## Rejected
 
@@ -289,6 +290,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Grokipedia (xAI AI-generated encyclopedia) as a corpus | https://www.tcd.ie/news_events/articles/2026/grokipedia-research/ | Major AI-information object but a corporate product (not a hobbyist hoard), already saturated by 2026 academic studies (18K-pair corpora), no open dataset released; revisit if an open unclaimed scrape is deposited. |
 | EU AI Act high-risk AI database (Article 71) | https://www.rapporteur.com/news/eus-high-risk-ai-database-pushed-back-to-mid-to-late-2027/ | Would be a strong EU-wide open registry of high-risk AI, but not operational — Digital Omnibus delayed registration + launch to late 2027; REVISIT when it launches. |
 | National public-sector algorithm registers beyond NL/UK (France Etalab / Finland / Norway / Scotland) | https://wp.oecd.ai/app/uploads/2025/05/algorithmic-transparency-in-the-public-sector.pdf | Pre-existing, already catalogued (OECD 2025); same object-type as NL/UK registers logged 08-25 — incremental/mode collapse. |
+| WARN-Act AI/automation layoff disclosure (NY field; CA SB 951) | https://www.hunton.com/hunton-employment-labor-perspectives/new-york-warn-act-no-ai-related-layoffs-reported-in-first-year-of-adding-ai-related-disclosure-to-the-system | NY field returned ZERO AI-attributed layoffs year one across 160+ filers (no usable dataset; cf. CA AB 302); CA SB 951 not effective until Jan 2027 — REVISIT in 2027 when both states have filings. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -339,6 +341,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-12 (frontier 5): 2 added (null day) -->
 <!-- Rejected delta 2026-10-13 (frontier 6): 2 added (null day) -->
 <!-- Rejected delta 2026-10-14 (frontier 7): 2 added (null day) -->
+<!-- Rejected delta 2026-10-15 (frontier 8): 1 added (null day) -->
 
 ---
 
