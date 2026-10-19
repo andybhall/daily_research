@@ -177,6 +177,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-14 (frontier 7, AI-focus): 0 added (null day — EU high-risk DB delayed to 2027; other registers pre-existing; India enforcement aggregates-only) -->
 <!-- Found delta 2026-10-15 (frontier 8, AI-focus): 0 added (null day — on-agenda AI-labor objects logged; WARN AI fields return zero; data-worker organizing not a dataset) -->
 <!-- Found delta 2026-10-16 (frontier 9, AI-focus): 0 added (null day — frontier mined + already null 10-06; DAO AI-voting has no dataset; AI proposals are an 08-17 refresh) -->
+<!-- Found delta 2026-10-19 (frontier 2, AI-focus): 0 added (null day — money trails comprehensively logged; federal AI grants science-policy-leaning/mined/messy) -->
 
 ## Rejected
 
@@ -293,6 +294,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | National public-sector algorithm registers beyond NL/UK (France Etalab / Finland / Norway / Scotland) | https://wp.oecd.ai/app/uploads/2025/05/algorithmic-transparency-in-the-public-sector.pdf | Pre-existing, already catalogued (OECD 2025); same object-type as NL/UK registers logged 08-25 — incremental/mode collapse. |
 | WARN-Act AI/automation layoff disclosure (NY field; CA SB 951) | https://www.hunton.com/hunton-employment-labor-perspectives/new-york-warn-act-no-ai-related-layoffs-reported-in-first-year-of-adding-ai-related-disclosure-to-the-system | NY field returned ZERO AI-attributed layoffs year one across 160+ filers (no usable dataset; cf. CA AB 302); CA SB 951 not effective until Jan 2027 — REVISIT in 2027 when both states have filings. |
 | DAO AI-agent voting / treasury agents (Buterin stewards; Near; Optimism; Governatooorr) | https://www.coindesk.com/web3/2026/02/21/ethereum-s-vitalik-buterin-proposes-ai-stewards-to-help-reinvent-dao-governance | Novel governance phenomenon but still proposals/experiments — no on-chain dataset of AI-cast votes; AI-vs-human labeling problem; adjacent to 08-27 market-agents; revisit if an open panel emerges. |
+| Federal AI research grants (NSF AI Institutes / NAIRR / DARPA-NSF AI Forge) | https://en.wikipedia.org/wiki/National_Artificial_Intelligence_Research_Institutes | Distinct money object (state funding + steering the AI research frontier), probe-able via NSF/USASpending assistance APIs, but science-policy-leaning vs the political agenda (which lists procurement, not research funding), on a maximally-mined source, and messy to define; revisit if framed around national-security steering + built as a recipient-concentration panel. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -345,6 +347,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-14 (frontier 7): 2 added (null day) -->
 <!-- Rejected delta 2026-10-15 (frontier 8): 1 added (null day) -->
 <!-- Rejected delta 2026-10-16 (frontier 9): 1 added (null day) -->
+<!-- Rejected delta 2026-10-19 (frontier 2): 1 added (null day) -->
 
 ---
 
