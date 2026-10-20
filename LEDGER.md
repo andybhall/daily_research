@@ -178,6 +178,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-15 (frontier 8, AI-focus): 0 added (null day — on-agenda AI-labor objects logged; WARN AI fields return zero; data-worker organizing not a dataset) -->
 <!-- Found delta 2026-10-16 (frontier 9, AI-focus): 0 added (null day — frontier mined + already null 10-06; DAO AI-voting has no dataset; AI proposals are an 08-17 refresh) -->
 <!-- Found delta 2026-10-19 (frontier 2, AI-focus): 0 added (null day — money trails comprehensively logged; federal AI grants science-policy-leaning/mined/messy) -->
+<!-- Found delta 2026-10-20 (frontier 3, AI-focus): 0 added (null day — persuasion-text AI corners logged; email-AI analysis unreleased; robocalls/ads no open corpus) -->
 
 ## Rejected
 
@@ -295,6 +296,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | WARN-Act AI/automation layoff disclosure (NY field; CA SB 951) | https://www.hunton.com/hunton-employment-labor-perspectives/new-york-warn-act-no-ai-related-layoffs-reported-in-first-year-of-adding-ai-related-disclosure-to-the-system | NY field returned ZERO AI-attributed layoffs year one across 160+ filers (no usable dataset; cf. CA AB 302); CA SB 951 not effective until Jan 2027 — REVISIT in 2027 when both states have filings. |
 | DAO AI-agent voting / treasury agents (Buterin stewards; Near; Optimism; Governatooorr) | https://www.coindesk.com/web3/2026/02/21/ethereum-s-vitalik-buterin-proposes-ai-stewards-to-help-reinvent-dao-governance | Novel governance phenomenon but still proposals/experiments — no on-chain dataset of AI-cast votes; AI-vs-human labeling problem; adjacent to 08-27 market-agents; revisit if an open panel emerges. |
 | Federal AI research grants (NSF AI Institutes / NAIRR / DARPA-NSF AI Forge) | https://en.wikipedia.org/wiki/National_Artificial_Intelligence_Research_Institutes | Distinct money object (state funding + steering the AI research frontier), probe-able via NSF/USASpending assistance APIs, but science-policy-leaning vs the political agenda (which lists procurement, not research funding), on a maximally-mined source, and messy to define; revisit if framed around national-security steering + built as a recipient-concentration panel. |
+| AI-written text in US political emails (Garimella analysis of dwillis archive + Pangram) | https://kirangarimella.substack.com/p/ai-written-text-in-us-political-emails | Confirms a real measurable AI nexus in the open political-email corpus (what 09-30 lacked), but it's an unreleased analysis (no AI-labeled dataset deposited), the archive alone is indirect-AI, and the author already published the finding; revisit if a labeled corpus is released. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -348,6 +350,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-15 (frontier 8): 1 added (null day) -->
 <!-- Rejected delta 2026-10-16 (frontier 9): 1 added (null day) -->
 <!-- Rejected delta 2026-10-19 (frontier 2): 1 added (null day) -->
+<!-- Rejected delta 2026-10-20 (frontier 3): 1 added (null day) -->
 
 ---
 
