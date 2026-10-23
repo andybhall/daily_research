@@ -181,6 +181,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-20 (frontier 3, AI-focus): 0 added (null day — persuasion-text AI corners logged; email-AI analysis unreleased; robocalls/ads no open corpus) -->
 <!-- Found delta 2026-10-21 (frontier 4, AI-focus): 0 added (null day — platform corners logged; robots.txt deposited version is famous 2024 DPI; AI-search citation audits overlap 08-21) -->
 <!-- Found delta 2026-10-22 (frontier 5, AI-focus): 0 added (null day — rich federal records logged; gov-AI-chatbot-logs FOIA corpus not yet released = strong watch; AI hearing witnesses build-it-yourself) -->
+<!-- Found delta 2026-10-23 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged; candidates are LLM-political-answer-monitoring variants or media products) -->
 
 ## Rejected
 
@@ -301,6 +302,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | AI-written text in US political emails (Garimella analysis of dwillis archive + Pangram) | https://kirangarimella.substack.com/p/ai-written-text-in-us-political-emails | Confirms a real measurable AI nexus in the open political-email corpus (what 09-30 lacked), but it's an unreleased analysis (no AI-labeled dataset deposited), the archive alone is indirect-AI, and the author already published the finding; revisit if a labeled corpus is released. |
 | News-vs-AI crawler / robots.txt access panel (DPI "Consent in Crisis"; Cloudflare; Common Crawl/IA) | https://www.dataprovenance.org/Consent_in_Crisis.pdf | Fresh, on-agenda (Information: news/AI data-access war), incidental, panel-able — but the clean deposited version is DPI's famous 2024 dataset (fails unclaimed, dated, IP-policy-framed); fresh 2026 reads are vendor/proprietary or build-from-raw; revisit if a fresh open politically-framed crawler-access panel is deposited (or build from Common Crawl/IA, news slice). |
 | **WATCH** — Government AI chatbot-logs corpus + cross-gov AI-use catalog (Stanford/USC/KNKX/NYT FOIA campaign) | https://www.muckrock.com/foi/united-states-of-america-10/ai-chatbot-interaction-logs-federal-communications-commission-208917/ | First-of-kind record of how the state actually uses AI (3,216 chat threads 2023-2026; deployments across 53 federal agencies/50 states/77 local govs) but NOT yet released — ongoing FOIA campaign, dispersed pending MuckRock requests. REVISIT on release (likely a clean Governance find then); track the "Stanford AI-Usage FOIA" MuckRock org. |
+| Time 16M-response AI election-answer database (12 models, since Jul 2024) | https://time.com/7334897/how-ai-is-reshaping-politics/ | Large longitudinal corpus but same object-type as the MIT LLM-election panel (09-07) + TrackingAI (08-24) — mode collapse; a newsroom product, not a hobbyist hoard. LLM-political-answer-monitoring genre now saturated in the ledger. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -357,6 +359,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-20 (frontier 3): 1 added (null day) -->
 <!-- Rejected delta 2026-10-21 (frontier 4): 1 added (null day) -->
 <!-- Rejected delta 2026-10-22 (frontier 5): 1 added (null day — + 1 strong WATCH: gov AI chatbot-logs FOIA corpus) -->
+<!-- Rejected delta 2026-10-23 (frontier 6): 1 added (null day — Time 16M election-answer DB = MIT-panel collision + media product) -->
 
 ---
 
