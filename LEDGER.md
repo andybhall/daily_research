@@ -182,6 +182,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-21 (frontier 4, AI-focus): 0 added (null day — platform corners logged; robots.txt deposited version is famous 2024 DPI; AI-search citation audits overlap 08-21) -->
 <!-- Found delta 2026-10-22 (frontier 5, AI-focus): 0 added (null day — rich federal records logged; gov-AI-chatbot-logs FOIA corpus not yet released = strong watch; AI hearing witnesses build-it-yourself) -->
 <!-- Found delta 2026-10-23 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged; candidates are LLM-political-answer-monitoring variants or media products) -->
+<!-- Found delta 2026-10-26 (frontier 9, AI-focus): 0 added (null day — frontier mined, 3rd consecutive F9 null; only refreshed resolutions / academic method / regulatory stories) -->
 
 ## Rejected
 
@@ -360,6 +361,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-21 (frontier 4): 1 added (null day) -->
 <!-- Rejected delta 2026-10-22 (frontier 5): 1 added (null day — + 1 strong WATCH: gov AI chatbot-logs FOIA corpus) -->
 <!-- Rejected delta 2026-10-23 (frontier 6): 1 added (null day — Time 16M election-answer DB = MIT-panel collision + media product) -->
+<!-- Rejected delta 2026-10-26 (frontier 9): 0 added (null day — nothing new beyond logged objects + regulatory stories) -->
 
 ---
 
