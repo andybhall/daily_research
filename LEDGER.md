@@ -123,6 +123,7 @@ arrival — do not surface it, do not re-litigate it.
 | Brazilian electoral deepfake jurisprudence corpus (Zenodo 22013413) — 129 coded TSE/TRE decisions, resolutions & laws on election deepfakes, 2023–2026 (47 judicial precedents; themes deepfake/free-speech/satire); non-US, Portuguese; CC-BY | https://zenodo.org/records/22013413 | governance | new |
 | AI/ML H-1B labor market (DOL OFLC LCA disclosure data) — AI-talent import as regulatory exhaust; FY2025 7,536 AI/ML filings (+168% since FY2020), $277K avg (+131% premium), concentrated Amazon/Apple/Microsoft + CA/WA; bulk .xlsx FY2008-2025 (employer×role×wage×worksite) | https://www.dol.gov/agencies/eta/foreign-labor/performance | governance | new |
 | Public comments on federal AI rulemakings (regulations.gov API) — open longitudinal panel of who contests U.S. AI governance; Copyright Office AI NOI (COLC-2023-0006) = 10,371 comments (verified live) vs NIST AI EO RFI 214 / OMB M-24-10 196; AI-generated mass comments now distorting the channel (GAO Jul 2026); docket×commenter×org×position×date | https://www.regulations.gov | governance | new |
+| Bangladesh AI political-misinformation fact-check register (Mendeley h864gr3dyt) — 122 coded verified fact-checks of AI-generated/edited election misinformation, Jan 2025–Feb 2026, from 5 Bengali fact-checkers (Rumor Scanner 110 / Dismislab 6 / FactWatch 4 / BOOM 1 / Ajker Patrika 1); coded by synthetic-media format × narrative frame × audit status; CC-BY; non-US counterpart to PDID/Brazil/Canada | https://data.mendeley.com/datasets/h864gr3dyt/1 | information | new |
 | AI & algorithmic-management clauses in CBAs (WageIndicator / UNI Europa / FES) — coded cross-national record of what labor bargains for on workplace AI; 3,600+ CBAs across 76 countries since 2011; clauses on data protection/monitoring/algorithmic mgmt/human oversight/training; 2024 survey (148 affiliates/32 countries) 20% have AI clauses, 42% negotiating; CESSDA-archived. Deposited intl. counterpart to the 08-26 US union-AI find | https://www.uni-europa.org/news/a-database-of-ai-and-algorithmic-management-in-collective-bargaining-agreements/ | representation | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
@@ -183,6 +184,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-22 (frontier 5, AI-focus): 0 added (null day — rich federal records logged; gov-AI-chatbot-logs FOIA corpus not yet released = strong watch; AI hearing witnesses build-it-yourself) -->
 <!-- Found delta 2026-10-23 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged; candidates are LLM-political-answer-monitoring variants or media products) -->
 <!-- Found delta 2026-10-26 (frontier 9, AI-focus): 0 added (null day — frontier mined, 3rd consecutive F9 null; only refreshed resolutions / academic method / regulatory stories) -->
+<!-- Found delta 2026-10-27 (frontier 10, AI-focus): 1 added (Bangladesh AI political-misinfo fact-check register — breaks 15-day null streak via a fresh non-US Mendeley deposit) -->
 
 ## Rejected
 
@@ -304,6 +306,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | News-vs-AI crawler / robots.txt access panel (DPI "Consent in Crisis"; Cloudflare; Common Crawl/IA) | https://www.dataprovenance.org/Consent_in_Crisis.pdf | Fresh, on-agenda (Information: news/AI data-access war), incidental, panel-able — but the clean deposited version is DPI's famous 2024 dataset (fails unclaimed, dated, IP-policy-framed); fresh 2026 reads are vendor/proprietary or build-from-raw; revisit if a fresh open politically-framed crawler-access panel is deposited (or build from Common Crawl/IA, news slice). |
 | **WATCH** — Government AI chatbot-logs corpus + cross-gov AI-use catalog (Stanford/USC/KNKX/NYT FOIA campaign) | https://www.muckrock.com/foi/united-states-of-america-10/ai-chatbot-interaction-logs-federal-communications-commission-208917/ | First-of-kind record of how the state actually uses AI (3,216 chat threads 2023-2026; deployments across 53 federal agencies/50 states/77 local govs) but NOT yet released — ongoing FOIA campaign, dispersed pending MuckRock requests. REVISIT on release (likely a clean Governance find then); track the "Stanford AI-Usage FOIA" MuckRock org. |
 | Time 16M-response AI election-answer database (12 models, since Jul 2024) | https://time.com/7334897/how-ai-is-reshaping-politics/ | Large longitudinal corpus but same object-type as the MIT LLM-election panel (09-07) + TrackingAI (08-24) — mode collapse; a newsroom product, not a hobbyist hoard. LLM-political-answer-monitoring genre now saturated in the ledger. |
+| RogueGPT / JudgeGPT / Expert-survey AI-disinfo datasets (Zenodo, Oct 2026) | https://alexloth.com/open-research-datasets-ai-disinformation-zenodo/ | Synthetic LLM-generated news-style stimuli + human judgments of synthetic stimuli + a 21-expert survey — constructed benchmarks, no real political/election content (recurring frontier-10 trap). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -362,6 +365,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-22 (frontier 5): 1 added (null day — + 1 strong WATCH: gov AI chatbot-logs FOIA corpus) -->
 <!-- Rejected delta 2026-10-23 (frontier 6): 1 added (null day — Time 16M election-answer DB = MIT-panel collision + media product) -->
 <!-- Rejected delta 2026-10-26 (frontier 9): 0 added (null day — nothing new beyond logged objects + regulatory stories) -->
+<!-- Rejected delta 2026-10-27 (frontier 10): 1 added (RogueGPT/JudgeGPT/Expert-survey synthetic AI-disinfo datasets — constructed, no real political content) -->
 
 ---
 
