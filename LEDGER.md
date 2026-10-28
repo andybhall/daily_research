@@ -185,6 +185,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-23 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged; candidates are LLM-political-answer-monitoring variants or media products) -->
 <!-- Found delta 2026-10-26 (frontier 9, AI-focus): 0 added (null day — frontier mined, 3rd consecutive F9 null; only refreshed resolutions / academic method / regulatory stories) -->
 <!-- Found delta 2026-10-27 (frontier 10, AI-focus): 1 added (Bangladesh AI political-misinfo fact-check register — breaks 15-day null streak via a fresh non-US Mendeley deposit) -->
+<!-- Found delta 2026-10-28 (frontier 1, AI-focus): 0 added (null day — frontier mined, 3rd F1 null; Charlotin AI Discovery DB thin/curator-adjacent → WATCH) -->
 
 ## Rejected
 
@@ -305,6 +306,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | AI-written text in US political emails (Garimella analysis of dwillis archive + Pangram) | https://kirangarimella.substack.com/p/ai-written-text-in-us-political-emails | Confirms a real measurable AI nexus in the open political-email corpus (what 09-30 lacked), but it's an unreleased analysis (no AI-labeled dataset deposited), the archive alone is indirect-AI, and the author already published the finding; revisit if a labeled corpus is released. |
 | News-vs-AI crawler / robots.txt access panel (DPI "Consent in Crisis"; Cloudflare; Common Crawl/IA) | https://www.dataprovenance.org/Consent_in_Crisis.pdf | Fresh, on-agenda (Information: news/AI data-access war), incidental, panel-able — but the clean deposited version is DPI's famous 2024 dataset (fails unclaimed, dated, IP-policy-framed); fresh 2026 reads are vendor/proprietary or build-from-raw; revisit if a fresh open politically-framed crawler-access panel is deposited (or build from Common Crawl/IA, news slice). |
 | **WATCH** — Government AI chatbot-logs corpus + cross-gov AI-use catalog (Stanford/USC/KNKX/NYT FOIA campaign) | https://www.muckrock.com/foi/united-states-of-america-10/ai-chatbot-interaction-logs-federal-communications-commission-208917/ | First-of-kind record of how the state actually uses AI (3,216 chat threads 2023-2026; deployments across 53 federal agencies/50 states/77 local govs) but NOT yet released — ongoing FOIA campaign, dispersed pending MuckRock requests. REVISIT on release (likely a clean Governance find then); track the "Stanford AI-Usage FOIA" MuckRock org. |
+| **WATCH** — Charlotin AI Discovery database (discoverability rulings on AI prompts/outputs) | https://www.damiencharlotin.com/ai-discovery/ | Fresh, open (CSV), on-agenda (how courts treat AI evidence) but only 15 decisions + same-curator companion to the logged Hallucination Cases DB (08-19) + adjacent to 09-28 AI-evidence screen (~16/25); REVISIT if it grows into a substantial panel. |
 | Time 16M-response AI election-answer database (12 models, since Jul 2024) | https://time.com/7334897/how-ai-is-reshaping-politics/ | Large longitudinal corpus but same object-type as the MIT LLM-election panel (09-07) + TrackingAI (08-24) — mode collapse; a newsroom product, not a hobbyist hoard. LLM-political-answer-monitoring genre now saturated in the ledger. |
 | RogueGPT / JudgeGPT / Expert-survey AI-disinfo datasets (Zenodo, Oct 2026) | https://alexloth.com/open-research-datasets-ai-disinformation-zenodo/ | Synthetic LLM-generated news-style stimuli + human judgments of synthetic stimuli + a 21-expert survey — constructed benchmarks, no real political/election content (recurring frontier-10 trap). |
 
@@ -366,6 +368,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-23 (frontier 6): 1 added (null day — Time 16M election-answer DB = MIT-panel collision + media product) -->
 <!-- Rejected delta 2026-10-26 (frontier 9): 0 added (null day — nothing new beyond logged objects + regulatory stories) -->
 <!-- Rejected delta 2026-10-27 (frontier 10): 1 added (RogueGPT/JudgeGPT/Expert-survey synthetic AI-disinfo datasets — constructed, no real political content) -->
+<!-- Rejected delta 2026-10-28 (frontier 1): 1 added WATCH (Charlotin AI Discovery DB — thin 15-decision companion to logged Hallucination DB) -->
 
 ---
 
