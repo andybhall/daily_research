@@ -187,6 +187,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-27 (frontier 10, AI-focus): 1 added (Bangladesh AI political-misinfo fact-check register — breaks 15-day null streak via a fresh non-US Mendeley deposit) -->
 <!-- Found delta 2026-10-28 (frontier 1, AI-focus): 0 added (null day — frontier mined, 3rd F1 null; Charlotin AI Discovery DB thin/curator-adjacent → WATCH) -->
 <!-- Found delta 2026-10-29 (frontier 2, AI-focus): 0 added (null day — money trails comprehensively mined, 4th F2 null; 990s delayed/Open-Phil-adjacent, rest commercial/vendor) -->
+<!-- Found delta 2026-10-30 (frontier 3, AI-focus): 0 added (null day — persuasion-text corners logged/un-releasable, 4th F3 null; Pew data-center-ads off-frontier; WMP aggregates) -->
 
 ## Rejected
 
@@ -371,6 +372,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-27 (frontier 10): 1 added (RogueGPT/JudgeGPT/Expert-survey synthetic AI-disinfo datasets — constructed, no real political content) -->
 <!-- Rejected delta 2026-10-28 (frontier 1): 1 added WATCH (Charlotin AI Discovery DB — thin 15-decision companion to logged Hallucination DB) -->
 <!-- Rejected delta 2026-10-29 (frontier 2): 0 added (null day — nothing new beyond logged money objects + commercial/vendor repackaging) -->
+<!-- Rejected delta 2026-10-30 (frontier 3): 0 added (null day — Pew data-center-ads off-frontier; WMP aggregates; rest logged/withheld) -->
 
 ---
 
