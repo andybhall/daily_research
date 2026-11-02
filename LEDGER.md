@@ -188,6 +188,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-28 (frontier 1, AI-focus): 0 added (null day — frontier mined, 3rd F1 null; Charlotin AI Discovery DB thin/curator-adjacent → WATCH) -->
 <!-- Found delta 2026-10-29 (frontier 2, AI-focus): 0 added (null day — money trails comprehensively mined, 4th F2 null; 990s delayed/Open-Phil-adjacent, rest commercial/vendor) -->
 <!-- Found delta 2026-10-30 (frontier 3, AI-focus): 0 added (null day — persuasion-text corners logged/un-releasable, 4th F3 null; Pew data-center-ads off-frontier; WMP aggregates) -->
+<!-- Found delta 2026-11-02 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged, 3rd F6 null; midterm trackers all commercial/academic/logged, not collector hoards) -->
 
 ## Rejected
 
@@ -373,6 +374,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-28 (frontier 1): 1 added WATCH (Charlotin AI Discovery DB — thin 15-decision companion to logged Hallucination DB) -->
 <!-- Rejected delta 2026-10-29 (frontier 2): 0 added (null day — nothing new beyond logged money objects + commercial/vendor repackaging) -->
 <!-- Rejected delta 2026-10-30 (frontier 3): 0 added (null day — Pew data-center-ads off-frontier; WMP aggregates; rest logged/withheld) -->
+<!-- Rejected delta 2026-11-02 (frontier 6): 0 added (null day — Resemble/NewsGuard commercial, MIT dashboard logged 09-07, Chang Instagram set unreleased) -->
 
 ---
 
