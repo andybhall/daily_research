@@ -190,6 +190,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-10-30 (frontier 3, AI-focus): 0 added (null day — persuasion-text corners logged/un-releasable, 4th F3 null; Pew data-center-ads off-frontier; WMP aggregates) -->
 <!-- Found delta 2026-11-02 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged, 3rd F6 null; midterm trackers all commercial/academic/logged, not collector hoards) -->
 <!-- Found delta 2026-11-03 (frontier 7, AI-focus): 0 added (null day — non-US election deepfakes nothing fresh; EU AI Office enforcement/incident register not public yet = WATCH) -->
+<!-- Found delta 2026-11-04 (frontier 8, AI-focus): 0 added (null day — on-agenda AI-labor objects logged; federal-workforce AI not AI-attributable; workplace-AI disclosure registries not public yet = WATCH) -->
 
 ## Rejected
 
@@ -312,6 +313,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | **WATCH** — Government AI chatbot-logs corpus + cross-gov AI-use catalog (Stanford/USC/KNKX/NYT FOIA campaign) | https://www.muckrock.com/foi/united-states-of-america-10/ai-chatbot-interaction-logs-federal-communications-commission-208917/ | First-of-kind record of how the state actually uses AI (3,216 chat threads 2023-2026; deployments across 53 federal agencies/50 states/77 local govs) but NOT yet released — ongoing FOIA campaign, dispersed pending MuckRock requests. REVISIT on release (likely a clean Governance find then); track the "Stanford AI-Usage FOIA" MuckRock org. |
 | **WATCH** — Charlotin AI Discovery database (discoverability rulings on AI prompts/outputs) | https://www.damiencharlotin.com/ai-discovery/ | Fresh, open (CSV), on-agenda (how courts treat AI evidence) but only 15 decisions + same-curator companion to the logged Hallucination Cases DB (08-19) + adjacent to 09-28 AI-evidence screen (~16/25); REVISIT if it grows into a substantial panel. |
 | **WATCH** — EU AI Office enforcement + Article-73 serious-incident reporting | https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act | AI Act enforcement opened 2 Aug 2026; Office already receiving serious-incident reports + sending RFIs, but NO public enforcement/incident register yet (only commercial trackers, conflicting figures). REVISIT when a register/incident DB is published — likely a clean Governance find (AI incident reporting). |
+| **WATCH** — Workplace-AI disclosure registries (Uruguay Law 20.396/2025; CA AB 1898; Canada registry proposal) | https://policyoptions.irpp.org/2026/06/workplace-ai-registry/ | Laws/proposals mandating disclosure of workplace algorithmic-management systems — would yield an on-agenda register, but no public registry data released yet. REVISIT when one publishes (esp. Uruguay, already in force). |
 | Time 16M-response AI election-answer database (12 models, since Jul 2024) | https://time.com/7334897/how-ai-is-reshaping-politics/ | Large longitudinal corpus but same object-type as the MIT LLM-election panel (09-07) + TrackingAI (08-24) — mode collapse; a newsroom product, not a hobbyist hoard. LLM-political-answer-monitoring genre now saturated in the ledger. |
 | RogueGPT / JudgeGPT / Expert-survey AI-disinfo datasets (Zenodo, Oct 2026) | https://alexloth.com/open-research-datasets-ai-disinformation-zenodo/ | Synthetic LLM-generated news-style stimuli + human judgments of synthetic stimuli + a 21-expert survey — constructed benchmarks, no real political/election content (recurring frontier-10 trap). |
 
@@ -378,6 +380,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-10-30 (frontier 3): 0 added (null day — Pew data-center-ads off-frontier; WMP aggregates; rest logged/withheld) -->
 <!-- Rejected delta 2026-11-02 (frontier 6): 0 added (null day — Resemble/NewsGuard commercial, MIT dashboard logged 09-07, Chang Instagram set unreleased) -->
 <!-- Rejected delta 2026-11-03 (frontier 7): 1 added WATCH (EU AI Office enforcement + Art-73 serious-incident reports — not a public register yet) -->
+<!-- Rejected delta 2026-11-04 (frontier 8): 1 added WATCH (workplace-AI disclosure registries — Uruguay Law 20.396 / CA AB 1898 / Canada proposal — no public registry data yet) -->
 
 ---
 
