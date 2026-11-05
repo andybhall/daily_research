@@ -191,6 +191,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-02 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged, 3rd F6 null; midterm trackers all commercial/academic/logged, not collector hoards) -->
 <!-- Found delta 2026-11-03 (frontier 7, AI-focus): 0 added (null day — non-US election deepfakes nothing fresh; EU AI Office enforcement/incident register not public yet = WATCH) -->
 <!-- Found delta 2026-11-04 (frontier 8, AI-focus): 0 added (null day — on-agenda AI-labor objects logged; federal-workforce AI not AI-attributable; workplace-AI disclosure registries not public yet = WATCH) -->
+<!-- Found delta 2026-11-05 (frontier 9, AI-focus): 0 added (null day — frontier mined, 4th F9 null; post-election prediction markets not-AI, AI-governance-market items commercial forecasts) -->
 
 ## Rejected
 
@@ -381,6 +382,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-02 (frontier 6): 0 added (null day — Resemble/NewsGuard commercial, MIT dashboard logged 09-07, Chang Instagram set unreleased) -->
 <!-- Rejected delta 2026-11-03 (frontier 7): 1 added WATCH (EU AI Office enforcement + Art-73 serious-incident reports — not a public register yet) -->
 <!-- Rejected delta 2026-11-04 (frontier 8): 1 added WATCH (workplace-AI disclosure registries — Uruguay Law 20.396 / CA AB 1898 / Canada proposal — no public registry data yet) -->
+<!-- Rejected delta 2026-11-05 (frontier 9): 0 added (null day — post-election prediction markets not-AI + no open release; AI-governance-market items commercial forecasts) -->
 
 ---
 
