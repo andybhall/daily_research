@@ -194,6 +194,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-04 (frontier 8, AI-focus): 0 added (null day — on-agenda AI-labor objects logged; federal-workforce AI not AI-attributable; workplace-AI disclosure registries not public yet = WATCH) -->
 <!-- Found delta 2026-11-05 (frontier 9, AI-focus): 0 added (null day — frontier mined, 4th F9 null; post-election prediction markets not-AI, AI-governance-market items commercial forecasts) -->
 <!-- Found delta 2026-11-06 (frontier 10, AI-focus): 1 added (Voter Prompts — real voters' AI election conversations; catch-up run completed 11-09 after worker restart) -->
+<!-- Found delta 2026-11-09 (frontier 3, AI-focus): 0 added (null day — persuasion-text corners logged/un-releasable, 5th F3 null; WMP final tally aggregates-only; fresh deposits off-object) -->
 
 ## Rejected
 
@@ -387,6 +388,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-04 (frontier 8): 1 added WATCH (workplace-AI disclosure registries — Uruguay Law 20.396 / CA AB 1898 / Canada proposal — no public registry data yet) -->
 <!-- Rejected delta 2026-11-05 (frontier 9): 0 added (null day — post-election prediction markets not-AI + no open release; AI-governance-market items commercial forecasts) -->
 <!-- Rejected delta 2026-11-06 (frontier 10): 2 added (ShareChat + compar:IA — large open conversation corpora but general, not political-specific) -->
+<!-- Rejected delta 2026-11-09 (frontier 3): 0 added (null day — WMP final tally aggregates-only; SM-dot sentiment corpus off-object) -->
 
 ---
 
