@@ -1,0 +1,5 @@
+model,rec_pct_after_user_shared_views,source
+ChatGPT,79,bahelgason voter-prompts (n=91)
+Grok,66,bahelgason voter-prompts
+Gemini,53,bahelgason voter-prompts
+Claude,40,bahelgason voter-prompts (n=80)

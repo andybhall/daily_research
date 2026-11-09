@@ -124,6 +124,7 @@ arrival — do not surface it, do not re-litigate it.
 | AI/ML H-1B labor market (DOL OFLC LCA disclosure data) — AI-talent import as regulatory exhaust; FY2025 7,536 AI/ML filings (+168% since FY2020), $277K avg (+131% premium), concentrated Amazon/Apple/Microsoft + CA/WA; bulk .xlsx FY2008-2025 (employer×role×wage×worksite) | https://www.dol.gov/agencies/eta/foreign-labor/performance | governance | new |
 | Public comments on federal AI rulemakings (regulations.gov API) — open longitudinal panel of who contests U.S. AI governance; Copyright Office AI NOI (COLC-2023-0006) = 10,371 comments (verified live) vs NIST AI EO RFI 214 / OMB M-24-10 196; AI-generated mass comments now distorting the channel (GAO Jul 2026); docket×commenter×org×position×date | https://www.regulations.gov | governance | new |
 | Bangladesh AI political-misinformation fact-check register (Mendeley h864gr3dyt) — 122 coded verified fact-checks of AI-generated/edited election misinformation, Jan 2025–Feb 2026, from 5 Bengali fact-checkers (Rumor Scanner 110 / Dismislab 6 / FactWatch 4 / BOOM 1 / Ajker Patrika 1); coded by synthetic-media format × narrative frame × audit status; CC-BY; non-US counterpart to PDID/Brazil/Canada | https://data.mendeley.com/datasets/h864gr3dyt/1 | information | new |
+| Voter Prompts — real voters' AI conversations about the 2026 midterms (Helgason/Linker/Gurudevan, Yale SOM; HF bahelgason/voter-prompts) — ~2,268 coded chats from 2,430 voters in 35 Senate-race states who used ChatGPT/Claude/Gemini/Grok inside a survey to decide their vote (Oct 2026, preregistered); demand side of AI-in-elections; candidate-rec rates diverge by model (post-disclosure ChatGPT 79/Grok 66/Gemini 53/Claude 40); released 3 Nov 2026 | https://www.bahelgason.com/voter-prompts/ | representation | new |
 | AI & algorithmic-management clauses in CBAs (WageIndicator / UNI Europa / FES) — coded cross-national record of what labor bargains for on workplace AI; 3,600+ CBAs across 76 countries since 2011; clauses on data protection/monitoring/algorithmic mgmt/human oversight/training; 2024 survey (148 affiliates/32 countries) 20% have AI clauses, 42% negotiating; CESSDA-archived. Deposited intl. counterpart to the 08-26 US union-AI find | https://www.uni-europa.org/news/a-database-of-ai-and-algorithmic-management-in-collective-bargaining-agreements/ | representation | new |
 
 <!-- Found delta 2026-08-08 (frontier 10): 4 added (sandboxed pass) + 2 added (open-egress re-run) -->
@@ -192,6 +193,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-03 (frontier 7, AI-focus): 0 added (null day — non-US election deepfakes nothing fresh; EU AI Office enforcement/incident register not public yet = WATCH) -->
 <!-- Found delta 2026-11-04 (frontier 8, AI-focus): 0 added (null day — on-agenda AI-labor objects logged; federal-workforce AI not AI-attributable; workplace-AI disclosure registries not public yet = WATCH) -->
 <!-- Found delta 2026-11-05 (frontier 9, AI-focus): 0 added (null day — frontier mined, 4th F9 null; post-election prediction markets not-AI, AI-governance-market items commercial forecasts) -->
+<!-- Found delta 2026-11-06 (frontier 10, AI-focus): 1 added (Voter Prompts — real voters' AI election conversations; catch-up run completed 11-09 after worker restart) -->
 
 ## Rejected
 
@@ -316,6 +318,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | **WATCH** — EU AI Office enforcement + Article-73 serious-incident reporting | https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act | AI Act enforcement opened 2 Aug 2026; Office already receiving serious-incident reports + sending RFIs, but NO public enforcement/incident register yet (only commercial trackers, conflicting figures). REVISIT when a register/incident DB is published — likely a clean Governance find (AI incident reporting). |
 | **WATCH** — Workplace-AI disclosure registries (Uruguay Law 20.396/2025; CA AB 1898; Canada registry proposal) | https://policyoptions.irpp.org/2026/06/workplace-ai-registry/ | Laws/proposals mandating disclosure of workplace algorithmic-management systems — would yield an on-agenda register, but no public registry data released yet. REVISIT when one publishes (esp. Uruguay, already in force). |
 | Time 16M-response AI election-answer database (12 models, since Jul 2024) | https://time.com/7334897/how-ai-is-reshaping-politics/ | Large longitudinal corpus but same object-type as the MIT LLM-election panel (09-07) + TrackingAI (08-24) — mode collapse; a newsroom product, not a hobbyist hoard. LLM-political-answer-monitoring genre now saturated in the ledger. |
+| ShareChat (142,808 in-the-wild chatbot conversations) + compar:IA (675k French gov chatbot-arena pairs, CC-BY) | https://huggingface.co/datasets/tucnguyen/ShareChat | Large open real-user conversation corpora but general, not political-specific (weak intrinsic political nexus); revisit for a built political slice. |
 | RogueGPT / JudgeGPT / Expert-survey AI-disinfo datasets (Zenodo, Oct 2026) | https://alexloth.com/open-research-datasets-ai-disinformation-zenodo/ | Synthetic LLM-generated news-style stimuli + human judgments of synthetic stimuli + a 21-expert survey — constructed benchmarks, no real political/election content (recurring frontier-10 trap). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
@@ -383,6 +386,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-03 (frontier 7): 1 added WATCH (EU AI Office enforcement + Art-73 serious-incident reports — not a public register yet) -->
 <!-- Rejected delta 2026-11-04 (frontier 8): 1 added WATCH (workplace-AI disclosure registries — Uruguay Law 20.396 / CA AB 1898 / Canada proposal — no public registry data yet) -->
 <!-- Rejected delta 2026-11-05 (frontier 9): 0 added (null day — post-election prediction markets not-AI + no open release; AI-governance-market items commercial forecasts) -->
+<!-- Rejected delta 2026-11-06 (frontier 10): 2 added (ShareChat + compar:IA — large open conversation corpora but general, not political-specific) -->
 
 ---
 
