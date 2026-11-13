@@ -198,6 +198,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-10 (frontier 4, AI-focus): 0 added (null day — platform corners logged, 4th F4 null; LLM-release metadata off-agenda; AI election-policy diffs un-deposited/adjacent to AUP+Watchtower) -->
 <!-- Found delta 2026-11-11 (frontier 5, AI-focus): 0 added (null day — gov-AI-chatbot-logs FOIA corpus still not released = watch; Prophecy Gov comments no AI nexus) -->
 <!-- Found delta 2026-11-12 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged, 5th F6 null; clhforensics is a personal AI-essay archive, rest vendor/academic/logged-jailbreak) -->
+<!-- Found delta 2026-11-13 (frontier 7, AI-focus): 0 added (null day — EU AI Office enforcement/incident register still not public [watch unchanged]; national registers logged/absent/meta) -->
 
 ## Rejected
 
@@ -395,6 +396,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-10 (frontier 4): 0 added (null day — LLM-release metadata off-agenda; AI election-policy diffs un-deposited, adjacent to AUP/Watchtower) -->
 <!-- Rejected delta 2026-11-11 (frontier 5): 0 added (null day — gov-AI-chatbot-logs FOIA corpus still pending [watch unchanged]; Prophecy Gov comments no AI nexus) -->
 <!-- Rejected delta 2026-11-12 (frontier 6): 0 added (null day — clhforensics personal AI-essay archive not a dataset; gemmozero vendor; Mendeley Indonesia academic) -->
+<!-- Rejected delta 2026-11-13 (frontier 7): 0 added (null day — EU AI Office enforcement/incident register still pending [watch unchanged]; national registers logged/absent/meta) -->
 
 ---
 
