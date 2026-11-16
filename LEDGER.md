@@ -199,6 +199,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-11 (frontier 5, AI-focus): 0 added (null day — gov-AI-chatbot-logs FOIA corpus still not released = watch; Prophecy Gov comments no AI nexus) -->
 <!-- Found delta 2026-11-12 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged, 5th F6 null; clhforensics is a personal AI-essay archive, rest vendor/academic/logged-jailbreak) -->
 <!-- Found delta 2026-11-13 (frontier 7, AI-focus): 0 added (null day — EU AI Office enforcement/incident register still not public [watch unchanged]; national registers logged/absent/meta) -->
+<!-- Found delta 2026-11-16 (frontier 10, AI-focus): 0 added (null day — fresh deposits are constructed audits/ongoing studies; Zenodo Spain/LatAm chatbot audit = claimed replication data, genre logged 08-21) -->
 
 ## Rejected
 
@@ -397,6 +398,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-11 (frontier 5): 0 added (null day — gov-AI-chatbot-logs FOIA corpus still pending [watch unchanged]; Prophecy Gov comments no AI nexus) -->
 <!-- Rejected delta 2026-11-12 (frontier 6): 0 added (null day — clhforensics personal AI-essay archive not a dataset; gemmozero vendor; Mendeley Indonesia academic) -->
 <!-- Rejected delta 2026-11-13 (frontier 7): 0 added (null day — EU AI Office enforcement/incident register still pending [watch unchanged]; national registers logged/absent/meta) -->
+<!-- Rejected delta 2026-11-16 (frontier 10): 1 added (Zenodo 23666063 Spain/LatAm chatbot disinfo-correction audit — constructed/claimed replication data, genre logged 08-21) -->
 
 ---
 
