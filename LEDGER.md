@@ -200,6 +200,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-12 (frontier 6, AI-focus): 0 added (null day — hobbyist AI hoards logged, 5th F6 null; clhforensics is a personal AI-essay archive, rest vendor/academic/logged-jailbreak) -->
 <!-- Found delta 2026-11-13 (frontier 7, AI-focus): 0 added (null day — EU AI Office enforcement/incident register still not public [watch unchanged]; national registers logged/absent/meta) -->
 <!-- Found delta 2026-11-16 (frontier 10, AI-focus): 0 added (null day — fresh deposits are constructed audits/ongoing studies; Zenodo Spain/LatAm chatbot audit = claimed replication data, genre logged 08-21) -->
+<!-- Found delta 2026-11-17 (frontier 1, AI-focus): 0 added (null day — 4th F1 null; hallucination DB now 2,262 decisions is a refresh of the 08-19 find; rest commercial/claimed) -->
 
 ## Rejected
 
@@ -399,6 +400,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-12 (frontier 6): 0 added (null day — clhforensics personal AI-essay archive not a dataset; gemmozero vendor; Mendeley Indonesia academic) -->
 <!-- Rejected delta 2026-11-13 (frontier 7): 0 added (null day — EU AI Office enforcement/incident register still pending [watch unchanged]; national registers logged/absent/meta) -->
 <!-- Rejected delta 2026-11-16 (frontier 10): 1 added (Zenodo 23666063 Spain/LatAm chatbot disinfo-correction audit — constructed/claimed replication data, genre logged 08-21) -->
+<!-- Rejected delta 2026-11-17 (frontier 1): 0 added (null day — hallucination DB [2,262] a refresh of 08-19 find; AI Discovery DB watch unchanged; rest commercial/claimed) -->
 
 ---
 
