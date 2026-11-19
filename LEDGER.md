@@ -203,6 +203,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-16 (frontier 10, AI-focus): 0 added (null day — fresh deposits are constructed audits/ongoing studies; Zenodo Spain/LatAm chatbot audit = claimed replication data, genre logged 08-21) -->
 <!-- Found delta 2026-11-17 (frontier 1, AI-focus): 0 added (null day — 4th F1 null; hallucination DB now 2,262 decisions is a refresh of the 08-19 find; rest commercial/claimed) -->
 <!-- Found delta 2026-11-18 (frontier 2, AI-focus): 1 added (World Bank AI Procurement Contracts — global open AI-procurement panel, 17,685 contracts; breaks 4-visit F2 null streak; probed live) -->
+<!-- Found delta 2026-11-19 (frontier 3, AI-focus): 0 added (null day — 6th consecutive F3 null; persuasion-text AI corners saturated; WMP ad tracker aggregates-only, AI campaign-texting private, rest constructed/withheld) -->
 
 ## Rejected
 
@@ -409,6 +410,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-16 (frontier 10): 1 added (Zenodo 23666063 Spain/LatAm chatbot disinfo-correction audit — constructed/claimed replication data, genre logged 08-21) -->
 <!-- Rejected delta 2026-11-17 (frontier 1): 0 added (null day — hallucination DB [2,262] a refresh of 08-19 find; AI Discovery DB watch unchanged; rest commercial/claimed) -->
 <!-- Rejected delta 2026-11-18 (frontier 2): 5 added (FEC campaign-AI-payments claimed/mined; SBIR AI awards unlabeled/mined/research-funding; UK Contracts Finder commercial trackers; data-center ballot finance indirect/curated; Section 117 no AI slice) -->
+<!-- Rejected delta 2026-11-19 (frontier 3): 0 added (null day — all candidates collide with logged Found [Levers, human-AI convos] or Reject [WMP ad tracker, AI-SMS bots, Nature 2025 dialogues, LLM-persuasion lab cluster]) -->
 
 ---
 
