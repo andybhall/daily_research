@@ -204,6 +204,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-17 (frontier 1, AI-focus): 0 added (null day — 4th F1 null; hallucination DB now 2,262 decisions is a refresh of the 08-19 find; rest commercial/claimed) -->
 <!-- Found delta 2026-11-18 (frontier 2, AI-focus): 1 added (World Bank AI Procurement Contracts — global open AI-procurement panel, 17,685 contracts; breaks 4-visit F2 null streak; probed live) -->
 <!-- Found delta 2026-11-19 (frontier 3, AI-focus): 0 added (null day — 6th consecutive F3 null; persuasion-text AI corners saturated; WMP ad tracker aggregates-only, AI campaign-texting private, rest constructed/withheld) -->
+<!-- Found delta 2026-11-20 (frontier 4, AI-focus): 0 added (null day — 5th consecutive F4 null; on-agenda platform objects logged; fresh material is off-agenda security scrapes, marketplace snapshots, and election-policy trackers duplicating AUP-diff finds) -->
 
 ## Rejected
 
@@ -335,6 +336,9 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | UK Contracts Finder AI spend (Tussell / Resultsense / BidSkim trackers; Palantir ~30% of value) | https://www.tussell.com/insights/ai-procurement-tracker | On-agenda but figures live behind commercial trackers; no open AI-labeled register — UK tenders already flow into the WB AI-procurement find (0067129) via TED. |
 | Data-center ballot-measure finance, 2026 (Ballotpedia, 38–41 local measures / 8–10 states) | https://ballotpedia.org/Data_center-related_ballot_measures,_2026 | Genuine 2026 money story but indirect AI nexus (land-use/zoning), finance data scattered, and the measure list is a curated Ballotpedia tracker, not incidental exhaust. |
 | Section 117 foreign gifts/contracts to universities (ED portal) | https://www.case.org/resources/foreign-gift-reporting | Aggregate-only reporting, no AI-labeled slice, weak intrinsic AI nexus (AI only via a few PRC-funding investigations). |
+| Ollama model-library pull-count exhaust (~239 models, ~1.04B pulls) | https://devtoolhub.com/ollama-model-library-by-the-numbers/ | Point-in-time snapshots + scraper tools only, no deposited longitudinal panel; weak political nexus (model popularity); HF-metadata-adjacent (08-12). |
+| Chrome AI-extension security datasets (Incogni 442; arXiv 2512.10029, 5,551 extensions) | https://arxiv.org/pdf/2512.10029 | Privacy/malware security objects with no political-information nexus (rule 6); claimed by their own studies. |
+| Pitt Cyber Social Media Election Policy Tracker | https://apps.cyber.pitt.edu/social-media-election-policies/timeline?embed=true | Curated, web-only version timeline of social-media (not AI-specific) election policies; overlaps the logged AI-provider AUP change-tracking (09-01) + Midas Watchtower reject — not fresh incidental exhaust. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -411,6 +415,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-17 (frontier 1): 0 added (null day — hallucination DB [2,262] a refresh of 08-19 find; AI Discovery DB watch unchanged; rest commercial/claimed) -->
 <!-- Rejected delta 2026-11-18 (frontier 2): 5 added (FEC campaign-AI-payments claimed/mined; SBIR AI awards unlabeled/mined/research-funding; UK Contracts Finder commercial trackers; data-center ballot finance indirect/curated; Section 117 no AI slice) -->
 <!-- Rejected delta 2026-11-19 (frontier 3): 0 added (null day — all candidates collide with logged Found [Levers, human-AI convos] or Reject [WMP ad tracker, AI-SMS bots, Nature 2025 dialogues, LLM-persuasion lab cluster]) -->
+<!-- Rejected delta 2026-11-20 (frontier 4): 3 added (Ollama pull-count exhaust no-deposit/HF-adjacent; Chrome AI-extension security datasets off-agenda/claimed; Pitt Cyber election-policy tracker curated/web-only/overlaps AUP+Watchtower) -->
 
 ---
 
