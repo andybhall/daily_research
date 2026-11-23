@@ -205,6 +205,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-18 (frontier 2, AI-focus): 1 added (World Bank AI Procurement Contracts — global open AI-procurement panel, 17,685 contracts; breaks 4-visit F2 null streak; probed live) -->
 <!-- Found delta 2026-11-19 (frontier 3, AI-focus): 0 added (null day — 6th consecutive F3 null; persuasion-text AI corners saturated; WMP ad tracker aggregates-only, AI campaign-texting private, rest constructed/withheld) -->
 <!-- Found delta 2026-11-20 (frontier 4, AI-focus): 0 added (null day — 5th consecutive F4 null; on-agenda platform objects logged; fresh material is off-agenda security scrapes, marketplace snapshots, and election-policy trackers duplicating AUP-diff finds) -->
+<!-- Found delta 2026-11-23 (frontier 7, AI-focus): 0 added (null day — 4th consecutive F7 null; EU AI Office incident register still not public [watch unchanged]; UK Full Fact register duplicates Bangladesh genre; Digital Policy Alert overlaps OECD.AI; China deep-synthesis a refresh of logged CAC) -->
 
 ## Rejected
 
@@ -339,6 +340,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Ollama model-library pull-count exhaust (~239 models, ~1.04B pulls) | https://devtoolhub.com/ollama-model-library-by-the-numbers/ | Point-in-time snapshots + scraper tools only, no deposited longitudinal panel; weak political nexus (model popularity); HF-metadata-adjacent (08-12). |
 | Chrome AI-extension security datasets (Incogni 442; arXiv 2512.10029, 5,551 extensions) | https://arxiv.org/pdf/2512.10029 | Privacy/malware security objects with no political-information nexus (rule 6); claimed by their own studies. |
 | Pitt Cyber Social Media Election Policy Tracker | https://apps.cyber.pitt.edu/social-media-election-policies/timeline?embed=true | Curated, web-only version timeline of social-media (not AI-specific) election policies; overlaps the logged AI-provider AUP change-tracking (09-01) + Midas Watchtower reject — not fresh incidental exhaust. |
+| Full Fact / University of Westminster UK AI-generated-misinformation register (112 items, 2025–2026) | https://fullfact.org/policy/reports/ai-generated-misinformation-in-the-uk-harm-context-and-classification/ | Coded AI-misinformation fact-check register genre already logged (Bangladesh, 10-27); small/cross-sectional, assembled for + claimed by Full Fact's own report, and the page states no download link/repository/license for the underlying items (access unverified). |
+| Digital Policy Alert — global digital-policy change & enforcement-event tracker (~5,600 events, AI a policy area; REST API + download) | https://digitalpolicyalert.org/ai-governance | Curated cross-jurisdiction regulatory-event tracker (assembled to be studied), strongly overlaps the logged OECD.AI national-policy database (09-04) + rejected commercial AI-law trackers — not incidental exhaust. |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -416,6 +419,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-18 (frontier 2): 5 added (FEC campaign-AI-payments claimed/mined; SBIR AI awards unlabeled/mined/research-funding; UK Contracts Finder commercial trackers; data-center ballot finance indirect/curated; Section 117 no AI slice) -->
 <!-- Rejected delta 2026-11-19 (frontier 3): 0 added (null day — all candidates collide with logged Found [Levers, human-AI convos] or Reject [WMP ad tracker, AI-SMS bots, Nature 2025 dialogues, LLM-persuasion lab cluster]) -->
 <!-- Rejected delta 2026-11-20 (frontier 4): 3 added (Ollama pull-count exhaust no-deposit/HF-adjacent; Chrome AI-extension security datasets off-agenda/claimed; Pitt Cyber election-policy tracker curated/web-only/overlaps AUP+Watchtower) -->
+<!-- Rejected delta 2026-11-23 (frontier 7): 2 added (Full Fact/Westminster UK AI-misinfo register — coded-register genre logged/small/claimed/no-open-deposit; Digital Policy Alert — curated reg-event tracker overlapping OECD.AI). EU AI Office register watch unchanged; China deep-synthesis = refresh of logged CAC -->
 
 ---
 
