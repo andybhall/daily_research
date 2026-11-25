@@ -207,6 +207,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-20 (frontier 4, AI-focus): 0 added (null day — 5th consecutive F4 null; on-agenda platform objects logged; fresh material is off-agenda security scrapes, marketplace snapshots, and election-policy trackers duplicating AUP-diff finds) -->
 <!-- Found delta 2026-11-23 (frontier 7, AI-focus): 0 added (null day — 4th consecutive F7 null; EU AI Office incident register still not public [watch unchanged]; UK Full Fact register duplicates Bangladesh genre; Digital Policy Alert overlaps OECD.AI; China deep-synthesis a refresh of logged CAC) -->
 <!-- Found delta 2026-11-24 (frontier 8, AI-focus): 0 added (null day — 3rd consecutive F8 null; workplace-AI disclosure registries still publish no data [watch unchanged]; Cornell strike tracker has no AI-demand code; EEOC no open AI-charge dataset; worker AI-sentiment proprietary Glassdoor analysis) -->
+<!-- Found delta 2026-11-25 (frontier 9, AI-focus): 0 added (null day — 5th consecutive F9 null; AI markets/governance objects logged; AI-washing SCAs already built by consultancies/overlap DAIL; AI-agent DAO voting still no open dataset; 14a-8 process closed) -->
 
 ## Rejected
 
@@ -346,6 +347,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Cornell ILR-LER Labor Action Tracker (AI/automation strikes subset) | https://striketracker.ilr.cornell.edu/methodology.html | Genuine work-stoppage panel but no AI/automation demand code in its coding — AI nexus is build-it-yourself keyword work; adjacent to the logged union-AI finds (08-26). |
 | EEOC AI hiring-discrimination charges (algorithmic employment decisions) | https://thedailyrecord.com/2025/10/01/eeoc-disparate-impact-ai-discrimination/ | No public charge-level dataset; federal disparate-impact enforcement retreating (Sept 2025 memo closed those charges; 2022/2023 AI guidance withdrawn); live action is Mobley v. Workday, already in the logged DAIL AI-litigation tracker (09-08). |
 | Worker AI-sentiment review corpora (Glassdoor economic research; Blind surveys) | https://the-decoder.com/ai-sentiment-is-turning-sour-as-employee-reviews-reveal-growing-frustration-across-the-workforce/ | Proprietary Glassdoor analysis of its own review corpus (a logged seed) — AI mentions +240% YoY, positive share 81%→43% — not an open coded deposit; Blind figures are stated-preference surveys, not exhaust. |
+| AI-related / "AI-washing" securities class actions (CRA 87 SCAs 2021–Q1 2026; Cornerstone 15–16/yr) | https://www.crai.com/insights-events/publications/ai-related-securities-litigation/ | On-agenda (shareholders contesting corporate AI claims) but already assembled + published by CRA/Cornerstone/law-firm trackers (claimed); overlaps the logged DAIL AI-litigation tracker (09-08) + CourtListener dockets; SEC under Atkins stepped back from AI-washing enforcement. |
+| AI-agent DAO governance refresh (DAO-AI framework; Event Horizon $204M delegated votes, collapsed) | https://arxiv.org/abs/2510.21117v2 | Constructed agentic research framework (simulated agent decisions, not real votes) + a collapsed AI-delegate platform; no open on-chain dataset of AI-cast votes; AI-vs-human labeling problem — same as the logged DAO AI-agent-voting reject (10-16). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -425,6 +428,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-20 (frontier 4): 3 added (Ollama pull-count exhaust no-deposit/HF-adjacent; Chrome AI-extension security datasets off-agenda/claimed; Pitt Cyber election-policy tracker curated/web-only/overlaps AUP+Watchtower) -->
 <!-- Rejected delta 2026-11-23 (frontier 7): 2 added (Full Fact/Westminster UK AI-misinfo register — coded-register genre logged/small/claimed/no-open-deposit; Digital Policy Alert — curated reg-event tracker overlapping OECD.AI). EU AI Office register watch unchanged; China deep-synthesis = refresh of logged CAC -->
 <!-- Rejected delta 2026-11-24 (frontier 8): 3 added (Cornell Labor Action Tracker no AI-demand code/union-AI-adjacent; EEOC AI hiring-discrimination no open dataset/enforcement retreating/Mobley in DAIL; worker AI-sentiment proprietary Glassdoor analysis/stated-preference surveys). Workplace-AI disclosure-registry watch unchanged -->
+<!-- Rejected delta 2026-11-25 (frontier 9): 2 added (AI-washing securities class actions — consultancy-built/claimed, overlaps DAIL+CourtListener, SEC retreating; AI-agent DAO governance — DAO-AI framework + Event Horizon collapsed, no open on-chain AI-vote dataset). Polymarket/Kalshi AI markets = collision with Manifold/Metaculus + seeds -->
 
 ---
 
