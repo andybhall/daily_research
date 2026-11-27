@@ -209,6 +209,7 @@ arrival — do not surface it, do not re-litigate it.
 <!-- Found delta 2026-11-24 (frontier 8, AI-focus): 0 added (null day — 3rd consecutive F8 null; workplace-AI disclosure registries still publish no data [watch unchanged]; Cornell strike tracker has no AI-demand code; EEOC no open AI-charge dataset; worker AI-sentiment proprietary Glassdoor analysis) -->
 <!-- Found delta 2026-11-25 (frontier 9, AI-focus): 0 added (null day — 5th consecutive F9 null; AI markets/governance objects logged; AI-washing SCAs already built by consultancies/overlap DAIL; AI-agent DAO voting still no open dataset; 14a-8 process closed) -->
 <!-- Found delta 2026-11-26 (frontier 10, AI-focus): 0 added (null day — 3rd F10 null [10-07, 11-16, 11-26]; trawl yielded only constructed audits/media content analyses/classifier benchmarks/restricted/logged objects; Purdue 2026-midterm DB = refresh of logged PDID) -->
+<!-- Found delta 2026-11-27 (frontier 1, AI-focus): 0 added (null day — 5th consecutive F1 null; AI-litigation genre most-logged; "AI on Trial" 500-case/39-jurisdiction DB is Streamlit-only/no open data; rest commercial/journal/vendor-scrape/already-rejected; Charlotin AI Discovery watch unchanged) -->
 
 ## Rejected
 
@@ -354,6 +355,8 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 | Zenodo AI-committee voting thresholds (21637349, 28 LLMs) + Oslo AI-election media-coverage content analysis (20281727) | https://zenodo.org/records/21637349 | Constructed AI-agent decision-making / media content analysis replication deposits — recurring frontier-10 trap (assembled to be studied, not exhaust). |
 | PolyglotFakeFacts — 18-language fake/real news classifier dataset (Mendeley) | https://data.mendeley.com/datasets/gff8bmr4ff | Text classifier benchmark for fake-news detection, not AI-generated-content exhaust; off-object (no AI-generation nexus). |
 | Tilburg conversational voting-advice-application field study (DataverseNL) | https://research.tilburguniversity.edu/en/datasets/in-pursuit-of-informed-voters-three-experimental-studies-on-enhan/ | Constructed lab+field experiment on chatbot VAAs behind restricted access (OpenAccess false); not open incidental exhaust. |
+| "AI on Trial" (Assunção/USP/Techlab) — 500 AI-litigation cases, 39 countries/jurisdictions, coded (jurisdiction/court/AI-issue/year), judicial + administrative | https://techpolicy.press/beyond-regulation-what-500-cases-reveal-about-the-future-of-ai-in-the-courts | Broader jurisdiction coverage than DAIL/Algorithmic Contestability, but access is a Streamlit dashboard only (no bulk download/CSV/API/repository/license; aggregate counts only); one researcher's curated project (May 2025), AI-litigation genre heavily logged. |
+| J.S. Held AI Disputes Monitor + Mdpi 347-case ML litigation analysis | https://www.mdpi.com/2076-3417/16/1/235 | Commercial dashboard over third-party sources (J.S. Held, Mar 2026) / journal article with no released case set (Mdpi) — not open primary deposits; AI-litigation genre logged (DAIL 09-08). |
 
 <!-- Rejected delta 2026-08-08 (frontier 10): 11 added (sandboxed pass) + 8 added (open-egress re-run) -->
 <!-- Rejected delta 2026-08-09 (frontier 1): 6 added -->
@@ -435,6 +438,7 @@ _Datasets considered and rejected, with reasons — so they are never re-litigat
 <!-- Rejected delta 2026-11-24 (frontier 8): 3 added (Cornell Labor Action Tracker no AI-demand code/union-AI-adjacent; EEOC AI hiring-discrimination no open dataset/enforcement retreating/Mobley in DAIL; worker AI-sentiment proprietary Glassdoor analysis/stated-preference surveys). Workplace-AI disclosure-registry watch unchanged -->
 <!-- Rejected delta 2026-11-25 (frontier 9): 2 added (AI-washing securities class actions — consultancy-built/claimed, overlaps DAIL+CourtListener, SEC retreating; AI-agent DAO governance — DAO-AI framework + Event Horizon collapsed, no open on-chain AI-vote dataset). Polymarket/Kalshi AI markets = collision with Manifold/Metaculus + seeds -->
 <!-- Rejected delta 2026-11-26 (frontier 10): 4 added (ISD/VoteGEO constructed election-answer audits; Zenodo AI-committee+Oslo media-coverage constructed/replication; PolyglotFakeFacts classifier benchmark off-object; Tilburg VAA constructed+restricted). Purdue 2026-midterm DB = refresh of logged PDID; ShareChat already rejected 11-06 -->
+<!-- Rejected delta 2026-11-27 (frontier 1): 2 added ("AI on Trial" 500-case/39-jurisdiction DB — Streamlit-only/no open data/curated/genre-logged; J.S. Held AI Disputes Monitor commercial dashboard + Mdpi 347-case journal analysis). "Visible to the Court"/gemmozero already rejected; Charlotin AI Discovery watch unchanged -->
 
 ---
 
